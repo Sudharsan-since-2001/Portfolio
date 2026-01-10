@@ -67,3 +67,24 @@ app/            # App Router pages
 components/     # Reusable UI components
 public/         # Static assets
 styles/         # Global styles
+
+🚀 Deployment
+
+The easiest way to deploy this portfolio is with Vercel, the creators of Next.js.
+
+Push your code to GitHub
+
+Import the repository into Vercel
+
+Deploy with zero configuration
+
+For more details, check out the Next.js deployment documentation
+.
+
+📚 Learn More
+
+Next.js Documentation
+
+Learn Next.js
+
+Next.js GitHub Repository
