@@ -54,3 +54,16 @@ bun dev
 
 Open http://localhost:3000
  in your browser to see the result.
+
+You can start editing the page by modifying:
+
+app/page.tsx
+
+
+The page auto-updates as you edit the file.
+
+📁 Project Structure
+app/            # App Router pages
+components/     # Reusable UI components
+public/         # Static assets
+styles/         # Global styles
