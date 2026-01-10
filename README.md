@@ -27,3 +27,15 @@ Styling: CSS / Tailwind CSS (if applicable)
 Fonts: Geist via next/font
 
 Deployment: Vercel
+
+📦 Getting Started
+
+First, install the dependencies:
+
+npm install
+# or
+yarn install
+# or
+pnpm install
+# or
+bun install
