@@ -1,21 +1,17 @@
-Here’s a clean, professional **README.md** you can use for a **Next.js portfolio project**. You can copy-paste this directly and customize names, links, and sections as needed.
-
----
-
-# Personal Portfolio 🚀
+Personal Portfolio 🚀
 
 This is my personal portfolio website built with **Next.js**, showcasing my projects, skills, and experience as a developer. The site is fast, responsive, and optimized for modern web standards.
 
-## ✨ Features
+Features
 
-* ⚡ Built with **Next.js App Router**
-* 🎨 Modern, responsive UI
-* 🧑‍💻 Showcases projects, skills, and experience
-* 🌐 SEO-friendly and performance optimized
-* 🔤 Uses **next/font** for optimized font loading (Geist)
-* 🚀 Deployed easily on **Vercel**
+Built with Next.js App Router
+Modern, responsive UI
+Showcases projects, skills, and experience
+SEO-friendly and performance optimized
+Uses next/font for optimized font loading (Geist)
+Deployed easily on Vercel
 
-## 🛠️ Tech Stack
+Tech Stack
 
 * **Framework:** Next.js
 * **Language:** TypeScript
