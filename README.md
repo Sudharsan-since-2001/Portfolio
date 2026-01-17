@@ -2,7 +2,7 @@ Personal Portfolio 🚀
 
 This is my personal portfolio website built with **Next.js**, showcasing my projects, skills, and experience as a developer. The site is fast, responsive, and optimized for modern web standards.
 
-Features:
+Features
 
 Built with Next.js App Router
 Modern, responsive UI
