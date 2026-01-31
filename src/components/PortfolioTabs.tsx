@@ -38,20 +38,20 @@ const marketingProjects = [
 
 const developmentProjects = [
     {
-        title: "VibeSync SaaS",
-        tech: ["Next.js", "Tailwind", "Supabase", "Stripe"],
-        description: "A subscription-based platform for digital creators to sync their assets across all social channels.",
-        github: "https://github.com",
-        demo: "https://demo.com",
-        snippet: "npm install @vibesync/core"
+        title: "Toothfix",
+        tech: ["React", "Vite", "TypeScript", "React Router", "Vercel"],
+        description: "A premium, high-performance portfolio and booking platform designed for a modern dental clinic.",
+        github: "https://github.com/Sudharsan-since-2001/Toothfix",
+        demo: "https://toothfix.vercel.app/",
+        snippet: "npm run build"
     },
     {
-        title: "Marketing Engine API",
-        tech: ["Node.js", "GraphQL", "Redis", "Docker"],
-        description: "High-performance API built for processing campaign data and generating real-time performance metrics.",
-        github: "https://github.com",
-        demo: "https://demo.com",
-        snippet: "const report = await engine.generate(cid);"
+        title: "AI Ad Copy Engine",
+        tech: ["Next.js", "Python", "FastAPI", "OpenAI", "Vercel"],
+        description: "An AI-powered platform for junior marketers that identifies ideal customer personas, maps emotional triggers, and generates targeted ad copy with strategy planning for optimal channel selection.",
+        github: "https://github.com/Sudharsan-since-2001/AI-ad-copy-generator-V.2",
+        demo: "https://ai-ad-copy-generator-by-sudharsan.vercel.app/",
+        snippet: "const adCopy = await ai.generate(product);"
     }
 ]
 

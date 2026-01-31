@@ -1,6 +1,7 @@
 "use client"
 
 import * as React from "react"
+import Image from "next/image"
 import { ArrowRight, Linkedin, Github, Sparkles } from "lucide-react"
 import { motion } from "framer-motion"
 
@@ -22,13 +23,19 @@ export function Hero() {
                         className="relative flex justify-center lg:justify-start"
                     >
                         <div className="relative w-full max-w-lg aspect-square rounded-[3rem] overflow-hidden border-4 border-primary/10 shadow-2xl group">
-                            <div className="absolute inset-0 bg-primary/5 group-hover:bg-transparent transition-colors duration-500" />
-                            <div className="absolute inset-4 border border-primary/20 rounded-[2.2rem] pointer-events-none" />
+                            <div className="absolute inset-0 bg-primary/5 group-hover:bg-transparent transition-colors duration-500 z-10" />
+                            <div className="absolute inset-4 border border-primary/20 rounded-[2.2rem] pointer-events-none z-20" />
 
-                            {/* Fallback pattern */}
+                            {/* Hero Image */}
                             <div className="w-full h-full bg-muted flex items-center justify-center relative overflow-hidden">
-                                <span className="text-primary/10 font-serif text-[15rem] italic font-bold select-none">SK</span>
-                                <div className="absolute bottom-10 right-10 p-4 glass rounded-2xl border border-primary/20">
+                                <Image
+                                    src="/profile.jpg"
+                                    alt="Sudharsan"
+                                    fill
+                                    className="object-cover group-hover:scale-105 transition-transform duration-700"
+                                    priority
+                                />
+                                <div className="absolute bottom-10 right-10 p-4 glass rounded-2xl border border-primary/20 z-10">
                                     <Sparkles className="text-primary" size={24} />
                                 </div>
                             </div>
@@ -60,10 +67,15 @@ export function Hero() {
                                 <span>View My Work</span>
                                 <ArrowRight size={20} />
                             </button>
-                            <button className="px-8 py-3.5 rounded-xl bg-background border border-foreground/10 font-bold flex items-center space-x-2 hover:bg-foreground/5 transition-all shadow-sm">
+                            <a
+                                href="https://www.linkedin.com/in/sudharsan-karthikeyan-seo-analyst/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="px-8 py-3.5 rounded-xl bg-background border border-foreground/10 font-bold flex items-center space-x-2 hover:bg-foreground/5 transition-all shadow-sm"
+                            >
                                 <Linkedin size={20} className="text-primary" />
                                 <span>LinkedIn</span>
-                            </button>
+                            </a>
                         </div>
                     </motion.div>
                 </div>
