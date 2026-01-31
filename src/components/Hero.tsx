@@ -29,7 +29,7 @@ export function Hero() {
                             {/* Hero Image */}
                             <div className="w-full h-full bg-muted flex items-center justify-center relative overflow-hidden">
                                 <Image
-                                    src="public/profile.jpg"
+                                    src="/public/profile.jpg"
                                     alt="Sudharsan"
                                     fill
                                     className="object-cover group-hover:scale-105 transition-transform duration-700"
