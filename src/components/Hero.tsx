@@ -4,6 +4,7 @@ import * as React from "react"
 import Image from "next/image"
 import { ArrowRight, Linkedin, Github, Sparkles } from "lucide-react"
 import { motion } from "framer-motion"
+import profilePic from "../../public/profile.jpg"
 
 export function Hero() {
     return (
@@ -29,11 +30,12 @@ export function Hero() {
                             {/* Hero Image */}
                             <div className="w-full h-full bg-muted flex items-center justify-center relative overflow-hidden">
                                 <Image
-                                    src="/public/profile.jpg"
+                                    src={profilePic}
                                     alt="Sudharsan"
                                     fill
                                     className="object-cover group-hover:scale-105 transition-transform duration-700"
                                     priority
+                                    unoptimized
                                 />
                                 <div className="absolute bottom-10 right-10 p-4 glass rounded-2xl border border-primary/20 z-10">
                                     <Sparkles className="text-primary" size={24} />
