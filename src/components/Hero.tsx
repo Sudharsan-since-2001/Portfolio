@@ -2,86 +2,140 @@
 
 import * as React from "react"
 import Image from "next/image"
-import { ArrowRight, Linkedin, Github, Sparkles } from "lucide-react"
+import { ArrowRight, Linkedin, Sparkles, Zap, Star, Heart, CheckCircle2, Share2, Search, Target, PenTool, BrainCircuit, Bot, Users } from "lucide-react"
 import { motion } from "framer-motion"
 import profilePic from "../../public/profile.jpg"
 
+const skills = [
+    {
+        title: "Social Media Management",
+        icon: <Share2 size={28} className="text-foreground" />,
+        color: "bg-[var(--nb-pink)]",
+        iconBg: "bg-[var(--nb-pink)]/30",
+    },
+    {
+        title: "Search Engine Optimisation",
+        icon: <Search size={28} className="text-foreground" />,
+        color: "bg-[var(--nb-green)]",
+        iconBg: "bg-[var(--nb-green)]/30",
+    },
+    {
+        title: "Meta Ads",
+        icon: <Target size={28} className="text-foreground" />,
+        color: "bg-[var(--nb-blue)]",
+        iconBg: "bg-[var(--nb-blue)]/30",
+    },
+    {
+        title: "Content Strategist",
+        icon: <PenTool size={28} className="text-foreground" />,
+        color: "bg-[var(--nb-yellow)]",
+        iconBg: "bg-[var(--nb-yellow)]/30",
+    },
+    {
+        title: "Prompt Engineering & LLM Applications",
+        icon: <BrainCircuit size={28} className="text-foreground" />,
+        color: "bg-[var(--nb-purple)]",
+        iconBg: "bg-[var(--nb-purple)]/30",
+    },
+    {
+        title: "Python Automation for Marketing Tasks",
+        icon: <Bot size={28} className="text-foreground" />,
+        color: "bg-[var(--nb-green)]",
+        iconBg: "bg-[var(--nb-green)]/30",
+    },
+    {
+        title: "Audience Targeting with Data & AI Insights",
+        icon: <Users size={28} className="text-foreground" />,
+        color: "bg-[var(--nb-blue)]",
+        iconBg: "bg-[var(--nb-blue)]/30",
+    },
+]
+
 export function Hero() {
     return (
-        <section className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
-            {/* Background Orbs */}
-            <div className="absolute top-1/4 -left-20 w-72 h-72 bg-primary/20 rounded-full blur-[100px] animate-pulse" />
-            <div className="absolute bottom-1/4 -right-20 w-96 h-96 bg-primary/10 rounded-full blur-[120px] animate-pulse" />
+        <>
+            <section className="relative min-h-screen flex items-center pt-24 pb-4 overflow-hidden bg-background">
 
-            <div className="w-full px-4 sm:px-6 lg:px-12 relative z-10">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 
-                    {/* Profile Visual - Now on the Left */}
-                    <motion.div
-                        initial={{ opacity: 0, x: -30 }}
-                        animate={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 1, delay: 0.2 }}
-                        className="relative flex justify-center lg:justify-start"
-                    >
-                        <div className="relative w-full max-w-lg aspect-square rounded-[3rem] overflow-hidden border-4 border-primary/10 shadow-2xl group">
-                            <div className="absolute inset-0 bg-primary/5 group-hover:bg-transparent transition-colors duration-500 z-10" />
-                            <div className="absolute inset-4 border border-primary/20 rounded-[2.2rem] pointer-events-none z-20" />
+                {/* ===== MAIN CONTENT ===== */}
+                <div className="w-full px-4 sm:px-6 lg:px-12 relative z-10">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-6 items-center max-w-7xl mx-auto">
 
-                            {/* Hero Image */}
-                            <div className="w-full h-full bg-muted flex items-center justify-center relative overflow-hidden">
-                                <Image
-                                    src={profilePic}
-                                    alt="Sudharsan"
-                                    fill
-                                    className="object-cover group-hover:scale-105 transition-transform duration-700"
-                                    priority
-                                    unoptimized
+                        {/* ===== LEFT: TEXT CONTENT ===== */}
+                        <motion.div
+                            initial={{ opacity: 0, x: -40 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            transition={{ duration: 0.6, ease: "easeOut" }}
+                            className="space-y-6 sm:space-y-8 text-left order-2 lg:order-1"
+                        >
+                            {/* Small intro line */}
+                            <div className="inline-flex items-center gap-2 px-3 py-1.5 sm:px-4 sm:py-2 bg-[var(--nb-yellow)] border-[3px] border-foreground shadow-[3px_3px_0px_var(--foreground)] font-black text-xs sm:text-sm uppercase tracking-wider text-foreground">
+                                Digital Marketer • Vibe Coder
+                            </div>
+
+                            {/* BIG heading */}
+                            <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-[5.5rem] xl:text-[6.5rem] font-sans font-black tracking-tight text-foreground leading-[0.95] sm:leading-[0.92] uppercase">
+                                Hi, I{"'"}m Sudharsan
+                            </h1>
+
+                            {/* Description */}
+                            <p className="text-sm sm:text-base md:text-lg text-muted-foreground dark:text-slate-300 max-w-md leading-relaxed font-semibold">
+                                A versatile digital marketer and creative developer passionate about building
+                                impactful digital experiences that vibe with users and drive results.
+                            </p>
+
+                            {/* Buttons */}
+                            <div className="flex flex-col sm:flex-row gap-4 pt-1">
+                                <button className="nb-btn px-6 sm:px-8 py-3.5 sm:py-4 bg-foreground dark:bg-white text-background dark:text-black text-sm sm:text-base flex items-center justify-center gap-3 hover:bg-primary hover:text-white border-foreground">
+                                    <span>View My Work</span>
+                                </button>
+                                <a
+                                    href="https://www.linkedin.com/in/sudharsan-karthikeyan-seo-analyst/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="nb-btn px-6 sm:px-8 py-3.5 sm:py-4 bg-transparent text-foreground dark:text-zinc-300 text-sm sm:text-base flex items-center justify-center gap-3 hover:bg-[var(--nb-blue)]/20 border-foreground dark:border-white/20 transition-all"
+                                >
+                                    <Linkedin size={20} />
+                                    <span>LinkedIn</span>
+                                </a>
+                            </div>
+                        </motion.div>
+
+                        {/* ===== RIGHT: PROFILE PHOTO IN COLORED CONTAINER ===== */}
+                        <motion.div
+                            initial={{ opacity: 0, x: 40 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            transition={{ duration: 0.7, ease: "easeOut", delay: 0.15 }}
+                            className="relative flex justify-center order-1 lg:order-2"
+                        >
+                            <div className="relative w-full max-w-[300px] aspect-[4/5] sm:max-w-[380px] md:max-w-[420px] lg:max-w-[440px]">
+
+                                {/* Pink/Magenta background container */}
+                                <div
+                                    className="absolute inset-4 sm:inset-6 bg-[var(--nb-pink)] border-[4px] border-foreground shadow-[6px_6px_0px_var(--foreground)] overflow-hidden"
+                                    style={{ borderRadius: '2rem' }}
                                 />
-                                <div className="absolute bottom-10 right-10 p-4 glass rounded-2xl border border-primary/20 z-10">
-                                    <Sparkles className="text-primary" size={24} />
+
+                                {/* Profile Image - overlapping the container */}
+                                <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[85%] h-[90%] z-10">
+                                    <Image
+                                        src={profilePic}
+                                        alt="Sudharsan"
+                                        fill
+                                        className="object-cover object-top"
+                                        priority
+                                        unoptimized
+                                        style={{ borderRadius: '0' }}
+                                    />
                                 </div>
                             </div>
-                        </div>
-                    </motion.div>
-
-                    {/* Text Content - Now on the Right */}
-                    <motion.div
-                        initial={{ opacity: 0, x: 30 }}
-                        animate={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 0.8 }}
-                        className="space-y-8 text-left"
-                    >
-                        <div className="inline-flex items-center px-4 py-1.5 rounded-full bg-foreground/5 border border-foreground/10 text-foreground/80 font-semibold text-sm">
-                            Digital Marketer • Vibe Coder
-                        </div>
-
-                        <h1 className="text-6xl md:text-7xl lg:text-8xl font-sans font-bold tracking-tight text-foreground/90">
-                            Hi, I'm <span className="text-primary">Sudharsan</span>
-                        </h1>
-
-                        <p className="text-xl text-muted-foreground/80 max-w-xl leading-relaxed font-medium">
-                            A versatile digital marketer and creative developer passionate about building
-                            impactful digital experiences that vibe with users and drive results.
-                        </p>
-
-                        <div className="flex flex-wrap gap-4 pt-4">
-                            <button className="px-8 py-3.5 rounded-xl bg-primary text-primary-foreground font-bold flex items-center space-x-2 hover:opacity-90 transition-all shadow-lg shadow-primary/20">
-                                <span>View My Work</span>
-                                <ArrowRight size={20} />
-                            </button>
-                            <a
-                                href="https://www.linkedin.com/in/sudharsan-karthikeyan-seo-analyst/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="px-8 py-3.5 rounded-xl bg-background border border-foreground/10 font-bold flex items-center space-x-2 hover:bg-foreground/5 transition-all shadow-sm"
-                            >
-                                <Linkedin size={20} className="text-primary" />
-                                <span>LinkedIn</span>
-                            </a>
-                        </div>
-                    </motion.div>
+                        </motion.div>
+                    </div>
                 </div>
-            </div>
-        </section>
+
+
+            </section >
+
+        </>
     )
 }

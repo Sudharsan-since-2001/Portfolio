@@ -12,14 +12,14 @@ export default function Home() {
     <main className="min-h-screen bg-background">
       <Navbar />
       <Hero />
-      <div className="border-t border-muted/20">
-        <AboutSection isTinted={true} />
-      </div>
+      <div className="nb-divider" />
+      <AboutSection isTinted={true} />
+      <div className="nb-divider" />
       <ExperienceSection />
+      <div className="nb-divider" />
       <HowISolveSection isTinted={true} />
       <ServicesSection />
       <PortfolioTabs isTinted={true} />
-
     </main>
   );
 }
