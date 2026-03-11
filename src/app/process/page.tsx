@@ -1,7 +1,15 @@
 import { Navbar } from "@/components/Navbar";
 import { HowISolveSection } from "@/components/HowISolveSection";
 import { PageHeader } from "@/components/PageHeader";
+import type { Metadata } from "next";
 
+export const metadata: Metadata = {
+    title: "Process | Sudharsan Karthikeyan",
+    description: "How I blend analytics with creativity to solve complex digital problems.",
+    alternates: {
+        canonical: "/process",
+    },
+};
 export default function ProcessPage() {
     return (
         <main className="min-h-screen bg-background">

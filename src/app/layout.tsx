@@ -14,8 +14,12 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Sudharsan Karthikeyan | Digital Marketer + Vibe Coder",
-  description: "Portfolio of Sudharsan Karthikeyan - Showcasing digital marketing campaigns and creative coding projects.",
+  metadataBase: new URL("https://sudharsankarthikeyan.co.in"),
+  title: "Sudharsan Karthikeyan | Digital Marketing Strategist",
+  description: "Portfolio of Sudharsan Karthikeyan, a digital marketing strategist specializing in social media growth, SEO strategy, and content marketing.",
+  alternates: {
+    canonical: "/",
+  },
 };
 
 export default function RootLayout({
