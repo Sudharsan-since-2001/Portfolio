@@ -41,7 +41,7 @@ export function AboutSection({
                             className="md:col-span-12 nb-card p-6 sm:p-10 md:p-14 border-[3px] sm:border-[4px] bg-background"
                         >
                             <p className="text-xl sm:text-2xl md:text-4xl font-bold leading-tight text-foreground tracking-tight">
-                                I{"'"}m Sudharsan Karthikeyan, a Digital Marketer and Vibe Coder. I started in marketing, working on campaigns, content, and audience behavior. Over time, I started building websites, tools, and applications that supported my marketing work.
+                               I'm Sudharsan Karthikeyan, a Digital Marketer who builds websites, tools, and applications. I started my career in marketing, working on campaigns, content, and understanding audience behavior. Over time, I began creating websites and digital tools to support the marketing work I was doing.
                             </p>
                         </motion.div>
 
@@ -54,7 +54,7 @@ export function AboutSection({
                             className="md:col-span-12 lg:col-span-7 nb-card p-6 sm:p-8 md:p-10 border-[3px] bg-background"
                         >
                             <p className="text-base sm:text-lg md:text-xl font-semibold text-muted-foreground leading-relaxed">
-                                Vibe Coding became a way for me to execute ideas faster. I{"'"}ve worked on freelance projects, building landing pages, websites, and applications that solve real problems and support business goals.
+                                What started as curiosity became a skill. I've worked on projects developing landing pages, websites, and applications that solve practical problems and support business goals.
                             </p>
                         </motion.div>
 
@@ -67,7 +67,7 @@ export function AboutSection({
                             className="md:col-span-12 lg:col-span-5 nb-card p-6 sm:p-8 md:p-10 border-[3px] !bg-primary text-primary-foreground"
                         >
                             <p className="text-base sm:text-lg md:text-xl font-black leading-snug">
-                                Today, I combine marketing thinking with hands-on building. I do not just plan strategies — I create and deliver solutions that work in the real world.
+                                Today, I combine marketing thinking with hands-on building. I don't just plan strategies. I build and deliver solutions that work in the real world.
                             </p>
                         </motion.div>
                     </div>

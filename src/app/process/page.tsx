@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
     title: "Process | Sudharsan Karthikeyan",
-    description: "How I blend analytics with creativity to solve complex digital problems.",
+    description: "How I approach and solve digital problems",
     alternates: {
         canonical: "/process",
     },
@@ -18,7 +18,7 @@ export default function ProcessPage() {
                 <PageHeader
                     title="My"
                     highlight="Process"
-                    description="How I blend analytics with creativity to solve complex digital problems."
+                    description="How I approach and solve digital problems"
                 />
                 <HowISolveSection isTinted={false} noTopPadding={true} hideHeader={true} />
             </div>

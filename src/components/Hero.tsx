@@ -70,18 +70,19 @@ export function Hero() {
                         >
                             {/* Small intro line */}
                             <div className="inline-flex items-center gap-2 px-3 py-1.5 sm:px-4 sm:py-2 bg-[var(--nb-yellow)] border-[3px] border-foreground shadow-[3px_3px_0px_var(--foreground)] font-black text-xs sm:text-sm uppercase tracking-wider text-foreground">
-                                Digital Marketer • Vibe Coder
+                                Digital Marketer | No code developer | Author
                             </div>
 
                             {/* BIG heading */}
-                            <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-[5.5rem] xl:text-[6.5rem] font-sans font-black tracking-tight text-foreground leading-[0.95] sm:leading-[0.92] uppercase">
-                                Hi, I{"'"}m Sudharsan
+                            <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-[5.5rem] xl:text-[6.5rem] font-sans font-black tracking-tight text-foreground leading-none sm:leading-[1.1] uppercase">
+                                Hi, I'm
+                                <br />
+                                Sudharsan
                             </h1>
 
                             {/* Description */}
                             <p className="text-sm sm:text-base md:text-lg text-muted-foreground dark:text-slate-300 max-w-md leading-relaxed font-semibold">
-                                A versatile digital marketer and creative developer passionate about building
-                                impactful digital experiences that vibe with users and drive results.
+                                I work at the intersection of marketing, technology, and storytelling. I build digital products, experiment with AI, and write about ideas that shape the internet.
                             </p>
 
                             {/* Buttons */}
