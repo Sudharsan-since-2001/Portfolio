@@ -15,8 +15,8 @@ const playfair = Playfair_Display({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://sudharsankarthikeyan.co.in"),
-  title: "Sudharsan Karthikeyan | Digital Marketing Strategist",
-  description: "Portfolio of Sudharsan Karthikeyan, a digital marketing strategist specializing in social media growth, SEO strategy, and content marketing.",
+  title: "Sudharsan Karthikeyan | Digital Marketing Strategist & SEO Specialist",
+  description: "Portfolio of Sudharsan Karthikeyan, a digital marketing strategist and web developer with 3+ years of experience in social media growth, SEO strategy, and digital campaigns.",
   alternates: {
     canonical: "/",
   },

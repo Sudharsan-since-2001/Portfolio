@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
     title: "Portfolio | Sudharsan Karthikeyan",
-    description: "Explore the portfolio of Sudharsan Karthikeyan, showcasing successful SEO strategy, content marketing, and digital marketing strategies.",
+    description: "Explore the portfolio of Sudharsan Karthikeyan, showcasing successful digital marketing campaigns, web development projects, and published writing.",
     alternates: {
         canonical: "/portfolio",
     },

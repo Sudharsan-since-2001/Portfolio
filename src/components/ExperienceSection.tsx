@@ -8,7 +8,6 @@ const experiences = [
     {
         role: "Senior Digital Marketer",
         company: "6dot5 Ethnics",
-        period: "05/2025 - Present",
         isCurrent: true,
         tagline: "Driving digital growth and high-impact marketing strategies for the brand.",
         description: "Leading the digital marketing efforts at 6dot5 Ethnics, focusing on sustainable growth and brand positioning.",
@@ -23,7 +22,6 @@ const experiences = [
     {
         role: "Social Media Strategist",
         company: "Power of Parthasarathy",
-        period: "01/2024 - 05/2025",
         tagline: "Managed strategic digital communication for a political PR team.",
         description: "Spearheaded the social media strategy for a high-profile political PR team, ensuring impactful communication and audience engagement.",
         responsibilities: [
@@ -37,7 +35,6 @@ const experiences = [
     {
         role: "Freelance Web Developer (Websites & Tools)",
         company: "Independent",
-        period: "2023 - Present",
         tagline: "I build scalable websites and internal web tools using modern frontend frameworks.",
         description: "Delivering clean, maintainable, and performance-focused solutions tailored to business needs.",
         responsibilities: [
@@ -51,7 +48,6 @@ const experiences = [
     {
         role: "Digital Marketer",
         company: "Shri Aarupadaiyappa Association",
-        period: "01/2022 - 01/2024",
         tagline: "Executed digital marketing campaigns for the real estate sector.",
         description: "Focused on lead generation and digital branding for real estate projects, significantly increasing digital reach.",
         responsibilities: [
@@ -109,16 +105,13 @@ export function ExperienceSection({
                                     className="w-full text-left flex items-start justify-between p-5 sm:p-6 group"
                                 >
                                     <div className="space-y-3 flex-1">
-                                        <div className="flex items-center gap-3 flex-wrap">
-                                            {exp.isCurrent && (
+                                        {exp.isCurrent && (
+                                            <div className="flex items-center gap-3 flex-wrap">
                                                 <span className="nb-badge px-2.5 py-1 sm:px-3 sm:py-1 bg-[var(--nb-green)] text-foreground text-[10px] sm:text-xs">
                                                     Current
                                                 </span>
-                                            )}
-                                            <span className="nb-badge px-2.5 py-1 sm:px-3 sm:py-1 bg-muted text-muted-foreground text-[10px] sm:text-xs">
-                                                {exp.period}
-                                            </span>
-                                        </div>
+                                            </div>
+                                        )}
                                         <h3 className="text-lg sm:text-xl md:text-2xl font-black text-foreground group-hover:text-primary transition-colors uppercase leading-tight">
                                             {exp.role} {exp.company !== "Independent" && `@ ${exp.company}`}
                                         </h3>

@@ -68,17 +68,17 @@ export function Hero() {
                             transition={{ duration: 0.6, ease: "easeOut" }}
                             className="space-y-6 sm:space-y-8 text-left order-2 lg:order-1"
                         >
-                            {/* Small intro line */}
-                            <div className="inline-flex items-center gap-2 px-3 py-1.5 sm:px-4 sm:py-2 bg-[var(--nb-yellow)] border-[3px] border-foreground shadow-[3px_3px_0px_var(--foreground)] font-black text-xs sm:text-sm uppercase tracking-wider text-foreground">
-                                Digital Marketer | No code developer | Author
-                            </div>
+                            {/* SEO optimized H1 heading */}
+                            <h1 className="inline-block px-3 py-2 sm:px-4 sm:py-3 bg-[var(--nb-yellow)] border-[3px] border-foreground shadow-[3px_3px_0px_var(--foreground)] font-black text-sm md:text-base uppercase tracking-wider text-foreground leading-snug break-words">
+                                Digital Marketing Strategist Helping Brands Grow Through SEO, Content, and Social Media
+                            </h1>
 
-                            {/* BIG heading */}
-                            <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-[5.5rem] xl:text-[6.5rem] font-sans font-black tracking-tight text-foreground leading-none sm:leading-[1.1] uppercase">
+                            {/* BIG heading (Now H2) */}
+                            <h2 className="text-4xl sm:text-6xl md:text-7xl lg:text-[5.5rem] xl:text-[6.5rem] font-sans font-black tracking-tight text-foreground leading-none sm:leading-[1.1] uppercase">
                                 Hi, I'm
                                 <br />
                                 Sudharsan
-                            </h1>
+                            </h2>
 
                             {/* Description */}
                             <p className="text-sm sm:text-base md:text-lg text-muted-foreground dark:text-slate-300 max-w-md leading-relaxed font-semibold">
