@@ -70,7 +70,7 @@ export function Hero() {
                         >
                             {/* SEO optimized H1 heading */}
                             <h1 className="inline-block px-3 py-2 sm:px-4 sm:py-3 bg-[var(--nb-yellow)] border-[3px] border-foreground shadow-[3px_3px_0px_var(--foreground)] font-black text-sm md:text-base uppercase tracking-wider text-foreground leading-snug break-words">
-                                Digital Marketing Strategist Helping Brands Grow Through SEO, Content, and Social Media
+                                Digital Marketing Strategist | SEO Specialist | Web Developer   
                             </h1>
 
                             {/* BIG heading (Now H2) */}
