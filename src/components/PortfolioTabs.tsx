@@ -172,9 +172,9 @@ export function PortfolioTabs({
                                 {activeTab === "Development" && (
                                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10">
                                         {developmentProjects.map((project) => (
-                                            <div key={project.title} className="bg-muted dark:bg-muted/50 border-[3px] sm:border-[4px] border-foreground shadow-[6px_6px_0px_var(--primary)] text-foreground dark:text-foreground overflow-hidden group hover:shadow-[8px_8px_0px_var(--primary)] transition-all">
+                                            <div key={project.title} className="bg-muted border-[3px] sm:border-[4px] border-foreground shadow-[6px_6px_0px_var(--primary)] text-foreground overflow-hidden group hover:shadow-[8px_8px_0px_var(--primary)] transition-all">
                                                 {/* Terminal Header */}
-                                                <div className="px-4 py-3 sm:px-6 sm:py-4 bg-muted/80 dark:bg-muted/30 border-b-[2.5px] sm:border-b-[3px] border-foreground/20 flex items-center justify-between">
+                                                <div className="px-4 py-3 sm:px-6 sm:py-4 bg-muted/80 border-b-[2.5px] sm:border-b-[3px] border-foreground/20 flex items-center justify-between">
                                                     <div className="flex items-center space-x-2">
                                                         <div className="w-3 h-3 sm:w-4 sm:h-4 bg-[#ff5f56] border-2 border-[#e0443e]" />
                                                         <div className="w-3 h-3 sm:w-4 sm:h-4 bg-[#ffbd2e] border-2 border-[#dea123]" />
@@ -194,7 +194,7 @@ export function PortfolioTabs({
                                                     </div>
 
                                                     {/* Code snippet */}
-                                                    <div className="p-3 sm:p-4 bg-background dark:bg-black/40 border-2 border-foreground/10 font-mono text-[11px] sm:text-sm text-[#059669] dark:text-[var(--nb-green)] flex items-center justify-between overflow-x-auto">
+                                                    <div className="p-3 sm:p-4 bg-background border-2 border-foreground/10 font-mono text-[11px] sm:text-sm text-[#059669] flex items-center justify-between overflow-x-auto">
                                                         <span className="whitespace-nowrap">$ {project.snippet}</span>
                                                         <span className="animate-pulse flex-shrink-0">▋</span>
                                                     </div>

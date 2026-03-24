@@ -2,8 +2,7 @@
 
 import * as React from "react"
 import Link from "next/link"
-import { useTheme } from "next-themes"
-import { Sun, Moon, Menu, X } from "lucide-react"
+import { Menu, X } from "lucide-react"
 import { motion, AnimatePresence } from "framer-motion"
 
 const navLinks = [
@@ -16,7 +15,6 @@ const navLinks = [
 ]
 
 export function Navbar() {
-    const { theme, setTheme } = useTheme()
     const [mounted, setMounted] = React.useState(false)
     const [isOpen, setIsOpen] = React.useState(false)
 
@@ -57,13 +55,6 @@ export function Navbar() {
                         </div>
 
                         <div className="flex items-center space-x-2 sm:space-x-3">
-                            <button
-                                onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-                                className="nb-btn p-2 sm:p-2.5 bg-[var(--nb-yellow)] text-foreground"
-                                aria-label="Toggle Theme"
-                            >
-                                {theme === "dark" ? <Sun size={18} /> : <Moon size={18} />}
-                            </button>
                             <Link
                                 href="/contact"
                                 className="hidden md:block nb-btn px-5 py-2.5 bg-primary text-primary-foreground text-sm font-black uppercase"

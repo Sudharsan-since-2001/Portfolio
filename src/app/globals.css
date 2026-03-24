@@ -41,30 +41,6 @@
   --nb-orange: #FF6B35;
 }
 
-[data-theme='dark'] {
-  --background: #080C14;
-  --foreground: #F1F5F9;
-  --primary: #FF7E47;
-  --primary-foreground: #080C14;
-  --muted: #0F172A;
-  --muted-foreground: #94A3B8;
-  --accent: #FFD166;
-  --accent-foreground: #080C14;
-
-  --neo-shadow: 5px 5px 0px #000000;
-  --neo-shadow-lg: 8px 8px 0px #000000;
-  --neo-shadow-sm: 3px 3px 0px #000000;
-  --neo-border: 2.5px solid #F1F5F9;
-  --neo-border-thin: 1.5px solid #F1F5F9;
-
-  --nb-pink: #FF4D8D;
-  --nb-blue: #4D96FF;
-  --nb-green: #4DFF91;
-  --nb-yellow: #FFD166;
-  --nb-purple: #9D6FFB;
-  --nb-orange: #FF7E47;
-}
-
 * {
   border-radius: 0 !important;
 }
@@ -120,9 +96,6 @@ body {
   box-shadow: 1px 1px 0px #1a1a1a;
 }
 
-[data-theme='dark'] .nb-btn:active {
-  box-shadow: 1px 1px 0px #000;
-}
 
 /* Neubrutalism Badge */
 .nb-badge {

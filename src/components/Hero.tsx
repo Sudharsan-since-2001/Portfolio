@@ -69,8 +69,8 @@ export function Hero() {
                             className="space-y-6 sm:space-y-8 text-left order-2 lg:order-1"
                         >
                             {/* SEO optimized H1 heading */}
-                            <h1 className="inline-block px-3 py-2 sm:px-4 sm:py-3 bg-[var(--nb-yellow)] border-[3px] border-foreground shadow-[3px_3px_0px_var(--foreground)] font-black text-sm md:text-base uppercase tracking-wider text-foreground leading-snug break-words">
-                                Digital Marketing Strategist | SEO Specialist | Web Developer   
+                            <h1 className="inline-block px-3 py-2 sm:px-4 sm:py-3 bg-[var(--nb-yellow)] border-[3px] border-foreground shadow-[3px_3px_0px_var(--foreground)] font-black text-xs sm:text-sm md:text-base uppercase tracking-wider text-foreground leading-none whitespace-nowrap">
+                                Digital Marketing Strategist | SEO Specialist | Web Developer
                             </h1>
 
                             {/* BIG heading (Now H2) */}
@@ -81,20 +81,20 @@ export function Hero() {
                             </h2>
 
                             {/* Description */}
-                            <p className="text-sm sm:text-base md:text-lg text-muted-foreground dark:text-slate-300 max-w-md leading-relaxed font-semibold">
-                                I work at the intersection of marketing, technology, and storytelling. I build digital products, experiment with AI, and write about ideas that shape the internet.
+                            <p className="text-sm sm:text-base md:text-lg text-muted-foreground max-w-md leading-relaxed font-semibold">
+                                Most people pick a lane - marketer, developer, or writer. I don't. I help brands grow through search, strategy, and software, then tell the story that makes it stick.
                             </p>
 
                             {/* Buttons */}
                             <div className="flex flex-col sm:flex-row gap-4 pt-1">
-                                <button className="nb-btn px-6 sm:px-8 py-3.5 sm:py-4 bg-foreground dark:bg-white text-background dark:text-black text-sm sm:text-base flex items-center justify-center gap-3 hover:bg-primary hover:text-white border-foreground">
+                                <button className="nb-btn px-6 sm:px-8 py-3.5 sm:py-4 bg-foreground text-background text-sm sm:text-base flex items-center justify-center gap-3 hover:bg-primary hover:text-white border-foreground">
                                     <span>View My Work</span>
                                 </button>
                                 <a
                                     href="https://www.linkedin.com/in/sudharsan-karthikeyan-seo-analyst/"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="nb-btn px-6 sm:px-8 py-3.5 sm:py-4 bg-transparent text-foreground dark:text-zinc-300 text-sm sm:text-base flex items-center justify-center gap-3 hover:bg-[var(--nb-blue)]/20 border-foreground dark:border-white/20 transition-all"
+                                    className="nb-btn px-6 sm:px-8 py-3.5 sm:py-4 bg-transparent text-foreground text-sm sm:text-base flex items-center justify-center gap-3 hover:bg-[var(--nb-blue)]/20 border-foreground transition-all"
                                 >
                                     <Linkedin size={20} />
                                     <span>LinkedIn</span>

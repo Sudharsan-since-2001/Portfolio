@@ -28,7 +28,8 @@ export default function ContactPage() {
                                     Let{"'"}s Connect
                                 </div>
                                 <h1 className="text-4xl md:text-6xl font-sans font-black uppercase leading-tight max-w-5xl mx-auto">
-                                    If you{"'"}re looking for someone who builds products that work and campaigns that reach people —{" "}
+                                    I build products that work and campaigns that reach people. If that's what you need -   
+                                    
                                     <span className="relative inline-block">
                                         <span className="relative z-10">let{"'"}s talk.</span>
                                         <span className="absolute bottom-1 left-0 w-full h-3 bg-primary -z-0" />
