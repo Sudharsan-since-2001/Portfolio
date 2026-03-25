@@ -57,25 +57,25 @@ const developmentProjects = [
 
 const writingProjects = [
     {
-        title: "The Vibe Coding Manifesto",
-        type: "Thought Leadership",
-        readTime: "8 min read",
-        description: "An exploration of how modern developers are blending aesthetics with algorithmic efficiency to create soulful software.",
-        link: "#"
+        title: "The most important space experiment of 2023, and almost nobody heard about it till 2026.",
+        type: "Deep Dive",
+        readTime: "10 min read",
+        description: "An investigation into an underrated space mission that's quietly changing our understanding of planetary physics and space exploration's future.",
+        link: "https://medium.com/@sudharsanmilburn/the-most-important-space-experiment-of-2023-and-almost-nobody-heard-about-it-9e7044382934"
     },
     {
-        title: "Conversion Psychology in Ads",
-        type: "Case Study",
-        readTime: "12 min read",
-        description: "A deep dive into the psychological triggers that drive clicks in high-performance digital marketing campaigns.",
-        link: "#"
+        title: "The Lovers of Neptune",
+        type: "Sci-Fi Novel",
+        readTime: "Novel",
+        description: "A captivating exploration of science fiction and human connection set on the farthest reaches of our solar system.",
+        link: "https://the-lovers-of-neptune-aacd3ba47-sudharsans-projects-84f59cbf.vercel.app/"
     },
     {
-        title: "Next.js 15: A New Era",
-        type: "Technical Guide",
-        readTime: "15 min read",
-        description: "A comprehensive guide on implementing the latest features of Next.js for enterprise-scale applications.",
-        link: "#"
+        title: "How Livbio Got Cited by Google AI in 72 Hours: A GEO Breakdown",
+        type: "GEO Case Study",
+        readTime: "5 min read",
+        description: "A Generative Engine Optimization Case Study Analysis exploring how strategic content optimization led to rapid AI citations.",
+        link: "https://medium.com/@sudharsanmilburn/how-livbio-got-cited-by-google-ai-in-72-hours-a-geo-breakdown-7afc587a9748"
     }
 ]
 
@@ -216,20 +216,27 @@ export function PortfolioTabs({
                                 {activeTab === "Writing" && (
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
                                         {writingProjects.map((project) => (
-                                            <div key={project.title} className="nb-card p-6 sm:p-8 space-y-5 sm:space-y-6 bg-background group">
-                                                <div className="flex justify-between items-start">
-                                                    <span className="nb-badge px-2.5 py-1 sm:px-3 sm:py-1 bg-muted text-muted-foreground text-[10px] sm:text-xs font-black">{project.readTime}</span>
+                                            <div key={project.title} className="nb-card p-6 sm:p-8 flex flex-col bg-background group h-full">
+                                                <div className="flex-grow space-y-5 sm:space-y-6 mb-8">
+                                                    <div className="flex justify-between items-start">
+                                                        <span className="nb-badge px-2.5 py-1 sm:px-3 sm:py-1 bg-muted text-muted-foreground text-[10px] sm:text-xs font-black">{project.readTime}</span>
+                                                    </div>
+                                                    <div className="space-y-3">
+                                                        <span className="nb-badge inline-block px-2.5 py-1 sm:px-3 sm:py-1 bg-primary text-primary-foreground text-[10px] sm:text-xs">
+                                                            {project.type}
+                                                        </span>
+                                                        <h3 className="text-xl sm:text-2xl font-black uppercase leading-tight">{project.title}</h3>
+                                                    </div>
+                                                    <p className="text-sm sm:text-base text-muted-foreground leading-relaxed font-medium">{project.description}</p>
                                                 </div>
-                                                <div className="space-y-3">
-                                                    <span className="nb-badge inline-block px-2.5 py-1 sm:px-3 sm:py-1 bg-primary text-primary-foreground text-[10px] sm:text-xs">
-                                                        {project.type}
-                                                    </span>
-                                                    <h3 className="text-xl sm:text-2xl font-black uppercase leading-tight">{project.title}</h3>
-                                                </div>
-                                                <p className="text-sm sm:text-base text-muted-foreground leading-relaxed font-medium">{project.description}</p>
-                                                <button className="nb-btn px-5 py-2.5 sm:px-6 sm:py-3 bg-background text-foreground flex items-center justify-center gap-2 text-xs sm:text-sm group-hover:bg-[var(--nb-yellow)] transition-colors font-black uppercase shadow-[3px_3px_0px_var(--foreground)]">
+                                                <a 
+                                                    href={project.link} 
+                                                    target="_blank" 
+                                                    rel="noopener noreferrer" 
+                                                    className="nb-btn px-5 py-2.5 sm:px-6 sm:py-3 bg-background text-foreground flex items-center justify-center gap-2 text-xs sm:text-sm group-hover:bg-[var(--nb-yellow)] transition-colors font-black uppercase shadow-[3px_3px_0px_var(--foreground)]"
+                                                >
                                                     <span>Read Article</span>
-                                                </button>
+                                                </a>
                                             </div>
                                         ))}
                                     </div>
