@@ -4,6 +4,7 @@ import { AboutSection } from "@/components/AboutSection";
 import { ExperienceSection } from "@/components/ExperienceSection";
 import { ServicesSection } from "@/components/ServicesSection";
 import { PortfolioTabs } from "@/components/PortfolioTabs";
+import { ContactSection } from "@/components/ContactSection";
 
 import { HowISolveSection } from "@/components/HowISolveSection";
 
@@ -20,6 +21,8 @@ export default function Home() {
       <HowISolveSection isTinted={true} />
       <ServicesSection />
       <PortfolioTabs isTinted={true} />
+      <div className="nb-divider" />
+      <ContactSection />
     </main>
   );
 }

@@ -8,31 +8,13 @@ import { ExternalLink, Github, Globe, Terminal, ArrowRight, Target, BarChart3, M
 // --- Data ---
 const marketingProjects = [
     {
-        title: "Viral Ad Campaign",
-        client: "TechFlow Solutions",
-        results: "+45% Conversion Rate",
-        category: "Paid Media",
-        description: "Multi-channel advertising campaign focusing on highly targeted demographics and creative storytelling.",
-        color: "bg-[var(--nb-blue)]",
-        icon: <Target size={24} />
-    },
-    {
-        title: "SEO Overhaul",
-        client: "GreenLife E-com",
-        results: "200k+ Monthly Visits",
+        title: "SEO Strategy",
+        client: "6Dot5Ethnics",
         category: "Organic Growth",
-        description: "Complete technical SEO audit and content strategy that tripled organic traffic within 6 months.",
+        description: "I took a fashion website from 0 to 20.4k impressions in 1.5 months.",
         color: "bg-[var(--nb-green)]",
-        icon: <BarChart3 size={24} />
-    },
-    {
-        title: "Social Media Strategy",
-        client: "Vibe Studios",
-        results: "50k+ New Followers",
-        category: "Brand Awareness",
-        description: "Designed a cohesive brand voice and high-engagement content calendar across Instagram and TikTok.",
-        color: "bg-[var(--nb-pink)]",
-        icon: <MousePointer2 size={24} />
+        icon: <BarChart3 size={24} />,
+        link: "https://medium.com/@sudharsanmilburn/i-took-a-fashion-website-from-0-to-20-4k-impressions-in-1-5-months-heres-what-actually-worked-9c09ba7ded2b"
     }
 ]
 
@@ -68,7 +50,7 @@ const writingProjects = [
         type: "Sci-Fi Novel",
         readTime: "Novel",
         description: "A captivating exploration of science fiction and human connection set on the farthest reaches of our solar system.",
-        link: "https://the-lovers-of-neptune-aacd3ba47-sudharsans-projects-84f59cbf.vercel.app/"
+        link: "https://the-lovers-of-neptune.vercel.app/"
     },
     {
         title: "How Livbio Got Cited by Google AI in 72 Hours: A GEO Breakdown",
@@ -146,28 +128,53 @@ export function PortfolioTabs({
                                 exit={{ opacity: 0, y: -20 }}
                                 transition={{ duration: 0.4 }}
                             >
-                                {activeTab === "Digital Marketing" && (
-                                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-                                        {marketingProjects.map((project) => (
-                                            <div key={project.title} className="nb-card p-6 sm:p-8 space-y-5 sm:space-y-6 bg-background group">
-                                                <div className="space-y-3 sm:space-y-4">
-                                                    <span className="nb-badge inline-block px-2.5 py-1 sm:px-3 sm:py-1 bg-primary text-primary-foreground text-[10px] sm:text-xs">
-                                                        {project.category}
-                                                    </span>
-                                                    <h3 className="text-xl sm:text-2xl font-black uppercase leading-tight">{project.title}</h3>
-                                                    <p className="text-xs sm:text-sm text-muted-foreground font-bold">for {project.client}</p>
-                                                </div>
-                                                <p className="text-sm sm:text-base text-muted-foreground font-medium leading-relaxed">{project.description}</p>
-                                                <div className="pt-4 border-t-[2.5px] sm:border-t-[3px] border-foreground flex items-center justify-between">
-                                                    <div className="space-y-1">
-                                                        <span className="text-[9px] sm:text-[10px] uppercase font-black text-muted-foreground tracking-widest">Results</span>
-                                                        <div className="text-base sm:text-lg font-black text-primary">{project.results}</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        ))}
-                                    </div>
-                                )}
+        {activeTab === "Digital Marketing" && (
+            <div className="flex justify-start w-full">
+                {marketingProjects.map((project) => (
+                    <div key={project.title} className="relative w-full max-w-lg mt-8 mb-4 nb-card bg-background border-[3px] md:border-[4px] border-foreground shadow-[6px_6px_0px_var(--foreground)] p-6 md:p-8 space-y-6 group overflow-visible">
+                        {/* Floating Badge */}
+                        <div className="absolute -top-4 left-6 nb-badge bg-primary text-primary-foreground px-4 py-1.5 text-[10px] font-black uppercase tracking-[0.2em] shadow-[3px_3px_0px_#000] border-[2px] border-foreground">
+                            {project.category}
+                        </div>
+
+                        {/* Title and Metric */}
+                        <div className="space-y-1 text-center md:text-left">
+                            <h4 className="text-[9px] md:text-[10px] font-black uppercase tracking-[0.3em] text-muted-foreground/60 tracking-widest">{project.title}</h4>
+                            <div className="flex items-center justify-center md:justify-start">
+                                <h2 className="text-4xl md:text-5xl font-black tracking-tighter text-primary leading-none">
+                                    20.4K
+                                </h2>
+                            </div>
+                        </div>
+
+                        {/* Quote with Accent Line */}
+                        <div className="flex gap-4 items-stretch">
+                            <div className="w-1 bg-[var(--nb-yellow)]" />
+                            <p className="text-sm md:text-lg font-bold leading-relaxed italic text-foreground/80 lowercase">
+                                &ldquo;{project.description}&rdquo;
+                            </p>
+                        </div>
+
+                        {/* Centered CTA */}
+                        <div className="flex justify-center pt-2">
+                            {project.link && (
+                                <a 
+                                    href={project.link}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="nb-btn px-6 py-2.5 bg-[var(--nb-yellow)] text-foreground text-[10px] sm:text-xs font-black uppercase shadow-[4px_4px_0px_#000] hover:shadow-[6px_6px_0px_#000] hover:-translate-x-1 hover:-translate-y-1 transition-all"
+                                >
+                                    Read Case Study
+                                </a>
+                            )}
+                        </div>
+
+                        {/* Decorative Pixel Corner */}
+                        <div className="absolute top-1/2 -right-[10px] -translate-y-1/2 w-[16px] h-[16px] bg-foreground hidden md:block" />
+                    </div>
+                ))}
+            </div>
+        )}
 
                                 {activeTab === "Development" && (
                                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10">

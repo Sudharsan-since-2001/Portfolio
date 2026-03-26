@@ -1,6 +1,7 @@
 "use client"
 
 import * as React from "react"
+import Link from "next/link"
 import Image from "next/image"
 import { ArrowRight, Linkedin, Sparkles, Zap, Star, Heart, CheckCircle2, Share2, Search, Target, PenTool, BrainCircuit, Bot, Users } from "lucide-react"
 import { motion } from "framer-motion"
@@ -69,9 +70,17 @@ export function Hero() {
                             className="space-y-6 sm:space-y-8 text-left order-2 lg:order-1"
                         >
                             {/* SEO optimized H1 heading */}
-                            <h1 className="inline-block px-3 py-2 sm:px-4 sm:py-3 bg-[var(--nb-yellow)] border-[3px] border-foreground shadow-[3px_3px_0px_var(--foreground)] font-black text-xs sm:text-sm md:text-base uppercase tracking-wider text-foreground leading-none whitespace-nowrap">
-                                Digital Marketing Strategist | SEO Specialist | Web Developer
-                            </h1>
+                            <div className="flex flex-wrap gap-2 sm:gap-3">
+                                <span className="nb-badge px-3 py-1.5 bg-[var(--nb-yellow)] text-foreground text-[10px] sm:text-[11px] md:text-sm">
+                                    Digital Marketing Strategist
+                                </span>
+                                <span className="nb-badge px-3 py-1.5 bg-[var(--nb-blue)] text-foreground text-[10px] sm:text-[11px] md:text-sm">
+                                    SEO Specialist
+                                </span>
+                                <span className="nb-badge px-3 py-1.5 bg-[var(--nb-pink)] text-foreground text-[10px] sm:text-[11px] md:text-sm">
+                                    Web Developer
+                                </span>
+                            </div>
 
                             {/* BIG heading (Now H2) */}
                             <h2 className="text-4xl sm:text-6xl md:text-7xl lg:text-[5.5rem] xl:text-[6.5rem] font-sans font-black tracking-tight text-foreground leading-none sm:leading-[1.1] uppercase">
@@ -87,9 +96,9 @@ export function Hero() {
 
                             {/* Buttons */}
                             <div className="flex flex-col sm:flex-row gap-4 pt-1">
-                                <button className="nb-btn px-6 sm:px-8 py-3.5 sm:py-4 bg-foreground text-background text-sm sm:text-base flex items-center justify-center gap-3 hover:bg-primary hover:text-white border-foreground">
+                                <Link href="/portfolio" className="nb-btn px-6 sm:px-8 py-3.5 sm:py-4 bg-foreground text-background text-sm sm:text-base flex items-center justify-center gap-3 hover:bg-primary hover:text-white border-foreground">
                                     <span>View My Work</span>
-                                </button>
+                                </Link>
                                 <a
                                     href="https://www.linkedin.com/in/sudharsan-karthikeyan-seo-analyst/"
                                     target="_blank"
