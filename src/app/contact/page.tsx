@@ -10,11 +10,11 @@ export default function ContactPage() {
             <Navbar />
 
             {/* Decorative Shapes */}
-            <div className="absolute top-40 left-8 w-20 h-20 bg-[var(--nb-yellow)] border-[3px] border-foreground rotate-12 opacity-40" />
-            <div className="absolute top-60 right-12 w-14 h-14 bg-[var(--nb-pink)] border-[3px] border-foreground -rotate-6 opacity-40" />
-            <div className="absolute bottom-40 left-1/4 w-16 h-16 bg-[var(--nb-blue)] border-[3px] border-foreground rotate-45 opacity-30" />
+            <div className="hidden md:block absolute top-40 left-8 w-20 h-20 bg-[var(--nb-yellow)] border-[3px] border-foreground rotate-12 opacity-40" />
+            <div className="hidden md:block absolute top-60 right-12 w-14 h-14 bg-[var(--nb-pink)] border-[3px] border-foreground -rotate-6 opacity-40" />
+            <div className="hidden md:block absolute bottom-40 left-1/4 w-16 h-16 bg-[var(--nb-blue)] border-[3px] border-foreground rotate-45 opacity-30" />
 
-            <div className="pt-32 pb-24 relative z-10">
+            <div className="pt-8 pb-16 relative z-10">
                 <section className="px-4">
                     <div className="max-w-6xl mx-auto">
                         <motion.div
@@ -28,12 +28,8 @@ export default function ContactPage() {
                                     Let{"'"}s Connect
                                 </div>
                                 <h1 className="text-4xl md:text-6xl font-sans font-black uppercase leading-tight max-w-5xl mx-auto">
-                                    I build products that work and campaigns that reach people. If that's what you need -   
-                                    
-                                    <span className="relative inline-block">
-                                        <span className="relative z-10">let{"'"}s talk.</span>
-                                        <span className="absolute bottom-1 left-0 w-full h-3 bg-primary -z-0" />
-                                    </span>
+                                    HAVE AN IDEA? I'D LOVE TO HEAR IT.
+                           
                                 </h1>
                             </div>
 

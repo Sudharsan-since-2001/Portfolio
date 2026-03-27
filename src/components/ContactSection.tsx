@@ -41,12 +41,7 @@ export function ContactSection({
                                 </div>
                             )}
                             <h2 className="text-3xl md:text-6xl font-sans font-black uppercase leading-tight max-w-5xl mx-auto tracking-tighter">
-                                I build products that work and campaigns that reach people. If that's what you need -   
-                                <br className="hidden md:block" />
-                                <span className="relative inline-block ml-2">
-                                    <span className="relative z-10 text-primary">let{"'"}s talk.</span>
-                                    <span className="absolute bottom-2 left-0 w-full h-4 bg-foreground/5 -z-0" />
-                                </span>
+                                HAVE AN IDEA? I'D LOVE TO HEAR IT.
                             </h2>
                         </div>
 

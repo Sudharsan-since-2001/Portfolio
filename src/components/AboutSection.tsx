@@ -55,7 +55,7 @@ export function AboutSection({
                             className="md:col-span-12 lg:col-span-7 nb-card p-6 sm:p-8 md:p-8 border-[3px] md:border-[4px] bg-background relative z-10 hover:-translate-y-1 transition-all shadow-[4px_4px_0px_#000]"
                         >
                             <p className="text-sm sm:text-base md:text-lg font-bold text-foreground/90 leading-relaxed">
-                                I started my career in digital marketing running ads, creating content, growing brands. Over 4 years, as my role and responsibilities grew, I taught myself web development. Now I build the website and drive the traffic to it. That combination is rare. And for the brands I work with across various industries, it{"'"}s been a game changer.
+                                I started my career in digital marketing creating content, running ads and growing brands. Over 4 years, as my role and responsibilities grew, I taught myself web development. Now I build the website and drive the traffic to it. That combination is rare. And for the brands I work with across various industries, it{"'"}s been a game changer.
                             </p>
                         </motion.div>
 
@@ -68,7 +68,7 @@ export function AboutSection({
                             className="md:col-span-12 lg:col-span-5 nb-card p-6 sm:p-8 md:p-8 border-[3px] md:border-[4px] !bg-[var(--nb-blue)] shadow-[6px_6px_0px_#000] hover:-translate-x-1 hover:-translate-y-1 transition-all"
                         >
                             <p className="text-base sm:text-lg md:text-xl font-black leading-snug text-foreground">
-                                Today, with seasoned experience behind me, I can take a product from scratch and take it to the right audience - building it, positioning it, and growing it—all with a clear understanding of every step in between.
+                                Today, with seasoned experience behind me, I can take a product from scratch and take it to the right audience. Building it, positioning it, and growing it all with a clear understanding of every step in between.
                             </p>
                         </motion.div>
                     </div>

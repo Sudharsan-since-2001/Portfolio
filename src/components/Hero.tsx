@@ -55,7 +55,7 @@ const skills = [
 export function Hero() {
     return (
         <>
-            <section className="relative min-h-screen flex items-center pt-24 pb-4 overflow-hidden bg-background">
+            <section className="relative min-h-[calc(100vh-64px)] md:min-h-[calc(100vh-96px)] flex items-center pt-12 md:pt-16 pb-4 overflow-hidden bg-background">
 
 
                 {/* ===== MAIN CONTENT ===== */}

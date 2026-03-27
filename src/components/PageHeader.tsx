@@ -10,7 +10,7 @@ interface PageHeaderProps {
 
 export function PageHeader({ title, highlight, description }: PageHeaderProps) {
     return (
-        <div className="py-12 sm:py-20 bg-background">
+        <div className="pt-6 pb-12 sm:pt-10 sm:pb-16 bg-background">
             <div className="w-full px-4 sm:px-6 lg:px-12">
                 <div className="max-w-4xl mx-auto text-center space-y-4 sm:space-y-6">
                     <motion.h1

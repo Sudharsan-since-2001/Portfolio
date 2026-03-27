@@ -14,7 +14,7 @@ export default function ServicesPage() {
     return (
         <main className="min-h-screen bg-background">
             <Navbar />
-            <div className="pt-20">
+            <div>
                 <PageHeader
                     title="Expertise &"
                     highlight="Services"
