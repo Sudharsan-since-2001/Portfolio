@@ -11,10 +11,21 @@ const marketingProjects = [
         title: "SEO Strategy",
         client: "6Dot5Ethnics",
         category: "Organic Growth",
+        results: "20.4K",
         description: "I took a fashion website from 0 to 20.4k impressions in 1.5 months.",
         color: "bg-[var(--nb-green)]",
         icon: <BarChart3 size={24} />,
         link: "https://medium.com/@sudharsanmilburn/i-took-a-fashion-website-from-0-to-20-4k-impressions-in-1-5-months-heres-what-actually-worked-9c09ba7ded2b"
+    },
+    {
+        title: "Content & Ads",
+        client: "Viral Growth Strategy",
+        category: "Paid + Organic",
+        results: "29.6M",
+        description: "How I generated 29.6M views using content + ads",
+        color: "bg-[var(--nb-blue)]",
+        icon: <Target size={24} />,
+        link: "https://medium.com/@sudharsanmilburn/how-i-generated-29-6m-views-using-content-ads-082d3856dd08"
     }
 ]
 
@@ -129,30 +140,32 @@ export function PortfolioTabs({
                                 transition={{ duration: 0.4 }}
                             >
         {activeTab === "Digital Marketing" && (
-            <div className="flex justify-start w-full">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 pt-8">
                 {marketingProjects.map((project) => (
-                    <div key={project.title} className="relative w-full max-w-lg mt-8 mb-4 nb-card bg-background border-[3px] md:border-[4px] border-foreground shadow-[6px_6px_0px_var(--foreground)] p-6 md:p-8 space-y-6 group overflow-visible">
+                    <div key={project.title} className="relative w-full nb-card bg-background border-[3px] md:border-[4px] border-foreground shadow-[6px_6px_0px_var(--foreground)] p-6 md:p-8 space-y-6 group overflow-visible h-full flex flex-col justify-between">
                         {/* Floating Badge */}
                         <div className="absolute -top-4 left-6 nb-badge bg-primary text-primary-foreground px-4 py-1.5 text-[10px] font-black uppercase tracking-[0.2em] shadow-[3px_3px_0px_#000] border-[2px] border-foreground">
                             {project.category}
                         </div>
 
-                        {/* Title and Metric */}
-                        <div className="space-y-1 text-center md:text-left">
-                            <h4 className="text-[9px] md:text-[10px] font-black uppercase tracking-[0.3em] text-muted-foreground/60 tracking-widest">{project.title}</h4>
-                            <div className="flex items-center justify-center md:justify-start">
-                                <h2 className="text-4xl md:text-5xl font-black tracking-tighter text-primary leading-none">
-                                    20.4K
-                                </h2>
+                        <div className="space-y-6">
+                            {/* Title and Metric */}
+                            <div className="space-y-1 text-center md:text-left">
+                                <h4 className="text-[9px] md:text-[11px] font-black uppercase tracking-[0.3em] text-muted-foreground/60 tracking-widest">{project.title}</h4>
+                                <div className="flex items-center justify-center md:justify-start">
+                                    <h2 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tighter text-primary leading-none uppercase">
+                                        {project.results}
+                                    </h2>
+                                </div>
                             </div>
-                        </div>
 
-                        {/* Quote with Accent Line */}
-                        <div className="flex gap-4 items-stretch">
-                            <div className="w-1 bg-[var(--nb-yellow)]" />
-                            <p className="text-sm md:text-lg font-bold leading-relaxed italic text-foreground/80 lowercase">
-                                &ldquo;{project.description}&rdquo;
-                            </p>
+                            {/* Quote with Accent Line */}
+                            <div className="flex gap-4 items-stretch">
+                                <div className={cn("w-1.5", project.color || "bg-[var(--nb-yellow)]")} />
+                                <p className="text-sm md:text-lg font-bold leading-relaxed italic text-foreground/80">
+                                    &ldquo;{project.description}&rdquo;
+                                </p>
+                            </div>
                         </div>
 
                         {/* Centered CTA */}

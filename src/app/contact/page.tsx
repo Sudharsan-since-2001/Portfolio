@@ -29,7 +29,6 @@ export default function ContactPage() {
                                 </div>
                                 <h1 className="text-4xl md:text-6xl font-sans font-black uppercase leading-tight max-w-5xl mx-auto">
                                     HAVE AN IDEA? I'D LOVE TO HEAR IT.
-                           
                                 </h1>
                             </div>
 
