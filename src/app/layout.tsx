@@ -16,9 +16,6 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://sudharsankarthikeyan.co.in"),
   title: "Sudharsan Karthikeyan | Digital Marketing Strategist & SEO Specialist",
   description: "Portfolio of Sudharsan Karthikeyan, a digital marketing strategist and web developer with 3+ years of experience in social media growth, SEO strategy, and digital campaigns.",
-  alternates: {
-    canonical: "/",
-  },
   icons: {
     icon: "/favicon.ico",
     apple: "/apple-icon.jpg",
