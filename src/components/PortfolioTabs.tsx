@@ -26,6 +26,16 @@ const marketingProjects = [
         color: "bg-[var(--nb-blue)]",
         icon: <Target size={24} />,
         link: "https://medium.com/@sudharsanmilburn/how-i-generated-29-6m-views-using-content-ads-082d3856dd08"
+    },
+    {
+        title: "Ad Plan",
+        client: "YouTube Growth Strategy",
+        category: "Strategic Growth",
+        results: "96.5K",
+        description: "How I gained 96.5k subscribers in just 28 days through strategic content engineering and trend hijacking.",
+        color: "bg-[var(--nb-pink)]",
+        icon: <Sparkles size={24} />,
+        link: "https://medium.com/@sudharsanmilburn/how-we-gained-96-500-youtube-subscribers-in-28-days-for-a-politicians-channel-3ee28332b192"
     }
 ]
 

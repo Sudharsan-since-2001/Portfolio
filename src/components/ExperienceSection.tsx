@@ -14,34 +14,37 @@ const experiences = [
         responsibilities: [
             "Overseeing end-to-end digital marketing campaigns",
             "Implementing data-driven strategies for customer acquisition",
+            "Developed and maintained corporate web presence",
+            "Built a custom competitor analysis tool for strategic market insights",
+            "Led and mentored a team of junior digital marketers",
             "Analyzing market trends to stay ahead of the curve",
             "Optimizing marketing funnels for maximum conversion"
         ],
         color: "bg-[var(--nb-yellow)]"
     },
     {
-        role: "Social Media Strategist",
+        role: "Digital Campaign Lead",
         company: "Power of Parthasarathy",
         tagline: "Managed strategic digital communication for a political PR team.",
-        description: "Spearheaded the social media strategy for a high-profile political PR team, ensuring impactful communication and audience engagement.",
+        description: "Spearheaded the digital campaign strategy for a high-profile political PR team, ensuring impactful communication and audience engagement.",
         responsibilities: [
-            "Developed viral social media campaigns",
-            "Managed public perception through digital channels",
-            "Coordinated with content creators for high-impact visuals",
-            "Monitored real-time audience sentiment and adjusted strategy"
+            "Led and mentored a cross-functional digital team of content creators, designers, and analysts to execute high-impact political communication strategies",
+            "Supervised end-to-end workflow of the digital team, from ideation to publishing and performance tracking",
+            "Drove rapid YouTube growth from 6K to 100K subscribers by optimizing content strategy, trends, and distribution",
+            "Optimized the public figure’s online presence to enhance reach, engagement, and audience perception"
         ],
         color: "bg-[var(--nb-pink)]"
     },
     {
-        role: "Freelance Web Developer (Websites & Tools)",
+        role: "Freelance Digital Marketer & Web Developer",
         company: "Independent",
-        tagline: "I build scalable websites and internal web tools using modern frontend frameworks.",
-        description: "Delivering clean, maintainable, and performance-focused solutions tailored to business needs.",
+        tagline: "Building high-ranking digital experiences through code and strategic marketing.",
+        description: "I take on high-stakes SEO, AEO, and GEO projects, ensuring every project ranks, and handle end-to-end web development to deliver measurable growth for the brands I work with.",
         responsibilities: [
-            "Website development and optimization",
-            "Custom tool and dashboard development",
-            "Frontend architecture and responsiveness",
-            "UI/UX implementation"
+            "Executing high-impact SEO, AEO, and GEO (Generative Engine Optimization) strategies to ensure top rankings",
+            "Architecting and building high-performance websites and internal tools using modern frameworks like Next.js and React",
+            "Developing custom analytics dashboards that automate performance tracking and provide real-time data for business growth",
+            "Delivering end-to-end full-stack solutions with a focus on high-impact UI/UX design and flawless mobile responsiveness"
         ],
         color: "bg-[var(--nb-blue)]"
     },
@@ -51,10 +54,10 @@ const experiences = [
         tagline: "Executed digital marketing campaigns for the real estate sector.",
         description: "Focused on lead generation and digital branding for real estate projects, significantly increasing digital reach.",
         responsibilities: [
-            "Managed Google and Meta ad campaigns for real estate leads",
-            "Built and maintained the association's digital presence",
-            "Oversaw SEO strategies for property listings",
-            "Collaborated on visual content for property marketing"
+            "Designing and executing high-ROI Google and Meta ad campaigns focused on quality lead generation for premium real estate projects",
+            "Developing and managing the entire digital infrastructure of the association, ensuring a strong online presence",
+            "Implementing strategic SEO and local search optimization to increase visibility and search rankings for property listings",
+            "Coordinating with creative teams to produce high-impact visual content that drives engagement for property marketing"
         ],
         color: "bg-[var(--nb-green)]"
     }
