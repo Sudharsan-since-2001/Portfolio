@@ -90,16 +90,6 @@ export function ServicesSection({
                             </motion.div>
                         ))}
                     </div>
-
-                    <div className="flex justify-center pt-8">
-                        <Link 
-                            href="/contact" 
-                            className="nb-btn px-8 py-4 sm:px-10 sm:py-5 bg-[var(--nb-yellow)] text-foreground font-black uppercase tracking-widest text-xs sm:text-sm flex items-center gap-4 hover:bg-foreground hover:text-background transition-all shadow-[4px_4px_0px_#000] sm:shadow-[6px_6px_0px_#000]"
-                        >
-                            <span>Start a Project</span>
-                            <ArrowRight size={20} />
-                        </Link>
-                    </div>
                 </div>
             </div>
         </section>

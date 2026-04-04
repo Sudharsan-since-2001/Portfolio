@@ -275,14 +275,6 @@ export function PortfolioTabs({
                             </motion.div>
                         </AnimatePresence>
                     </div>
-
-                    {/* Bridge Link to Contact */}
-                    <div className="pt-12 text-center">
-                        <Link href="/contact" className="inline-flex items-center gap-2 text-sm font-black uppercase tracking-widest text-muted-foreground hover:text-primary transition-colors group">
-                            <span>Have a project in mind? Let's discuss</span>
-                            <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
-                        </Link>
-                    </div>
                 </div>
             </div>
         </section>
