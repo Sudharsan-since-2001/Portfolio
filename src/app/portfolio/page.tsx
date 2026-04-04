@@ -1,4 +1,3 @@
-import { Navbar } from "@/components/Navbar";
 import { PortfolioTabs } from "@/components/PortfolioTabs";
 import { PageHeader } from "@/components/PageHeader";
 import type { Metadata } from "next";
@@ -13,7 +12,6 @@ export const metadata: Metadata = {
 export default function PortfolioPage() {
     return (
         <main className="min-h-screen bg-background">
-            <Navbar />
             <div>
                 <PageHeader
                     title="My"

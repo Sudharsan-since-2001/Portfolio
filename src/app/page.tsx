@@ -11,7 +11,6 @@ import { HowISolveSection } from "@/components/HowISolveSection";
 export default function Home() {
   return (
     <main className="min-h-screen bg-background">
-      <Navbar />
       <Hero />
       <div className="nb-divider" />
       <AboutSection isTinted={true} />

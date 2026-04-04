@@ -1,4 +1,3 @@
-import { Navbar } from "@/components/Navbar";
 import { AboutSection } from "@/components/AboutSection";
 import { PageHeader } from "@/components/PageHeader";
 import type { Metadata } from "next";
@@ -13,7 +12,6 @@ export const metadata: Metadata = {
 export default function AboutPage() {
     return (
         <main className="min-h-screen bg-background">
-            <Navbar />
             <div>
                 <PageHeader
                     title="About"

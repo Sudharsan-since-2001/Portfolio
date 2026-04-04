@@ -17,16 +17,8 @@ const navLinks = [
 ]
 
 export function Navbar() {
-    const [mounted, setMounted] = React.useState(false)
     const [isOpen, setIsOpen] = React.useState(false)
-
     const pathname = usePathname()
-
-    React.useEffect(() => {
-        setMounted(true)
-    }, [])
-
-    if (!mounted) return null
 
     return (
         <>

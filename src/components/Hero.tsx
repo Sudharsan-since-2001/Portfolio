@@ -55,7 +55,7 @@ const skills = [
 export function Hero() {
     return (
         <>
-            <section className="relative min-h-[calc(100vh-64px)] md:min-h-[calc(100vh-96px)] flex items-center pt-12 md:pt-16 pb-4 overflow-hidden bg-background">
+            <section id="hero" className="relative min-h-[calc(100vh-64px)] md:min-h-[calc(100vh-96px)] flex items-center pt-12 md:pt-16 pb-4 overflow-hidden bg-background">
 
 
                 {/* ===== MAIN CONTENT ===== */}
@@ -82,12 +82,12 @@ export function Hero() {
                                 </span>
                             </div>
 
-                            {/* BIG heading (Now H2) */}
-                            <h2 className="text-4xl sm:text-6xl md:text-7xl lg:text-[5.5rem] xl:text-[6.5rem] font-sans font-black tracking-tight text-foreground leading-none sm:leading-[1.1] uppercase">
+                            {/* BIG heading (Now H1) */}
+                            <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-[5.5rem] xl:text-[6.5rem] font-sans font-black tracking-tight text-foreground leading-none sm:leading-[1.1] uppercase">
                                 Hi, I'm
                                 <br />
                                 Sudharsan
-                            </h2>
+                            </h1>
 
                             {/* Description */}
                             <p className="text-sm sm:text-base md:text-lg text-muted-foreground max-w-md leading-relaxed font-semibold">

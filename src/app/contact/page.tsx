@@ -1,13 +1,11 @@
 "use client"
 
-import { Navbar } from "@/components/Navbar";
 import { motion } from "framer-motion";
 import { Mail, Phone, ArrowRight, MapPin } from "lucide-react";
 
 export default function ContactPage() {
     return (
         <main className="min-h-screen bg-background relative overflow-hidden">
-            <Navbar />
 
             {/* Decorative Shapes */}
             <div className="hidden md:block absolute top-40 left-8 w-20 h-20 bg-[var(--nb-yellow)] border-[3px] border-foreground rotate-12 opacity-40" />

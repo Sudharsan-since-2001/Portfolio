@@ -22,6 +22,9 @@ export const metadata: Metadata = {
   },
 };
 
+import { Navbar } from "@/components/Navbar";
+import { Footer } from "@/components/Footer";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -29,8 +32,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${inter.variable} ${playfair.variable} antialiased`}>
-        {children}
+      <body className={`${inter.variable} ${playfair.variable} antialiased min-h-screen flex flex-col`}>
+        <Navbar />
+        <div className="flex-grow">
+          {children}
+        </div>
+        <Footer />
       </body>
     </html>
   );
