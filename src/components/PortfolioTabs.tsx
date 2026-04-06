@@ -56,6 +56,14 @@ const developmentProjects = [
         github: "https://github.com/Sudharsan-since-2001/AI-ad-copy-generator-V.2",
         demo: "https://ai-ad-copy-generator-by-sudharsan.vercel.app/",
         snippet: "const adCopy = await ai.generate(product);"
+    },
+    {
+        title: "Content to Cash",
+        tech: ["HTML", "CSS", "JavaScript"],
+        description: "An intelligence platform that calculates engagement rates to identify high-performing content trends, while forecasting influencer costs across different global markets for data-driven campaign budgeting.",
+        github: "https://github.com/Sudharsan-since-2001/Content-to-Cash",
+        demo: "https://content-to-cash.vercel.app/",
+        snippet: "const roi = calculateInfluencerROI(engagementRate, marketCost);"
     }
 ]
 
