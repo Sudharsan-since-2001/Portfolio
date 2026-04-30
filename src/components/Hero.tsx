@@ -69,17 +69,30 @@ export function Hero() {
                             transition={{ duration: 0.6, ease: "easeOut" }}
                             className="space-y-6 sm:space-y-8 text-left order-2 lg:order-1"
                         >
-                            {/* SEO optimized H1 heading */}
-                            <div className="flex flex-wrap gap-2 sm:gap-3">
-                                <span className="nb-badge px-3 py-1.5 bg-[var(--nb-yellow)] text-foreground text-[10px] sm:text-[11px] md:text-sm">
-                                    Digital Marketing Strategist
-                                </span>
-                                <span className="nb-badge px-3 py-1.5 bg-[var(--nb-blue)] text-foreground text-[10px] sm:text-[11px] md:text-sm">
-                                    SEO Specialist
-                                </span>
-                                <span className="nb-badge px-3 py-1.5 bg-[var(--nb-pink)] text-foreground text-[10px] sm:text-[11px] md:text-sm">
-                                    Web Developer
-                                </span>
+                            {/* Rotating Titles */}
+                            <div className="h-8 sm:h-10 overflow-hidden relative">
+                                <motion.div
+                                    animate={{
+                                        y: [0, -40, -80, 0],
+                                    }}
+                                    transition={{
+                                        duration: 8,
+                                        repeat: Infinity,
+                                        ease: "easeInOut",
+                                        times: [0, 0.3, 0.6, 1]
+                                    }}
+                                    className="flex flex-col gap-0"
+                                >
+                                    <span className="nb-badge inline-block w-fit px-3 py-1.5 bg-[var(--nb-yellow)] text-foreground text-[10px] sm:text-[11px] md:text-sm font-black uppercase tracking-widest whitespace-nowrap">
+                                        Senior Digital Marketer
+                                    </span>
+                                    <span className="nb-badge inline-block w-fit px-3 py-1.5 bg-[var(--nb-blue)] text-foreground text-[10px] sm:text-[11px] md:text-sm font-black uppercase tracking-widest whitespace-nowrap" style={{ marginTop: '8px' }}>
+                                        Content/Copywriter
+                                    </span>
+                                    <span className="nb-badge inline-block w-fit px-3 py-1.5 bg-[var(--nb-pink)] text-foreground text-[10px] sm:text-[11px] md:text-sm font-black uppercase tracking-widest whitespace-nowrap" style={{ marginTop: '8px' }}>
+                                        Social Media Specialist
+                                    </span>
+                                </motion.div>
                             </div>
 
                             {/* BIG heading (Now H1) */}
@@ -90,8 +103,8 @@ export function Hero() {
                             </h1>
 
                             {/* Description */}
-                            <p className="text-sm sm:text-base md:text-lg text-muted-foreground max-w-md leading-relaxed font-semibold">
-                                Most people pick a lane - marketer, developer, or writer. I don't. I help brands grow through search, strategy, and software, then tell the story that makes it stick.
+                            <p className="text-sm sm:text-base md:text-lg text-muted-foreground max-w-xl leading-relaxed font-semibold">
+                                4 years. Multiple industries. One goal - grow the brand, own the narrative, and deliver results worth talking about.
                             </p>
 
                             {/* Buttons */}

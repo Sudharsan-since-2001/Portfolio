@@ -11,7 +11,6 @@ const navLinks = [
     { name: "About", href: "/about", color: "bg-[#FF90B3]" },
     { name: "Experience", href: "/experience", color: "bg-[#90C8FF]" },
     { name: "How I Solve Problems", href: "/process", color: "bg-[#90FFAB]" },
-    { name: "Services", href: "/services", color: "bg-[#FFD166]" },
     { name: "Portfolio", href: "/portfolio", color: "bg-[#C4A0FF]" },
     { name: "Contact", href: "/contact", color: "bg-[#FF6B35]" },
 ]

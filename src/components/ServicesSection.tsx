@@ -70,7 +70,7 @@ export function ServicesSection({
                             className="text-center"
                         >
                             <h2 className="text-3xl sm:text-4xl md:text-6xl font-sans font-black uppercase">
-                                Expertise & Services
+                                Core Expertise
                             </h2>
                         </motion.div>
                     )}

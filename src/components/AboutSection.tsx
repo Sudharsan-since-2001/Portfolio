@@ -32,46 +32,16 @@ export function AboutSection({
                         </div>
                     )}
 
-                    <div className="grid grid-cols-1 md:grid-cols-12 gap-5 md:gap-6">
-                        {/* Top: Giant Typography Statement */}
-                        <motion.div
-                            initial={{ opacity: 0, y: 30 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            className="md:col-span-12 nb-card p-6 sm:p-8 md:p-10 border-[3.5px] md:border-[5px] bg-background relative overflow-hidden group shadow-[6px_6px_0px_var(--foreground)]"
-                        >
-                            <div className="absolute top-0 right-0 w-24 h-24 bg-[var(--nb-yellow)]/10 -mr-12 -mt-12 rotate-45 transition-transform group-hover:scale-110" />
-                            <p className="text-lg sm:text-xl md:text-3xl lg:text-4xl font-black leading-[1.1] text-foreground tracking-tighter uppercase relative z-10">
-                                I STARTED WITH ADS. ALONG THE WAY LEARNED TO BUILD WEB. <span className="text-primary">NOW I BRING BOTH</span> TO EVERY BRAND I WORK WITH.
-                            </p>
-                        </motion.div>
-
-                        {/* Left Column: Career Evolution */}
-                        <motion.div
-                            initial={{ opacity: 0, y: 30 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ delay: 0.1 }}
-                            className="md:col-span-12 lg:col-span-7 nb-card p-6 sm:p-8 md:p-8 border-[3px] md:border-[4px] bg-background relative z-10 hover:-translate-y-1 transition-all shadow-[4px_4px_0px_#000]"
-                        >
-                            <p className="text-sm sm:text-base md:text-lg font-bold text-foreground/90 leading-relaxed">
-                                I started my career in digital marketing creating content, running ads and growing brands. Over 4 years, as my role and responsibilities grew, I taught myself web development. Now I build the website and drive the traffic to it. That combination is rare. And for the brands I work with across various industries, it{"'"}s been a game changer.
-                            </p>
-                        </motion.div>
-
-                        {/* Right Column: Today's Value */}
-                        <motion.div
-                            initial={{ opacity: 0, y: 30 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ delay: 0.2 }}
-                            className="md:col-span-12 lg:col-span-5 nb-card p-6 sm:p-8 md:p-8 border-[3px] md:border-[4px] !bg-[var(--nb-blue)] shadow-[6px_6px_0px_#000] hover:-translate-x-1 hover:-translate-y-1 transition-all"
-                        >
-                            <p className="text-base sm:text-lg md:text-xl font-black leading-snug text-foreground">
-                                Today, with seasoned experience behind me, I can take a product from scratch and take it to the right audience. Building it, positioning it, and growing it all with a clear understanding of every step in between.
-                            </p>
-                        </motion.div>
-                    </div>
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        className="nb-card p-8 sm:p-12 md:p-16 bg-background border-[4px] md:border-[6px] shadow-[8px_8px_0px_var(--foreground)]"
+                    >
+                        <p className="max-w-4xl text-lg sm:text-xl md:text-2xl font-bold text-foreground leading-[1.6] md:leading-[1.8]">
+                            I{"'"}m Sudharsan, a Senior Digital Marketer with 4 years of experience running campaigns, building brands, and driving growth across fashion, real estate, and politics. I{"'"}ve managed Meta ads, grown social media presence, written copy, and built SEO strategies that actually rank. I know what works and what wastes budget. As my responsibilities grew, I learned web development to take full ownership of every project I touched. I test before I scale. What works gets doubled down on, what doesn{"'"}t gets cut. Outside of work, I{"'"}m someone who gets genuinely obsessed with why things work, whether it{"'"}s an ad, a product, or a trend blowing up on social media.
+                        </p>
+                    </motion.div>
                 </div>
             </div>
         </section>
