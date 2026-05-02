@@ -2,7 +2,6 @@ import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
 import { AboutSection } from "@/components/AboutSection";
 import { ExperienceSection } from "@/components/ExperienceSection";
-import { ServicesSection } from "@/components/ServicesSection";
 import { PortfolioTabs } from "@/components/PortfolioTabs";
 import { ContactSection } from "@/components/ContactSection";
 
@@ -18,7 +17,6 @@ export default function Home() {
       <ExperienceSection />
       <div className="nb-divider" />
       <HowISolveSection isTinted={true} />
-      <ServicesSection />
       <PortfolioTabs isTinted={true} />
       <div className="nb-divider" />
       <ContactSection />

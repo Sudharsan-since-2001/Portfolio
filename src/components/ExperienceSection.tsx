@@ -23,7 +23,7 @@ const experiences = [
         color: "bg-[var(--nb-yellow)]"
     },
     {
-        role: "Digital Campaign Lead",
+        role: "Digital Marketer",
         company: "Power of Parthasarathy",
         tagline: "Managed strategic digital communication for a political PR team.",
         description: "Spearheaded the digital campaign strategy for a high-profile political PR team, ensuring impactful communication and audience engagement.",
