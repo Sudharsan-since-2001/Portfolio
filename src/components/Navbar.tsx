@@ -33,7 +33,7 @@ export function Navbar() {
                 {/* Logo Section */}
                 <Link
                     href="/"
-                    className="flex-grow md:flex-shrink-0 px-4 md:px-12 flex items-center justify-start bg-transparent transition-all group relative z-10"
+                    className="flex-grow md:flex-shrink-0 px-6 md:px-12 flex items-center justify-start bg-transparent transition-all group relative z-10"
                 >
                     <span className="text-xs md:text-xl font-black uppercase tracking-tighter whitespace-nowrap text-foreground">
                         Sudharsan Karthikeyan

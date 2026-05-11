@@ -6,24 +6,25 @@ import { ChevronDown, ChevronUp, Briefcase } from "lucide-react"
 
 const experiences = [
     {
-        role: "Senior Digital Marketer",
+        role: "Senior Digital Marketer & Brand Strategist",
         company: "6dot5 Ethnics",
         isCurrent: true,
-        tagline: "Driving digital growth and high-impact marketing strategies for the brand.",
-        description: "Leading the digital marketing efforts at 6dot5 Ethnics, focusing on sustainable growth and brand positioning.",
+        tagline: "Making an ethnic fashion brand impossible to scroll past and hard to forget.",
+        description: "Running the full digital marketing operation at 6dot5 Ethnics, from how the brand shows up online to how it turns browsers into buyers.",
         responsibilities: [
-            "Overseeing end-to-end digital marketing campaigns",
-            "Implementing data-driven strategies for customer acquisition",
-            "Developed and maintained corporate web presence",
-            "Built a custom competitor analysis tool for strategic market insights",
-            "Led and mentored a team of junior digital marketers",
-            "Analyzing market trends to stay ahead of the curve",
-            "Optimizing marketing funnels for maximum conversion"
+            "Planning and running campaigns across Meta and Instagram that bring the right people in, not just traffic for the sake of it",
+            "Handling SEO, AEO, and GEO so the brand gets found on search engines, answer boxes, and AI-generated results, without paying for every click",
+            "Shaping how 6dot5 Ethnics is positioned in the market, what it stands for, who it speaks to, and how it sounds doing it",
+            "Keeping the website clean, updated, and built to convert, from product pages to landing pages",
+            "Built a competitor tracking system from scratch to spot gaps in the market before others do",
+            "Managing a team of junior digital marketers, assigning work, reviewing output, and keeping everyone moving in the same direction",
+            "Reading the data regularly to understand what is working, what is not, and where to shift focus next",
+            "Auditing and improving the full customer journey, from the first ad they see to the moment they check out"
         ],
         color: "bg-[var(--nb-yellow)]"
     },
     {
-        role: "Digital Marketer",
+        role: "Content Lead",
         company: "Power of Parthasarathy",
         tagline: "Managed strategic digital communication for a political PR team.",
         description: "Spearheaded the digital campaign strategy for a high-profile political PR team, ensuring impactful communication and audience engagement.",
@@ -36,15 +37,17 @@ const experiences = [
         color: "bg-[var(--nb-pink)]"
     },
     {
-        role: "Freelance Digital Marketer & Web Developer",
+        role: "Freelance Content Writer & Copywriter",
         company: "Independent",
-        tagline: "Building high-ranking digital experiences through code and strategic marketing.",
-        description: "I take on high-stakes SEO, AEO, and GEO projects, ensuring every project ranks, and handle end-to-end web development to deliver measurable growth for the brands I work with.",
+        tagline: "Words that make people stop scrolling, start reading, and actually do something.",
+        description: "I write content that does a job, whether that's getting a blog post to page one, making a founder sound like themselves on LinkedIn, or turning a bland product page into something people actually want to read.",
         responsibilities: [
-            "Executing high-impact SEO, AEO, and GEO (Generative Engine Optimization) strategies to ensure top rankings",
-            "Architecting and building high-performance websites and internal tools using modern frameworks like Next.js and React",
-            "Developing custom analytics dashboards that automate performance tracking and provide real-time data for business growth",
-            "Delivering end-to-end full-stack solutions with a focus on high-impact UI/UX design and flawless mobile responsiveness"
+            "SEO writing that's built for humans first, search engines second. Long-form articles, blogs, and web copy that rank without reading like a robot wrote them",
+            "Ghostwriting for founders, executives, and creators who have a lot to say but not enough time to say it. LinkedIn posts, newsletters, thought pieces, and full books",
+            "Sales and conversion copy. Landing pages, email sequences, and ad copy written to move people, not just inform them",
+            "Brand voice and strategy. Figuring out how a brand should sound, what it should stand for, and who it's really talking to. Building messaging frameworks, tone of voice guides, and positioning statements that give every piece of content a clear direction to follow",
+            "Content strategy. Mapping out what to say, when to say it, and which platform it belongs on. No random posting, just intentional content with a purpose behind it",
+            "End-to-end content work, from the blank page to the published piece. Research, writing, editing, done"
         ],
         color: "bg-[var(--nb-blue)]"
     },
@@ -91,7 +94,7 @@ export function ExperienceSection({
                             viewport={{ once: true }}
                             className="text-center space-y-3 sm:space-y-4"
                         >
-                            <h2 className="text-3xl sm:text-4xl md:text-6xl font-sans font-black uppercase">
+                            <h2 className="text-2xl sm:text-4xl md:text-6xl font-sans font-black uppercase">
                                 Professional Experience
                             </h2>
                             <p className="text-muted-foreground text-base sm:text-lg font-semibold">
@@ -105,7 +108,7 @@ export function ExperienceSection({
                             <div key={i} className="nb-card bg-background">
                                 <button
                                     onClick={() => setExpandedIndex(expandedIndex === i ? null : i)}
-                                    className="w-full text-left flex items-start justify-between p-5 sm:p-6 group"
+                                    className="w-full text-left flex items-start justify-between p-4 sm:p-6 group"
                                 >
                                     <div className="space-y-3 flex-1">
                                         {exp.isCurrent && (
@@ -136,7 +139,7 @@ export function ExperienceSection({
                                             transition={{ duration: 0.3, ease: "easeInOut" }}
                                             className="overflow-hidden"
                                         >
-                                            <div className="px-6 pb-6 space-y-4">
+                                            <div className="px-4 pb-6 space-y-4">
                                                 <div className={`${exp.color}/20 p-6 border-[3px] border-foreground`}>
                                                     <p className="text-foreground leading-relaxed font-medium">
                                                         {exp.description}

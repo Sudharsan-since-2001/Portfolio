@@ -70,10 +70,10 @@ export function Hero() {
                             className="space-y-6 sm:space-y-8 text-left order-2 lg:order-1"
                         >
                             {/* Rotating Titles */}
-                            <div className="h-8 sm:h-10 overflow-hidden relative">
+                            <div className="h-10 sm:h-12 overflow-hidden relative">
                                 <motion.div
                                     animate={{
-                                        y: [0, -40, -80, 0],
+                                        y: [0, -48, -96, 0],
                                     }}
                                     transition={{
                                         duration: 8,
@@ -84,19 +84,19 @@ export function Hero() {
                                     className="flex flex-col gap-0"
                                 >
                                     <span className="nb-badge inline-block w-fit px-3 py-1.5 bg-[var(--nb-yellow)] text-foreground text-[10px] sm:text-[11px] md:text-sm font-black uppercase tracking-widest whitespace-nowrap">
-                                        Senior Digital Marketer
+                                        Content Writer & Copywriter
                                     </span>
-                                    <span className="nb-badge inline-block w-fit px-3 py-1.5 bg-[var(--nb-blue)] text-foreground text-[10px] sm:text-[11px] md:text-sm font-black uppercase tracking-widest whitespace-nowrap" style={{ marginTop: '8px' }}>
-                                        Content/Copywriter
-                                    </span>
-                                    <span className="nb-badge inline-block w-fit px-3 py-1.5 bg-[var(--nb-pink)] text-foreground text-[10px] sm:text-[11px] md:text-sm font-black uppercase tracking-widest whitespace-nowrap" style={{ marginTop: '8px' }}>
+                                    <span className="nb-badge inline-block w-fit px-3 py-1.5 bg-[var(--nb-blue)] text-foreground text-[10px] sm:text-[11px] md:text-sm font-black uppercase tracking-widest whitespace-nowrap" style={{ marginTop: '12px' }}>
                                         Social Media Specialist
+                                    </span>
+                                    <span className="nb-badge inline-block w-fit px-3 py-1.5 bg-[var(--nb-pink)] text-foreground text-[10px] sm:text-[11px] md:text-sm font-black uppercase tracking-widest whitespace-nowrap" style={{ marginTop: '12px' }}>
+                                        Digital Marketer
                                     </span>
                                 </motion.div>
                             </div>
 
                             {/* BIG heading (Now H1) */}
-                            <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-[5.5rem] xl:text-[6.5rem] font-sans font-black tracking-tight text-foreground leading-none sm:leading-[1.1] uppercase">
+                            <h1 className="text-[2.5rem] sm:text-6xl md:text-7xl lg:text-[5.5rem] xl:text-[6.5rem] font-sans font-black tracking-tight text-foreground leading-[1.1] sm:leading-[1.1] uppercase">
                                 Hi, I'm
                                 <br />
                                 Sudharsan

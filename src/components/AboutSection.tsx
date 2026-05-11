@@ -36,10 +36,10 @@ export function AboutSection({
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        className="nb-card p-8 sm:p-12 md:p-16 bg-background border-[4px] md:border-[6px] shadow-[8px_8px_0px_var(--foreground)]"
+                        className="nb-card p-6 sm:p-12 md:p-16 bg-background border-[4px] md:border-[6px] shadow-[8px_8px_0px_var(--foreground)]"
                     >
                         <p className="max-w-4xl text-lg sm:text-xl md:text-2xl font-bold text-foreground leading-[1.6] md:leading-[1.8]">
-                            I{"'"}m Sudharsan, a Senior Digital Marketer with 4 years of experience running campaigns, building brands, and driving growth across fashion, real estate, and politics. I{"'"}ve managed Meta ads, grown social media presence, written copy, and built SEO strategies that actually rank. As my responsibilities grew, I learned web development to take full ownership of every project I touched. I test before I scale. What works gets doubled down on, what doesn{"'"}t gets cut. Outside of work, I{"'"}m someone who gets genuinely obsessed with why things work, whether it{"'"}s an ad, a product, or a trend blowing up on social media.
+                            I{"'"}m Sudharsan, a Content Writer & Copywriter who builds brands through words that work. With 4 years of experience across fashion, real estate, and politics, I{"'"}ve seen firsthand how the right message can move the needle. I don{"'"}t just write; I strategize. Whether it{"'"}s ghostwriting for founders, building SEO-driven content that ranks, or crafting high-conversion sales copy, my goal is always clear: make people stop scrolling and start reading. I combine my marketing background with a deep obsession for why things work, ensuring every piece of content has a purpose and delivers measurable results.
                         </p>
                     </motion.div>
                 </div>

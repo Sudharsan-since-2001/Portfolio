@@ -208,7 +208,7 @@ export function WritingShowcase() {
                                 transition={{ duration: 0.3 }}
                                 className="nb-card flex flex-col bg-background group overflow-hidden"
                             >
-                                <div className="p-6 flex-grow flex flex-col">
+                                <div className="p-5 flex-grow flex flex-col">
                                     <div className="flex-grow space-y-4 mb-6">
                                         <div className="flex justify-between items-start">
                                             <span className="nb-badge px-2.5 py-1 bg-muted text-muted-foreground text-[10px] font-black uppercase">
@@ -276,7 +276,7 @@ export function WritingShowcase() {
                             initial={{ opacity: 0, scale: 0.9, y: 20 }}
                             animate={{ opacity: 1, scale: 1, y: 0 }}
                             exit={{ opacity: 0, scale: 0.9, y: 20 }}
-                            className="relative w-full max-w-5xl max-h-[90vh] bg-background border-[4px] border-foreground shadow-[12px_12px_0px_#000] overflow-y-auto flex flex-col md:flex-row"
+                            className="relative w-full max-w-5xl max-h-[92vh] bg-background border-[4px] border-foreground shadow-[12px_12px_0px_#000] overflow-y-auto flex flex-col md:flex-row"
                         >
                             {/* Modal Close Button */}
                             <button 
@@ -288,24 +288,24 @@ export function WritingShowcase() {
 
                             {/* Image Section */}
                             {selectedProject.image && (
-                                <div className="w-full md:w-2/5 border-b-[4px] md:border-b-0 md:border-r-[4px] border-foreground bg-muted sticky top-0 md:relative h-[300px] md:h-auto">
+                                <div className="w-full md:w-2/5 border-b-[4px] md:border-b-0 md:border-r-[4px] border-foreground bg-muted md:sticky md:top-0 md:h-auto h-auto max-h-[50vh] md:max-h-none overflow-hidden flex-shrink-0">
                                     <img 
                                         src={selectedProject.image} 
                                         alt={selectedProject.title}
-                                        className="w-full h-full object-cover"
+                                        className="w-full h-full object-contain md:object-cover"
                                     />
                                 </div>
                             )}
 
                             {/* Content Section */}
-                            <div className="flex-1 p-6 sm:p-10 md:p-12 space-y-10 overflow-y-auto">
+                            <div className="flex-1 p-5 sm:p-10 md:p-12 space-y-10">
                                 <div className="space-y-4">
                                     <span className="nb-badge px-3 py-1 bg-[var(--nb-orange)] text-white text-xs font-black uppercase">
                                         {selectedProject.subCategory}
                                     </span>
-                                    <h2 className="text-3xl sm:text-5xl font-black uppercase leading-tight tracking-tighter">
-                                        {selectedProject.title}
-                                    </h2>
+                                    <h2 className="text-xl sm:text-5xl font-black uppercase leading-tight tracking-tighter">
+                                         {selectedProject.title}
+                                     </h2>
                                 </div>
 
                                 <div className="grid grid-cols-1 gap-12">

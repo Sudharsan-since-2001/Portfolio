@@ -22,7 +22,7 @@ export function Footer() {
             />
             
             <div className="w-full px-4 sm:px-6 lg:px-12">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
+                <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[1.5fr_1fr_1.2fr] gap-12 lg:gap-24">
                     
                     {/* Brand Section */}
                     <div className="space-y-6 lg:col-span-1">
@@ -32,7 +32,7 @@ export function Footer() {
                             </span>
                         </Link>
                         <p className="text-sm font-semibold text-muted-foreground max-w-md leading-relaxed">
-                            Building the bridge between digital marketing, no-code development, and strategic growth.
+                            Building the bridge between content strategy, high-conversion copywriting, and brand growth.
                         </p>
                         <div className="flex items-center gap-4 pt-2">
                              <a href="https://www.linkedin.com/in/sudharsan-karthikeyan-seo-analyst/" target="_blank" rel="noopener noreferrer" 
@@ -42,6 +42,17 @@ export function Footer() {
                              <a href="https://github.com/Sudharsan-since-2001" target="_blank" rel="noopener noreferrer" 
                                 className="p-2.5 bg-background border-[2.5px] border-foreground shadow-[3px_3px_0px_#000] hover:translate-x-[-2px] hover:translate-y-[-2px] transition-all">
                                 <Github size={20} />
+                             </a>
+                             <a href="https://medium.com/@sudharsanmilburn" target="_blank" rel="noopener noreferrer" 
+                                className="p-2.5 bg-background border-[2.5px] border-foreground shadow-[3px_3px_0px_#000] hover:translate-x-[-2px] hover:translate-y-[-2px] transition-all">
+                                <svg 
+                                    width="20" 
+                                    height="20" 
+                                    viewBox="0 0 16 16" 
+                                    fill="currentColor"
+                                >
+                                    <path d="M9.025 8c0 2.485-2.02 4.5-4.513 4.5A4.506 4.506 0 0 1 0 8c0-2.486 2.02-4.5 4.512-4.5A4.506 4.506 0 0 1 9.025 8m4.95 0c0 2.34-1.01 4.236-2.256 4.236S9.463 10.339 9.463 8c0-2.34 1.01-4.236 2.256-4.236S13.975 5.661 13.975 8M16 8c0 2.096-.355 3.795-.794 3.795-.438 0-.793-1.7-.793-3.795 0-2.096.355-3.795.794-3.795.438 0 .793 1.699.793 3.795" />
+                                </svg>
                              </a>
                         </div>
                     </div>
@@ -80,28 +91,12 @@ export function Footer() {
                         </div>
                     </div>
 
-                    {/* CTA Section */}
-                    <div className="space-y-6">
-                        <h4 className="text-sm font-black uppercase tracking-[0.2em] text-foreground underline decoration-[3px] underline-offset-4 decoration-primary">Newsletter</h4>
-                        <p className="text-xs font-bold text-muted-foreground leading-relaxed">
-                            Subscribe to get my latest insights on marketing and growth.
-                        </p>
-                        <div className="flex">
-                            <input 
-                                type="email" 
-                                placeholder="Email address"
-                                className="flex-grow px-4 py-2 text-xs font-bold bg-background border-[2.5px] border-foreground focus:outline-none focus:ring-0"
-                            />
-                            <button className="px-4 py-2 bg-foreground text-background border-[2.5px] border-foreground border-l-0 text-[10px] font-black uppercase tracking-widest hover:bg-primary transition-colors">
-                                JOIN
-                            </button>
-                        </div>
-                    </div>
+
 
                 </div>
 
                 {/* Bottom Bar */}
-                <div className="mt-16 pt-8 border-t-[2.5px] border-foreground/10 flex flex-col md:flex-row items-center gap-6 relative">
+                <div className="max-w-6xl mx-auto mt-16 pt-8 border-t-[2.5px] border-foreground/10 flex flex-col md:flex-row items-center gap-6 relative">
                     <div className="flex-grow text-center">
                         <p className="text-[10px] md:text-xs font-black uppercase tracking-widest text-muted-foreground/60">
                             &copy; {currentYear} Sudharsan Karthikeyan. All rights reserved.
