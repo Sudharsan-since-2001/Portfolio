@@ -38,6 +38,16 @@ const marketingProjects = [
         color: "bg-[var(--nb-pink)]",
         icon: <Sparkles size={24} />,
         link: "https://medium.com/@sudharsanmilburn/how-we-gained-96-500-youtube-subscribers-in-28-days-for-a-politicians-channel-3ee28332b192"
+    },
+    {
+        title: "Campaign Strategy",
+        client: "6Dot5Ethnics",
+        category: "Festive Campaign",
+        results: "8x ROAS",
+        description: "Silk, Strategy and Navratri",
+        color: "bg-[var(--nb-green)]",
+        icon: <Target size={24} />,
+        link: "https://medium.com/@sudharsanmilburn/nine-days-one-strategy-8x-returns-e5292dd293fe"
     }
 ]
 
