@@ -51,32 +51,7 @@ const marketingProjects = [
     }
 ]
 
-const developmentProjects = [
-    {
-        title: "Toothfix",
-        tech: ["React", "Vite", "TypeScript", "React Router", "Vercel"],
-        description: "A premium, high-performance portfolio and booking platform designed for a modern dental clinic.",
-        github: "https://github.com/Sudharsan-since-2001/Toothfix",
-        demo: "https://toothfix.vercel.app/",
-        snippet: "npm run build"
-    },
-    {
-        title: "AI Ad Copy Engine",
-        tech: ["Next.js", "Python", "FastAPI", "OpenAI", "Vercel"],
-        description: "An AI-powered platform for junior marketers that identifies ideal customer personas, maps emotional triggers, and generates targeted ad copy with strategy planning for optimal channel selection.",
-        github: "https://github.com/Sudharsan-since-2001/AI-ad-copy-generator-V.2",
-        demo: "https://ai-ad-copy-generator-by-sudharsan.vercel.app/",
-        snippet: "const adCopy = await ai.generate(product);"
-    },
-    {
-        title: "Content to Cash",
-        tech: ["HTML", "CSS", "JavaScript"],
-        description: "An intelligence platform that calculates engagement rates to identify high-performing content trends, while forecasting influencer costs across different global markets for data-driven campaign budgeting.",
-        github: "https://github.com/Sudharsan-since-2001/Content-to-Cash",
-        demo: "https://content-to-cash.vercel.app/",
-        snippet: "const roi = calculateInfluencerROI(engagementRate, marketCost);"
-    }
-]
+
 
 export function PortfolioTabs({
     isTinted = false,
@@ -91,7 +66,6 @@ export function PortfolioTabs({
 
     const tabs = [
         { name: "Digital Marketing", color: "bg-[var(--nb-yellow)]" },
-        { name: "Development", color: "bg-[var(--nb-blue)]" },
         { name: "Writing", color: "bg-[var(--nb-pink)]" },
     ]
 
@@ -195,49 +169,7 @@ export function PortfolioTabs({
             </div>
         )}
 
-                                {activeTab === "Development" && (
-                                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10">
-                                        {developmentProjects.map((project) => (
-                                            <div key={project.title} className="bg-muted border-[3px] sm:border-[4px] border-foreground shadow-[6px_6px_0px_var(--primary)] text-foreground overflow-hidden group hover:shadow-[8px_8px_0px_var(--primary)] transition-all">
-                                                {/* Terminal Header */}
-                                                <div className="px-4 py-3 sm:px-6 sm:py-4 bg-muted/80 border-b-[2.5px] sm:border-b-[3px] border-foreground/20 flex items-center justify-between">
-                                                    <div className="flex items-center space-x-2">
-                                                        <div className="w-3 h-3 sm:w-4 sm:h-4 bg-[#ff5f56] border-2 border-[#e0443e]" />
-                                                        <div className="w-3 h-3 sm:w-4 sm:h-4 bg-[#ffbd2e] border-2 border-[#dea123]" />
-                                                        <div className="w-3 h-3 sm:w-4 sm:h-4 bg-[#27c93f] border-2 border-[#1aab29]" />
-                                                    </div>
-                                                    <div className="text-[10px] sm:text-xs font-mono font-bold opacity-60 uppercase tracking-widest">{project.title}.exe</div>
-                                                </div>
-                                                <div className="p-5 sm:p-8 space-y-6 sm:space-y-8">
-                                                    <div className="space-y-4 sm:space-y-5">
-                                                        <h3 className="text-xl sm:text-2xl font-black uppercase text-foreground leading-tight">{project.title}</h3>
-                                                        <div className="flex flex-wrap gap-2">
-                                                            {project.tech.map(t => (
-                                                                <span key={t} className="px-2 py-0.5 sm:px-3 sm:py-1 text-[10px] sm:text-xs bg-foreground/10 text-foreground font-black uppercase border-2 border-foreground/30">{t}</span>
-                                                            ))}
-                                                        </div>
-                                                        <p className="text-sm sm:text-base text-muted-foreground leading-relaxed font-medium">{project.description}</p>
-                                                    </div>
 
-                                                    {/* Code snippet */}
-                                                    <div className="p-3 sm:p-4 bg-background border-2 border-foreground/10 font-mono text-[11px] sm:text-sm text-[#059669] flex items-center justify-between overflow-x-auto">
-                                                        <span className="whitespace-nowrap">$ {project.snippet}</span>
-                                                        <span className="animate-pulse flex-shrink-0">▋</span>
-                                                    </div>
-
-                                                    <div className="flex items-center space-x-6">
-                                                        <a href={project.github} target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2 text-foreground/60 hover:text-foreground transition-colors font-bold uppercase text-xs sm:text-sm">
-                                                            <span>Source</span>
-                                                        </a>
-                                                        <a href={project.demo} target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2 text-primary font-black uppercase text-xs sm:text-sm hover:underline">
-                                                            <span>Live Demo</span>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        ))}
-                                    </div>
-                                )}
 
                                 {activeTab === "Writing" && (
                                     <WritingShowcase />

@@ -5,7 +5,6 @@ import { ExperienceSection } from "@/components/ExperienceSection";
 import { PortfolioTabs } from "@/components/PortfolioTabs";
 import { ContactSection } from "@/components/ContactSection";
 
-import { HowISolveSection } from "@/components/HowISolveSection";
 
 export default function Home() {
   return (
@@ -16,7 +15,7 @@ export default function Home() {
       <div className="nb-divider" />
       <ExperienceSection />
       <div className="nb-divider" />
-      <HowISolveSection isTinted={true} />
+
       <PortfolioTabs isTinted={true} />
       <div className="nb-divider" />
       <ContactSection />
