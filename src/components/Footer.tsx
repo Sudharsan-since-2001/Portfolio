@@ -1,3 +1,5 @@
+"use client"
+
 import Link from "next/link"
 import { Linkedin, Github, Mail, Phone, MapPin, ArrowRight } from "lucide-react"
 
@@ -102,7 +104,7 @@ export function Footer() {
                         </p>
                     </div>
                     <div className="md:absolute md:right-12 flex items-center gap-8">
-                        <a href="#hero" className="text-[10px] font-black uppercase tracking-widest text-foreground hover:text-primary animate-bounce">Back To Top &uarr;</a>
+                        <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="text-[10px] font-black uppercase tracking-widest text-foreground hover:text-primary animate-bounce">Back To Top &uarr;</button>
                     </div>
                 </div>
             </div>

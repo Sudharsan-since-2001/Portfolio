@@ -41,7 +41,7 @@ export function ContactSection({
                                 </div>
                             )}
                             <h2 className="text-3xl md:text-6xl font-sans font-black uppercase leading-tight max-w-5xl mx-auto tracking-tighter">
-                                HAVE AN IDEA? I'D LOVE TO HEAR IT.
+                                &quot;CURRENTLY OPEN TO SENIOR MARKETING ROLES. LET'S TALK STRATEGY.&quot;
                             </h2>
                         </div>
 

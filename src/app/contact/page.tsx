@@ -26,7 +26,7 @@ export default function ContactPage() {
                                     Let{"'"}s Connect
                                 </div>
                                 <h1 className="text-4xl md:text-6xl font-sans font-black uppercase leading-tight max-w-5xl mx-auto">
-                                    HAVE AN IDEA? I'D LOVE TO HEAR IT.
+                                    &quot;CURRENTLY OPEN TO SENIOR MARKETING ROLES. LET'S TALK STRATEGY.&quot;
                                 </h1>
                             </div>
 
