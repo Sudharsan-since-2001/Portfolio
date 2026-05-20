@@ -31,27 +31,6 @@ interface WritingProject {
 // --- Writing Projects Data ---
 const writingProjects: WritingProject[] = [
     {
-        title: "Vegan Silk Campaign: Heritage Like a Crown",
-        mainCategory: "Copywriting",
-        subCategory: "SOCIAL MEDIA",
-        image: "/projects/vegan-silk-campaign.jpg",
-        description: "A premium fashion campaign for 6DOT5 Ethnics positioning vegan silk as conscious luxury through heritage-driven storytelling.",
-        link: "#",
-        details: {
-            headline: "She wears her heritage like a crown.",
-            subCopy: "A statement of grace, woven for the woman who carries tradition with confidence.",
-            campaignFocus: "The objective was to create copy that elevates vegan silk beyond a sustainable fabric choice and presents it as a symbol of refined tradition for the contemporary woman. The messaging was crafted for women aged 20–40 who see ethnic wear as more than fashion, as an extension of identity, confidence, and cultural pride.",
-            creativeInsight: "The headline uses the metaphor of a crown to evoke regality, strength, and self-assurance. Rather than simply describing the saree, the line frames heritage as something powerful and proudly embodied. It transforms the garment into a symbol of presence and identity, reinforcing the aspirational luxury positioning of the collection.",
-            brandPositioning: "This campaign presents 6DOT5’s vegan silk collection as conscious luxury, where timeless craftsmanship meets modern sophistication. It speaks to women who embrace tradition not as convention, but as personal expression.",
-            deliverables: [
-                { title: "Premium Recall", desc: "Creates a refined and memorable brand impression" },
-                { title: "Emotional Connection", desc: "Builds resonance through cultural identity and pride" },
-                { title: "Modern Relevance", desc: "Positions vegan silk as aspirational and contemporary" },
-                { title: "Luxury Appeal", desc: "Strengthens the perception of exclusivity and elegance" }
-            ]
-        }
-    },
-    {
         title: "The most important space experiment of 2023, and almost nobody heard about it till 2026.",
         mainCategory: "Content writing",
         subCategory: "BLOG / ARTICLES",
@@ -76,36 +55,46 @@ const writingProjects: WritingProject[] = [
         link: "https://medium.com/@sudharsanmilburn/how-livbio-got-cited-by-google-ai-in-72-hours-a-geo-breakdown-7afc587a9748"
     },
     {
-        title: "AI SaaS Landing Page: From Zero to $10k MRR",
-        mainCategory: "Copywriting",
-        subCategory: "LANDING PAGE",
-        results: "+12% Conversion",
-        description: "High-converting landing page copy for an AI productivity tool, focusing on pain-point agitation and benefit-driven headlines.",
-        link: "#"
-    },
-    {
-        title: "The 7-Day 'Launch' Email Sequence",
-        mainCategory: "Copywriting",
-        subCategory: "EMAIL COPY",
-        results: "24% Open Rate",
-        description: "A strategic email sequence designed to build hype and drive sales for a digital product launch in the tech niche.",
-        link: "#"
-    },
-    {
-        title: "Scalable Facebook Ads for E-commerce",
-        mainCategory: "Copywriting",
-        subCategory: "AD COPY",
-        results: "4.2x ROAS",
-        description: "Direct-response ad copy focused on emotional hooks and clear calls-to-action for a sustainable fashion brand.",
-        link: "#"
-    },
-    {
-        title: "Twitter/X Growth: Viral Hook Templates",
+        title: "Daily Post: Romanticize Your Life",
         mainCategory: "Copywriting",
         subCategory: "SOCIAL MEDIA",
-        results: "1M+ Impressions",
-        description: "A series of high-engagement social media posts and thread hooks designed to maximize reach and follower growth.",
-        link: "#"
+        image: "/projects/daily-post-1.jpg",
+        description: "A social media post featuring a dark green saree, reminding the audience to romanticize their life.",
+        link: "#",
+        details: {
+            headline: "Don't forget to romanticize your life today.",
+            subCopy: "Embrace the elegance of every moment.",
+            campaignFocus: "Daily social media engagement to inspire the audience.",
+            creativeInsight: "Pairing a gentle reminder with an elegant visual creates a strong emotional connection.",
+            brandPositioning: "A brand that values daily beauty and sophistication.",
+            deliverables: [
+                { title: "Social Media Post", desc: "Instagram/Facebook visual" },
+                { title: "Caption", desc: "Engaging short-form copy" },
+                { title: "Engagement", desc: "Community building" },
+                { title: "Brand Voice", desc: "Elegant and inspiring" }
+            ]
+        }
+    },
+    {
+        title: "Daily Post: Ethnos Rose Pink Organza",
+        mainCategory: "Copywriting",
+        subCategory: "SOCIAL MEDIA",
+        image: "/projects/daily-post-2.jpg",
+        description: "Showcasing the Rose Pink Organza Tissue Silk Saree with Heavy Work Border and Designer Blouse.",
+        link: "#",
+        details: {
+            headline: "Rose Pink Organza Tissue Silk Saree",
+            subCopy: "With Heavy Work Border And Designer Blouse.",
+            campaignFocus: "Product highlight post for social media.",
+            creativeInsight: "Highlighting the intricate details of the border and blouse to appeal to premium buyers.",
+            brandPositioning: "ETHNOS - Quality craftsmanship and exquisite design.",
+            deliverables: [
+                { title: "Product Showcase", desc: "Detailed product visual" },
+                { title: "Product Description", desc: "Clear, descriptive product copy" },
+                { title: "Conversion", desc: "Direct response focus" },
+                { title: "Premium Appeal", desc: "Highlighting craftsmanship" }
+            ]
+        }
     }
 ]
 
@@ -127,8 +116,8 @@ export function WritingShowcase() {
     return (
         <div className="space-y-12">
             {/* Header with highlight */}
-            <div className="space-y-6">
-                <h2 className="text-3xl sm:text-5xl md:text-6xl font-black uppercase leading-tight tracking-tighter">
+            <div className="space-y-6 w-full flex flex-col items-center text-center">
+                <h2 className="text-3xl sm:text-5xl md:text-6xl font-black uppercase leading-tight tracking-tighter text-center max-w-4xl mx-auto">
                     Words that work.{" "}
                     <span className="relative inline-block px-2">
                         <span className="relative z-10 text-foreground">Copy that converts.</span>
@@ -142,17 +131,18 @@ export function WritingShowcase() {
                 </h2>
 
                 {/* Main Category Toggle */}
-                <div className="flex flex-wrap gap-4">
+                <div className="flex justify-center w-full">
+                    <div className="flex flex-wrap justify-center gap-4">
                     <button
                         onClick={() => {
                             setMainCategory("Content writing")
                             setSubCategory("ALL")
                         }}
                         className={cn(
-                            "flex items-center gap-2 px-6 py-2 border-[3px] border-foreground font-black uppercase text-sm transition-all",
+                            "flex items-center gap-2 px-6 py-2 border-[3px] border-foreground font-black uppercase text-sm transition-all cursor-pointer",
                             mainCategory === "Content writing"
                                 ? "bg-foreground text-background shadow-[4px_4px_0px_var(--muted-foreground)] -translate-x-1 -translate-y-1"
-                                : "bg-background text-foreground hover:bg-muted"
+                                : "bg-background text-foreground shadow-[2px_2px_0px_var(--foreground)] hover:shadow-[3px_3px_0px_var(--foreground)] hover:-translate-x-[1px] hover:-translate-y-[1px]"
                         )}
                     >
                         <div className={cn("w-3 h-3 rounded-full border-2", mainCategory === "Content writing" ? "bg-background border-background" : "bg-foreground border-foreground")} />
@@ -164,29 +154,30 @@ export function WritingShowcase() {
                             setSubCategory("ALL")
                         }}
                         className={cn(
-                            "flex items-center gap-2 px-6 py-2 border-[3px] border-foreground font-black uppercase text-sm transition-all",
+                            "flex items-center gap-2 px-6 py-2 border-[3px] border-foreground font-black uppercase text-sm transition-all cursor-pointer",
                             mainCategory === "Copywriting"
                                 ? "bg-[var(--nb-orange)] text-white shadow-[4px_4px_0px_var(--foreground)] -translate-x-1 -translate-y-1"
-                                : "bg-background text-foreground hover:bg-muted"
+                                : "bg-background text-foreground shadow-[2px_2px_0px_var(--foreground)] hover:shadow-[3px_3px_0px_var(--foreground)] hover:-translate-x-[1px] hover:-translate-y-[1px]"
                         )}
                     >
                         <div className={cn("w-3 h-3 rounded-full border-2", mainCategory === "Copywriting" ? "bg-white border-white" : "bg-[var(--nb-orange)] border-[var(--nb-orange)]")} />
                         Copywriting
                     </button>
+                    </div>
                 </div>
             </div>
 
             {/* Sub-Category Filter Chips */}
-            <div className="flex flex-wrap gap-2">
+            <div className="flex flex-wrap gap-2 w-full">
                 {subCategories.map((cat) => (
                     <button
                         key={cat}
                         onClick={() => setSubCategory(cat)}
                         className={cn(
-                            "px-4 py-1.5 border-[2px] border-foreground text-[10px] sm:text-xs font-black uppercase transition-all",
+                            "px-4 py-1.5 border-[2px] border-foreground text-[10px] sm:text-xs font-black uppercase transition-all cursor-pointer",
                             subCategory === cat
-                                ? "bg-foreground text-background"
-                                : "bg-background text-foreground hover:bg-muted/50"
+                                ? "bg-foreground text-background shadow-[3px_3px_0px_var(--muted-foreground)] -translate-x-[1px] -translate-y-[1px]"
+                                : "bg-background text-foreground shadow-[1px_1px_0px_var(--foreground)] hover:shadow-[2px_2px_0px_var(--foreground)] hover:-translate-x-[1px] hover:-translate-y-[1px]"
                         )}
                     >
                         {cat}
@@ -195,7 +186,12 @@ export function WritingShowcase() {
             </div>
 
             {/* Project Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className={cn(
+                "w-full",
+                mainCategory === "Copywriting" 
+                    ? "columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6" 
+                    : "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+            )}>
                 <AnimatePresence mode="popLayout">
                     {filteredProjects.length > 0 ? (
                         filteredProjects.map((project) => (
@@ -206,47 +202,84 @@ export function WritingShowcase() {
                                 animate={{ opacity: 1, scale: 1 }}
                                 exit={{ opacity: 0, scale: 0.9 }}
                                 transition={{ duration: 0.3 }}
-                                className="nb-card flex flex-col bg-background group overflow-hidden"
+                                className={cn(
+                                    mainCategory === "Copywriting" 
+                                        ? "break-inside-avoid"
+                                        : "nb-card flex flex-col bg-background group overflow-hidden"
+                                )}
                             >
-                                <div className="p-5 flex-grow flex flex-col">
-                                    <div className="flex-grow space-y-4 mb-6">
-                                        <div className="flex justify-between items-start">
-                                            <span className="nb-badge px-2.5 py-1 bg-muted text-muted-foreground text-[10px] font-black uppercase">
-                                                {project.subCategory}
+                                {mainCategory === "Copywriting" ? (
+                                    <div 
+                                        className="w-full relative group cursor-pointer border-[3px] border-foreground shadow-[4px_4px_0px_var(--foreground)] hover:shadow-[6px_6px_0px_var(--foreground)] hover:-translate-y-1 hover:-translate-x-1 transition-all overflow-hidden"
+                                        onClick={() => project.details && setSelectedProject(project)}
+                                    >
+                                        <img 
+                                            src={project.image} 
+                                            alt={project.title}
+                                            className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105"
+                                        />
+                                        <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors flex items-center justify-center">
+                                            <span className="opacity-0 group-hover:opacity-100 bg-[var(--nb-yellow)] text-foreground px-4 py-2 text-xs font-black uppercase border-[2px] border-foreground shadow-[2px_2px_0px_#000] transform translate-y-4 group-hover:translate-y-0 transition-all">
+                                                View Project
                                             </span>
-                                            {(project.readTime || project.results) && (
-                                                <span className="text-[10px] font-black uppercase text-primary">
-                                                    {project.readTime || project.results}
-                                                </span>
+                                        </div>
+                                    </div>
+                                ) : (
+                                    <>
+                                        {project.image && (
+                                            <div 
+                                                className="w-full h-48 sm:h-56 border-b-[2px] border-foreground overflow-hidden bg-muted flex-shrink-0 cursor-pointer relative"
+                                                onClick={() => project.details && setSelectedProject(project)}
+                                            >
+                                                <img 
+                                                    src={project.image} 
+                                                    alt={project.title}
+                                                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                                                />
+                                                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors" />
+                                            </div>
+                                        )}
+                                        <div className="p-5 flex-grow flex flex-col">
+                                            <div className="flex-grow space-y-4 mb-6">
+                                                <div className="flex justify-between items-start">
+                                                    <span className="nb-badge px-2.5 py-1 bg-muted text-muted-foreground text-[10px] font-black uppercase">
+                                                        {project.subCategory}
+                                                    </span>
+                                                    {(project.readTime || project.results) && (
+                                                        <span className="text-[10px] font-black uppercase text-primary">
+                                                            {project.readTime || project.results}
+                                                        </span>
+                                                    )}
+                                                </div>
+                                                <h3 className="text-xl font-black uppercase leading-tight group-hover:text-primary transition-colors">
+                                                    {project.title}
+                                                </h3>
+                                                <p className="text-sm text-muted-foreground leading-relaxed font-medium line-clamp-3">
+                                                    {project.description}
+                                                </p>
+                                            </div>
+                                            {project.details ? (
+                                                <button 
+                                                    onClick={() => setSelectedProject(project)}
+                                                    className="nb-btn w-full py-3 bg-background text-foreground flex items-center justify-center gap-2 text-xs group-hover:bg-[var(--nb-yellow)] transition-colors font-black uppercase"
+                                                >
+                                                    <span>View Project</span>
+                                                    <ArrowRight size={14} />
+                                                </button>
+                                            ) : (
+                                                <a 
+                                                    href={project.link} 
+                                                    target="_blank" 
+                                                    rel="noopener noreferrer" 
+                                                    className="nb-btn w-full py-3 bg-background text-foreground flex items-center justify-center gap-2 text-xs group-hover:bg-[var(--nb-yellow)] transition-colors font-black uppercase"
+                                                >
+                                                    <span>{mainCategory === "Content writing" ? "Read Article" : "View Project"}</span>
+                                                    <ArrowRight size={14} />
+                                                </a>
                                             )}
                                         </div>
-                                        <h3 className="text-xl font-black uppercase leading-tight group-hover:text-primary transition-colors">
-                                            {project.title}
-                                        </h3>
-                                        <p className="text-sm text-muted-foreground leading-relaxed font-medium line-clamp-3">
-                                            {project.description}
-                                        </p>
-                                    </div>
-                                    {project.details ? (
-                                        <button 
-                                            onClick={() => setSelectedProject(project)}
-                                            className="nb-btn w-full py-3 bg-background text-foreground flex items-center justify-center gap-2 text-xs group-hover:bg-[var(--nb-yellow)] transition-colors font-black uppercase"
-                                        >
-                                            <span>View Project</span>
-                                            <ArrowRight size={14} />
-                                        </button>
-                                    ) : (
-                                        <a 
-                                            href={project.link} 
-                                            target="_blank" 
-                                            rel="noopener noreferrer" 
-                                            className="nb-btn w-full py-3 bg-background text-foreground flex items-center justify-center gap-2 text-xs group-hover:bg-[var(--nb-yellow)] transition-colors font-black uppercase"
-                                        >
-                                            <span>{mainCategory === "Content writing" ? "Read Article" : "View Project"}</span>
-                                            <ArrowRight size={14} />
-                                        </a>
-                                    )}
-                                </div>
+                                    </>
+                                )}
                             </motion.div>
                         ))
                     ) : (

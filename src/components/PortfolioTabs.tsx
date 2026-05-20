@@ -85,7 +85,7 @@ export function PortfolioTabs({
                             <h1 className="text-3xl sm:text-5xl md:text-7xl font-sans font-black uppercase">
                                 My Portfolio
                             </h1>
-                            <p className="text-base sm:text-lg md:text-xl text-muted-foreground font-semibold">Explore my work across different categories.</p>
+                            <p className="text-base sm:text-lg md:text-xl text-muted-foreground font-semibold">A curated collection of my best work in marketing, and content strategy.</p>
                         </div>
                     )}
 

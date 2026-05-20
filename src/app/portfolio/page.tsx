@@ -16,7 +16,7 @@ export default function PortfolioPage() {
                 <PageHeader
                     title="My"
                     highlight="Portfolio"
-                    description="A curated collection of my best work in marketing, development, and content creation."
+                    description="A curated collection of my best work in marketing, and content strategy."
                 />
                 <PortfolioTabs isTinted={false} noTopPadding={true} hideHeader={true} />
             </div>
