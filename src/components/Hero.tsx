@@ -69,30 +69,11 @@ export function Hero() {
                             transition={{ duration: 0.6, ease: "easeOut" }}
                             className="space-y-6 sm:space-y-8 text-left order-2 lg:order-1"
                         >
-                            {/* Rotating Titles */}
-                            <div className="h-10 sm:h-12 overflow-hidden relative">
-                                <motion.div
-                                    animate={{
-                                        y: [0, -48, -96, 0],
-                                    }}
-                                    transition={{
-                                        duration: 8,
-                                        repeat: Infinity,
-                                        ease: "easeInOut",
-                                        times: [0, 0.3, 0.6, 1]
-                                    }}
-                                    className="flex flex-col gap-0"
-                                >
-                                    <span className="nb-badge inline-block w-fit px-3 py-1.5 bg-[var(--nb-yellow)] text-foreground text-[10px] sm:text-[11px] md:text-sm font-black uppercase tracking-widest whitespace-nowrap">
-                                        Content Writer & Copywriter
-                                    </span>
-                                    <span className="nb-badge inline-block w-fit px-3 py-1.5 bg-[var(--nb-blue)] text-foreground text-[10px] sm:text-[11px] md:text-sm font-black uppercase tracking-widest whitespace-nowrap" style={{ marginTop: '12px' }}>
-                                        Social Media Specialist
-                                    </span>
-                                    <span className="nb-badge inline-block w-fit px-3 py-1.5 bg-[var(--nb-pink)] text-foreground text-[10px] sm:text-[11px] md:text-sm font-black uppercase tracking-widest whitespace-nowrap" style={{ marginTop: '12px' }}>
-                                        Digital Marketer
-                                    </span>
-                                </motion.div>
+                            {/* Job Title */}
+                            <div className="flex">
+                                <span className="nb-badge inline-block w-fit px-3 py-1.5 bg-[var(--nb-yellow)] text-foreground text-[10px] sm:text-[11px] md:text-sm font-black uppercase tracking-widest whitespace-nowrap">
+                                    Content Strategist & Digital Marketer
+                                </span>
                             </div>
 
                             {/* BIG heading (Now H1) */}

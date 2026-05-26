@@ -18,6 +18,7 @@ interface WritingProject {
     readTime?: string
     results?: string
     image?: string
+    fullPageImage?: string
     details?: {
         headline: string
         subCopy: string
@@ -53,6 +54,29 @@ const writingProjects: WritingProject[] = [
         readTime: "5 min read",
         description: "A Generative Engine Optimization Case Study Analysis exploring how strategic content optimization led to rapid AI citations.",
         link: "https://medium.com/@sudharsanmilburn/how-livbio-got-cited-by-google-ai-in-72-hours-a-geo-breakdown-7afc587a9748"
+    },
+    {
+        title: "Kanchi & Co. — Crafting the Digital Voice of a Luxury Silk Brand",
+        mainCategory: "Content writing",
+        subCategory: "CASE STUDIES",
+        readTime: "6 min read",
+        image: "/projects/kanchi-hero.png",
+        fullPageImage: "/projects/kanchi-hero.png",
+        description: "A detailed positioning breakdown and strategy teardown of how we built the brand identity and heritage narratives for a direct-to-consumer Kanchipuram silk store.",
+        link: "#",
+        details: {
+            headline: "Woven in Kanchipuram, Treasured everywhere else.",
+            subCopy: "Woven over 12 days. Admired for a lifetime.",
+            campaignFocus: "Establish Kanchi & Co. as the premier digital destination for authentic handloom silk sarees, blending historic craftsmanship with modern DTC convenience.",
+            creativeInsight: "Traditional saree purchases rely heavily on tactility and high-trust storytelling. The content strategy focuses on transparently mapping the 12-day craftsmanship cycle to build premium value and authenticity.",
+            brandPositioning: "Kanchi & Co. — The Silk Legacy. Positioning the brand as the ultimate standard of authentic Kanchipuram craftsmanship and heritage luxury.",
+            deliverables: [
+                { title: "Brand Voice Guidelines", desc: "Setting a luxurious, classic tone of voice." },
+                { title: "Weaving Cycle Documentation", desc: "Step-by-step narrative highlighting artisan labor." },
+                { title: "DTC Messaging Framework", desc: "Positioning value pillars (Shipping, Reviews, Authenticity)." },
+                { title: "Content Distribution Strategy", desc: "Social & editorial alignment plans." }
+            ]
+        }
     },
     {
         title: "Daily Post: Romanticize Your Life",
@@ -95,6 +119,28 @@ const writingProjects: WritingProject[] = [
                 { title: "Premium Appeal", desc: "Highlighting craftsmanship" }
             ]
         }
+    },
+    {
+        title: "Kanchi & Co. — Heritage Saree Landing Page Copy",
+        mainCategory: "Copywriting",
+        subCategory: "LANDING PAGE",
+        image: "/projects/kanchi-hero.png",
+        fullPageImage: "/projects/kanchi-hero.png",
+        description: "High-converting, luxury landing page copy for a premium Kanchipuram silk saree brand, focusing on heritage and craftsmanship.",
+        link: "#",
+        details: {
+            headline: "Woven in Kanchipuram, Treasured everywhere else.",
+            subCopy: "Woven over 12 days. Admired for a lifetime.",
+            campaignFocus: "Developing a high-performance landing page structure and copy flow to convert luxury consumers searching for authentic Indian handloom sarees.",
+            creativeInsight: "Combining high-intent DTC trust signals (free shipping, 5-day delivery, positive reviews) with deeply emotive, heritage-driven copywriting about the 12-day handloom process.",
+            brandPositioning: "Kanchi & Co. — The Silk Legacy. Positioning the brand as the ultimate standard of authentic Kanchipuram craftsmanship and heritage luxury.",
+            deliverables: [
+                { title: "Hero Header Copy", desc: "Heritage hooks and value propositions." },
+                { title: "Collection Descriptions", desc: "Classics, Contemporary, and Bridal Edit positioning." },
+                { title: "Heritage Section Hook", desc: "\"Woven over 12 days. Admired for a lifetime.\"" },
+                { title: "Interactive Matchmaker Quiz", desc: "Interactive questionnaire text to find the perfect saree." }
+            ]
+        }
     }
 ]
 
@@ -102,6 +148,13 @@ export function WritingShowcase() {
     const [mainCategory, setMainCategory] = React.useState<MainCategory>("Content writing")
     const [subCategory, setSubCategory] = React.useState<SubCategory>("ALL")
     const [selectedProject, setSelectedProject] = React.useState<WritingProject | null>(null)
+    const [modalTab, setModalTab] = React.useState<"strategy" | "preview">("strategy")
+
+    React.useEffect(() => {
+        if (selectedProject) {
+            setModalTab("strategy")
+        }
+    }, [selectedProject])
 
     const subCategories: SubCategory[] = mainCategory === "Copywriting"
         ? ["ALL", "AD COPY", "EMAIL COPY", "SOCIAL MEDIA", "LANDING PAGE"]
@@ -213,11 +266,19 @@ export function WritingShowcase() {
                                         className="w-full relative group cursor-pointer border-[3px] border-foreground shadow-[4px_4px_0px_var(--foreground)] hover:shadow-[6px_6px_0px_var(--foreground)] hover:-translate-y-1 hover:-translate-x-1 transition-all overflow-hidden"
                                         onClick={() => project.details && setSelectedProject(project)}
                                     >
-                                        <img 
-                                            src={project.image} 
-                                            alt={project.title}
-                                            className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105"
-                                        />
+                                        <div className={cn(
+                                            "w-full overflow-hidden",
+                                            project.subCategory === "LANDING PAGE" ? "aspect-[16/10]" : ""
+                                        )}>
+                                            <img 
+                                                src={project.image} 
+                                                alt={project.title}
+                                                className={cn(
+                                                    "w-full transition-transform duration-500 group-hover:scale-105",
+                                                    project.subCategory === "LANDING PAGE" ? "h-full object-cover object-top" : "h-auto object-cover"
+                                                )}
+                                            />
+                                        </div>
                                         <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors flex items-center justify-center">
                                             <span className="opacity-0 group-hover:opacity-100 bg-[var(--nb-yellow)] text-foreground px-4 py-2 text-xs font-black uppercase border-[2px] border-foreground shadow-[2px_2px_0px_#000] transform translate-y-4 group-hover:translate-y-0 transition-all">
                                                 View Project
@@ -234,7 +295,10 @@ export function WritingShowcase() {
                                                 <img 
                                                     src={project.image} 
                                                     alt={project.title}
-                                                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                                                    className={cn(
+                                                        "w-full h-full object-cover transition-transform duration-500 group-hover:scale-105",
+                                                        project.fullPageImage ? "object-top" : "object-center"
+                                                    )}
                                                 />
                                                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors" />
                                             </div>
@@ -309,7 +373,7 @@ export function WritingShowcase() {
                             initial={{ opacity: 0, scale: 0.9, y: 20 }}
                             animate={{ opacity: 1, scale: 1, y: 0 }}
                             exit={{ opacity: 0, scale: 0.9, y: 20 }}
-                            className="relative w-full max-w-5xl max-h-[92vh] bg-background border-[4px] border-foreground shadow-[12px_12px_0px_#000] overflow-y-auto flex flex-col md:flex-row"
+                            className="relative w-full max-w-5xl max-h-[92vh] bg-background border-[4px] border-foreground shadow-[12px_12px_0px_#000] overflow-y-auto flex flex-col"
                         >
                             {/* Modal Close Button */}
                             <button 
@@ -319,92 +383,135 @@ export function WritingShowcase() {
                                 <X size={24} />
                             </button>
 
-                            {/* Image Section */}
-                            {selectedProject.image && (
-                                <div className="w-full md:w-2/5 border-b-[4px] md:border-b-0 md:border-r-[4px] border-foreground bg-muted md:sticky md:top-0 md:h-auto h-auto max-h-[50vh] md:max-h-none overflow-hidden flex-shrink-0">
-                                    <img 
-                                        src={selectedProject.image} 
-                                        alt={selectedProject.title}
-                                        className="w-full h-full object-contain md:object-cover"
-                                    />
+                            {/* Modal Header & Tabs */}
+                            {selectedProject.fullPageImage ? (
+                                <div className="flex border-b-[4px] border-foreground bg-muted p-3 gap-3 items-center pr-16 select-none flex-wrap">
+                                    <button
+                                        onClick={() => setModalTab("strategy")}
+                                        className={cn(
+                                            "px-4 py-2 text-xs font-black uppercase border-[2.5px] border-foreground transition-all cursor-pointer",
+                                            modalTab === "strategy"
+                                                ? "bg-foreground text-background shadow-[2px_2px_0px_var(--muted-foreground)] -translate-x-[1px] -translate-y-[1px]"
+                                                : "bg-background text-foreground hover:shadow-[2px_2px_0px_var(--foreground)] hover:-translate-x-[1px] hover:-translate-y-[1px]"
+                                        )}
+                                    >
+                                        Strategy & Copy Details
+                                    </button>
+                                    <button
+                                        onClick={() => setModalTab("preview")}
+                                        className={cn(
+                                            "px-4 py-2 text-xs font-black uppercase border-[2.5px] border-foreground transition-all cursor-pointer",
+                                            modalTab === "preview"
+                                                ? "bg-[var(--nb-orange)] text-white shadow-[2px_2px_0px_var(--foreground)] -translate-x-[1px] -translate-y-[1px]"
+                                                : "bg-background text-foreground hover:shadow-[2px_2px_0px_var(--foreground)] hover:-translate-x-[1px] hover:-translate-y-[1px]"
+                                        )}
+                                    >
+                                        Full Web Page Preview
+                                    </button>
+                                </div>
+                            ) : null}
+
+                            {/* Modal Content Pane */}
+                            {selectedProject.fullPageImage && modalTab === "preview" ? (
+                                <div className="w-full bg-background flex justify-center p-4">
+                                    <div className="w-full max-w-4xl border-[4px] border-foreground shadow-[8px_8px_0px_#000] overflow-hidden aspect-[16/7.5] bg-white">
+                                        <img 
+                                            src={selectedProject.fullPageImage} 
+                                            alt={selectedProject.title}
+                                            className="w-full h-full object-cover object-top select-none"
+                                        />
+                                    </div>
+                                </div>
+                            ) : (
+                                <div className="flex flex-col md:flex-row flex-1">
+                                    {/* Image Section */}
+                                    {selectedProject.image && !selectedProject.fullPageImage && (
+                                        <div className="w-full md:w-2/5 border-b-[4px] md:border-b-0 md:border-r-[4px] border-foreground bg-muted md:sticky md:top-0 md:h-auto h-auto max-h-[50vh] md:max-h-none overflow-hidden flex-shrink-0">
+                                            <img 
+                                                src={selectedProject.image} 
+                                                alt={selectedProject.title}
+                                                className="w-full h-full object-contain md:object-cover"
+                                            />
+                                        </div>
+                                    )}
+
+                                    {/* Content Section */}
+                                    <div className="flex-1 p-5 sm:p-10 md:p-12 space-y-10">
+                                        <div className="space-y-4">
+                                            <span className="nb-badge px-3 py-1 bg-[var(--nb-orange)] text-white text-xs font-black uppercase">
+                                                {selectedProject.subCategory}
+                                            </span>
+                                            <h2 className="text-xl sm:text-5xl font-black uppercase leading-tight tracking-tighter">
+                                                 {selectedProject.title}
+                                             </h2>
+                                        </div>
+
+                                        <div className="grid grid-cols-1 gap-12">
+                                            {/* Headline & SubCopy */}
+                                            <div className="space-y-6 p-6 sm:p-8 bg-[var(--nb-yellow)] border-[3px] border-foreground shadow-[6px_6px_0px_#000]">
+                                                <div className="space-y-2">
+                                                    <h4 className="text-[10px] font-black uppercase tracking-widest opacity-60">Headline</h4>
+                                                    <p className="text-2xl sm:text-3xl font-black uppercase leading-tight italic">
+                                                        &ldquo;{selectedProject.details.headline}&rdquo;
+                                                    </p>
+                                                </div>
+                                                <div className="h-[2px] bg-foreground/20" />
+                                                <div className="space-y-2">
+                                                    <h4 className="text-[10px] font-black uppercase tracking-widest opacity-60">Sub Copy</h4>
+                                                    <p className="text-lg font-bold leading-relaxed">
+                                                        {selectedProject.details.subCopy}
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            {/* Campaign Overview */}
+                                            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                                                <div className="space-y-4">
+                                                    <h4 className="text-xs font-black uppercase tracking-widest text-primary">Campaign Focus</h4>
+                                                    <p className="text-sm sm:text-base text-muted-foreground font-medium leading-relaxed">
+                                                        {selectedProject.details.campaignFocus}
+                                                    </p>
+                                                </div>
+                                                <div className="space-y-4">
+                                                    <h4 className="text-xs font-black uppercase tracking-widest text-primary">Creative Insight</h4>
+                                                    <p className="text-sm sm:text-base text-muted-foreground font-medium leading-relaxed">
+                                                        {selectedProject.details.creativeInsight}
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            {/* Brand Positioning */}
+                                            <div className="space-y-4 p-6 border-[3px] border-foreground bg-muted/30">
+                                                <h4 className="text-xs font-black uppercase tracking-widest text-primary">Brand Positioning</h4>
+                                                <p className="text-base sm:text-lg font-bold leading-relaxed">
+                                                    {selectedProject.details.brandPositioning}
+                                                </p>
+                                            </div>
+
+                                            {/* Deliverables */}
+                                            <div className="space-y-6">
+                                                <h4 className="text-xs font-black uppercase tracking-widest text-primary text-center">What This Delivers</h4>
+                                                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                                    {selectedProject.details.deliverables.map((item, idx) => (
+                                                        <div key={idx} className="p-4 border-[2px] border-foreground bg-background">
+                                                            <div className="space-y-1">
+                                                                <h5 className="text-xs font-black uppercase text-primary">{item.title}</h5>
+                                                                <p className="text-[10px] sm:text-xs text-muted-foreground font-medium leading-relaxed">{item.desc}</p>
+                                                            </div>
+                                                        </div>
+                                                    ))}
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div className="pt-8 border-t-[2px] border-foreground/10 text-center">
+                                            <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-muted-foreground">
+                                                Strategic Copywriting & Creative Strategy by Sudharsan
+                                            </p>
+                                        </div>
+                                    </div>
                                 </div>
                             )}
-
-                            {/* Content Section */}
-                            <div className="flex-1 p-5 sm:p-10 md:p-12 space-y-10">
-                                <div className="space-y-4">
-                                    <span className="nb-badge px-3 py-1 bg-[var(--nb-orange)] text-white text-xs font-black uppercase">
-                                        {selectedProject.subCategory}
-                                    </span>
-                                    <h2 className="text-xl sm:text-5xl font-black uppercase leading-tight tracking-tighter">
-                                         {selectedProject.title}
-                                     </h2>
-                                </div>
-
-                                <div className="grid grid-cols-1 gap-12">
-                                    {/* Headline & SubCopy */}
-                                    <div className="space-y-6 p-6 sm:p-8 bg-[var(--nb-yellow)] border-[3px] border-foreground shadow-[6px_6px_0px_#000]">
-                                        <div className="space-y-2">
-                                            <h4 className="text-[10px] font-black uppercase tracking-widest opacity-60">Headline</h4>
-                                            <p className="text-2xl sm:text-3xl font-black uppercase leading-tight italic">
-                                                &ldquo;{selectedProject.details.headline}&rdquo;
-                                            </p>
-                                        </div>
-                                        <div className="h-[2px] bg-foreground/20" />
-                                        <div className="space-y-2">
-                                            <h4 className="text-[10px] font-black uppercase tracking-widest opacity-60">Sub Copy</h4>
-                                            <p className="text-lg font-bold leading-relaxed">
-                                                {selectedProject.details.subCopy}
-                                            </p>
-                                        </div>
-                                    </div>
-
-                                    {/* Campaign Overview */}
-                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                                        <div className="space-y-4">
-                                            <h4 className="text-xs font-black uppercase tracking-widest text-primary">Campaign Focus</h4>
-                                            <p className="text-sm sm:text-base text-muted-foreground font-medium leading-relaxed">
-                                                {selectedProject.details.campaignFocus}
-                                            </p>
-                                        </div>
-                                        <div className="space-y-4">
-                                            <h4 className="text-xs font-black uppercase tracking-widest text-primary">Creative Insight</h4>
-                                            <p className="text-sm sm:text-base text-muted-foreground font-medium leading-relaxed">
-                                                {selectedProject.details.creativeInsight}
-                                            </p>
-                                        </div>
-                                    </div>
-
-                                    {/* Brand Positioning */}
-                                    <div className="space-y-4 p-6 border-[3px] border-foreground bg-muted/30">
-                                        <h4 className="text-xs font-black uppercase tracking-widest text-primary">Brand Positioning</h4>
-                                        <p className="text-base sm:text-lg font-bold leading-relaxed">
-                                            {selectedProject.details.brandPositioning}
-                                        </p>
-                                    </div>
-
-                                    {/* Deliverables */}
-                                    <div className="space-y-6">
-                                        <h4 className="text-xs font-black uppercase tracking-widest text-primary text-center">What This Delivers</h4>
-                                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                                            {selectedProject.details.deliverables.map((item, idx) => (
-                                                <div key={idx} className="p-4 border-[2px] border-foreground bg-background">
-                                                    <div className="space-y-1">
-                                                        <h5 className="text-xs font-black uppercase text-primary">{item.title}</h5>
-                                                        <p className="text-[10px] sm:text-xs text-muted-foreground font-medium leading-relaxed">{item.desc}</p>
-                                                    </div>
-                                                </div>
-                                            ))}
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div className="pt-8 border-t-[2px] border-foreground/10 text-center">
-                                    <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-muted-foreground">
-                                        Strategic Copywriting & Creative Strategy by Sudharsan
-                                    </p>
-                                </div>
-                            </div>
                         </motion.div>
                     </div>
                 )}
