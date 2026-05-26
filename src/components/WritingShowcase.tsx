@@ -3,7 +3,7 @@
 import * as React from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { cn } from "@/lib/utils"
-import { ArrowRight, PenTool, ExternalLink, X } from "lucide-react"
+import { ArrowRight, PenTool, ExternalLink, X, Mail } from "lucide-react"
 
 // --- Data Types ---
 type MainCategory = "Content writing" | "Copywriting"
@@ -26,6 +26,24 @@ interface WritingProject {
         brandPositioning: string
         campaignFocus: string
         deliverables: { title: string; desc: string }[]
+        emailDetails?: {
+            subject: string
+            previewText: string
+            audience: string
+            goal: string
+            body: string
+            strategy: string
+        }
+        emails?: {
+            id: string
+            label: string
+            subject: string
+            previewText: string
+            audience: string
+            goal: string
+            body: string
+            strategy: string
+        }[]
     }
 }
 
@@ -141,6 +159,141 @@ const writingProjects: WritingProject[] = [
                 { title: "Interactive Matchmaker Quiz", desc: "Interactive questionnaire text to find the perfect saree." }
             ]
         }
+    },
+    {
+        title: "6DOT5 ETHNICS: Lifecycle Email Campaigns",
+        mainCategory: "Copywriting",
+        subCategory: "EMAIL COPY",
+        description: "A complete 4-part CRM email sequence (Welcome, Retargeting, Loyalty, and Cart Recovery) for a premium handloom Kanchipuram silk saree brand.",
+        link: "#",
+        details: {
+            headline: "Woven in Tamil Nadu, Delivered to your doorstep.",
+            subCopy: "A comprehensive CRM email sequence to build trust, recover cart abandons, and drive repeat purchases.",
+            campaignFocus: "Full lifecycle email marketing strategy for 6Dot5Ethnics.",
+            creativeInsight: "Replacing aggressive sales pitches with brand storytelling, transparent artisan mapping, and humanizing automated touchpoints.",
+            brandPositioning: "6Dot5Ethnics — Pure Handloom Silk, Direct from Weaver to Deserving Hands.",
+            deliverables: [],
+            emails: [
+                {
+                    id: "welcome",
+                    label: "1. Welcome Series",
+                    subject: "You just found your new favourite saree brand. You don't know it yet.",
+                    previewText: "Welcome to 6Dot5Ethnics. Here's what makes us different.",
+                    audience: "People who signed up via a lead magnet, contest, or Instagram follow - they know the brand name but have never bought. Cold-warm. They need to be introduced, not sold to yet.",
+                    goal: "Awareness + First Purchase",
+                    body: `Hi [Name],
+
+Welcome. We're glad you're here.
+
+We're 6Dot5Ethnics - a small team obsessed with one thing: getting authentic Kanjipuram silk sarees from the looms of Tamil Nadu to women who actually deserve them.
+
+No middlemen. No markups. No machine-made imitations dressed up in fancy packaging.
+
+Every saree on our site was woven by hand. It took a master weaver anywhere between 7 to 15 days to make it. And it'll be at your door in 5.
+
+We're not the biggest saree brand out there. But we might be the most honest one.
+
+Here's 10% off your first order - because the best way to understand what we do is to feel it.
+
+[Use code WELCOME10]
+
+Take your time. Browse at your own pace. And if you have questions, just reply to this email.
+
+We actually read them.
+
+With love,
+6Dot5Ethnics`,
+                    strategy: "Welcome emails have the highest open rates of any email type - this is prime real estate. Leads with brand story, not product push. 'We actually read them' humanises the brand and builds trust before asking for a transaction. The discount is a soft nudge, not the main event."
+                },
+                {
+                    id: "retargeting",
+                    label: "2. Re-targeting",
+                    subject: "We saw you looking. No judgment.",
+                    previewText: "Still thinking about it? Here's a little help.",
+                    audience: "People who visited the website, browsed products, maybe spent time on a product page - but left without adding anything to cart. They showed interest but not intent yet.",
+                    goal: "Bring them back, convert",
+                    body: `Hi [Name],
+
+You stopped by. Browsed around. Left without saying goodbye.
+
+Totally fine. We've all been there.
+
+But since you were looking - we thought we'd make it a little easier to decide.
+
+Right now, our bestselling Kanjeevarams are in stock. All hand-woven. All real silk. All the kind of sarees that make your mother ask "where did you get that?"
+
+Here's what other women picked up this week:
+→ The Classic Temple Border (ships in 3 days)
+→ The Contrast Pallu in Peacock Blue (only 4 left)
+→ The Bridal Crimson with Gold Zari (our most-gifted piece)
+
+No pressure. But if one of these caught your eye the first time, it's probably still catching it now.
+
+[Browse the collection]
+
+With love,
+6Dot5Ethnics`,
+                    strategy: "'We saw you looking. No judgment.' is self-aware and witty - it acknowledges the retargeting without feeling creepy. Social proof through 'what other women picked up this week' creates FOMO without screaming it. Scarcity on one product ('only 4 left') is specific, not generic."
+                },
+                {
+                    id: "loyalty",
+                    label: "3. Existing Customer",
+                    subject: "You have good taste. We have more of it.",
+                    previewText: "New arrivals - and a little something for coming back.",
+                    audience: "Someone who has already bought at least one saree from 6Dot5Ethnics. They trust the brand. The goal is to deepen that relationship and drive a second purchase - the most cost-effective customer you have.",
+                    goal: "Repeat purchase + loyalty",
+                    body: `Hi [Name],
+
+It's been a while. We've been busy at the loom.
+
+Since your last order, we've added 24 new sarees to the collection - including a new line of lightweight Kanjeevarams that are getting a lot of attention. (The kind of attention you're used to wearing 6Dot5Ethnics, basically.)
+
+We picked a few we think you'd love based on what you ordered before:
+→ [Personalised recommendation 1]
+→ [Personalised recommendation 2]
+→ [Personalised recommendation 3]
+
+And since you're family now - here's 15% off your next order. No expiry date. Use it whenever you're ready.
+
+[Code: FAMILY15]
+
+Thank you for trusting us with something as personal as what you wear.
+
+That's not something we take lightly.
+
+With love,
+6Dot5Ethnics`,
+                    strategy: "Existing customers don't need to be convinced - they need to feel valued. 'You're family now' rewards loyalty without being transactional. Personalised recommendations placeholder signals to the recruiter that you understand segmentation and CRM logic, not just copywriting."
+                },
+                {
+                    id: "abandoned",
+                    label: "4. Abandoned Cart",
+                    subject: "Your cart is giving us anxiety.",
+                    previewText: "It's been 24 hours. The saree is still waiting.",
+                    audience: "Someone who added a specific saree to their cart but didn't complete the purchase. Highest purchase intent of any segment. They chose a product - something stopped them at the final step.",
+                    goal: "Recover the sale",
+                    body: `Hi [Name],
+
+We noticed you left something behind. And honestly? We're a little worried about it.
+
+That Kanjipuram silk you picked out? It's been sitting in your cart, fully dressed, nowhere to go. That's not a good life for a saree.
+
+Here's the thing - it took a weaver in Kanchipuram 12 days to make it. We'd hate for it to end up with someone who loves it less than you do.
+
+Your cart is still saved. Your saree is still waiting.
+
+[Complete your order]
+
+And if something stopped you - wrong size, unsure about the colour - just reply to this email. We'll sort it out.
+
+With love,
+6Dot5Ethnics
+
+P.S. We can only hold your cart for another 48 hours. After that, it goes back to the shelf. Just saying.`,
+                    strategy: "Highest intent segment - doesn't need a discount, needs reassurance. Personifies the saree to create emotional pull. The reply CTA removes friction for the most common abandonment reasons. P.S. creates urgency without a countdown timer - feels human, not automated."
+                }
+            ]
+        }
     }
 ]
 
@@ -149,10 +302,16 @@ export function WritingShowcase() {
     const [subCategory, setSubCategory] = React.useState<SubCategory>("ALL")
     const [selectedProject, setSelectedProject] = React.useState<WritingProject | null>(null)
     const [modalTab, setModalTab] = React.useState<"strategy" | "preview">("strategy")
+    const [activeEmailId, setActiveEmailId] = React.useState<string>("")
 
     React.useEffect(() => {
         if (selectedProject) {
             setModalTab("strategy")
+            if (selectedProject.details?.emails && selectedProject.details.emails.length > 0) {
+                setActiveEmailId(selectedProject.details.emails[0].id)
+            } else {
+                setActiveEmailId("")
+            }
         }
     }, [selectedProject])
 
@@ -262,29 +421,61 @@ export function WritingShowcase() {
                                 )}
                             >
                                 {mainCategory === "Copywriting" ? (
-                                    <div 
-                                        className="w-full relative group cursor-pointer border-[3px] border-foreground shadow-[4px_4px_0px_var(--foreground)] hover:shadow-[6px_6px_0px_var(--foreground)] hover:-translate-y-1 hover:-translate-x-1 transition-all overflow-hidden"
-                                        onClick={() => project.details && setSelectedProject(project)}
-                                    >
-                                        <div className={cn(
-                                            "w-full overflow-hidden",
-                                            project.subCategory === "LANDING PAGE" ? "aspect-[16/10]" : ""
-                                        )}>
-                                            <img 
-                                                src={project.image} 
-                                                alt={project.title}
-                                                className={cn(
-                                                    "w-full transition-transform duration-500 group-hover:scale-105",
-                                                    project.subCategory === "LANDING PAGE" ? "h-full object-cover object-top" : "h-auto object-cover"
-                                                )}
-                                            />
+                                    project.image ? (
+                                        <div 
+                                            className="w-full relative group cursor-pointer border-[3px] border-foreground shadow-[4px_4px_0px_var(--foreground)] hover:shadow-[6px_6px_0px_var(--foreground)] hover:-translate-y-1 hover:-translate-x-1 transition-all overflow-hidden"
+                                            onClick={() => project.details && setSelectedProject(project)}
+                                        >
+                                            <div className={cn(
+                                                "w-full overflow-hidden",
+                                                project.subCategory === "LANDING PAGE" ? "aspect-[16/10]" : ""
+                                            )}>
+                                                <img 
+                                                    src={project.image} 
+                                                    alt={project.title}
+                                                    className={cn(
+                                                        "w-full transition-transform duration-500 group-hover:scale-105",
+                                                        project.subCategory === "LANDING PAGE" ? "h-full object-cover object-top" : "h-auto object-cover"
+                                                    )}
+                                                />
+                                            </div>
+                                            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors flex items-center justify-center">
+                                                <span className="opacity-0 group-hover:opacity-100 bg-[var(--nb-yellow)] text-foreground px-4 py-2 text-xs font-black uppercase border-[2px] border-foreground shadow-[2px_2px_0px_#000] transform translate-y-4 group-hover:translate-y-0 transition-all">
+                                                    View Project
+                                                </span>
+                                            </div>
                                         </div>
-                                        <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors flex items-center justify-center">
-                                            <span className="opacity-0 group-hover:opacity-100 bg-[var(--nb-yellow)] text-foreground px-4 py-2 text-xs font-black uppercase border-[2px] border-foreground shadow-[2px_2px_0px_#000] transform translate-y-4 group-hover:translate-y-0 transition-all">
-                                                View Project
-                                            </span>
+                                    ) : (
+                                        <div 
+                                            className="w-full p-6 relative group cursor-pointer border-[3px] border-foreground bg-gradient-to-br from-[#FFFDF9] to-[#F7F2E8] shadow-[4px_4px_0px_var(--foreground)] hover:shadow-[6px_6px_0px_var(--foreground)] hover:-translate-y-1 hover:-translate-x-1 transition-all flex flex-col justify-between min-h-[220px]"
+                                            onClick={() => project.details && setSelectedProject(project)}
+                                        >
+                                            <div className="space-y-5">
+                                                <div className="flex justify-between items-center">
+                                                    <span className="nb-badge px-3 py-1 bg-foreground text-background border-foreground text-[9px] font-black uppercase tracking-[0.15em]">
+                                                        {project.subCategory}
+                                                    </span>
+                                                    <div className="w-8 h-8 rounded-full border-[2px] border-foreground bg-background flex items-center justify-center shadow-[2px_2px_0px_#000] group-hover:bg-[var(--nb-yellow)] transition-colors">
+                                                        <Mail size={14} className="text-foreground" />
+                                                    </div>
+                                                </div>
+                                                <div className="space-y-2">
+                                                    <h3 className="text-lg sm:text-xl font-black uppercase leading-tight text-foreground group-hover:text-primary transition-colors">
+                                                        {project.title}
+                                                    </h3>
+                                                    <p className="text-xs text-muted-foreground leading-relaxed font-medium line-clamp-3">
+                                                        {project.description}
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div className="pt-4 mt-4 border-t-[2px] border-foreground/10 flex items-center justify-between text-[10px] font-black uppercase tracking-wider text-foreground group-hover:text-primary transition-colors">
+                                                <span>View Strategy & Email Copy</span>
+                                                <div className="w-6 h-6 border-[2px] border-foreground bg-background flex items-center justify-center shadow-[2px_2px_0px_#000] group-hover:translate-x-0.5 group-hover:bg-[var(--nb-yellow)] transition-all">
+                                                    <ArrowRight size={12} className="text-foreground" />
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
+                                    )
                                 ) : (
                                     <>
                                         {project.image && (
@@ -420,6 +611,282 @@ export function WritingShowcase() {
                                             alt={selectedProject.title}
                                             className="w-full h-full object-cover object-top select-none"
                                         />
+                                    </div>
+                                </div>
+                            ) : selectedProject.details.emails ? (
+                                <div className="flex flex-col flex-1 border-t-[4px] border-foreground">
+                                    {/* Email Toggles / Tabs Bar */}
+                                    <div className="bg-muted/50 p-4 border-b-[4px] border-foreground flex flex-wrap gap-2 items-center">
+                                        <span className="text-[10px] font-black uppercase tracking-widest text-muted-foreground mr-2">Campaign Flow:</span>
+                                        {selectedProject.details.emails.map((email) => (
+                                            <button
+                                                key={email.id}
+                                                onClick={() => setActiveEmailId(email.id)}
+                                                className={cn(
+                                                    "px-3.5 py-1.5 text-xs font-black uppercase border-[2.5px] border-foreground transition-all cursor-pointer",
+                                                    activeEmailId === email.id
+                                                        ? "bg-[var(--nb-orange)] text-white shadow-[3px_3px_0px_#000] -translate-x-[1px] -translate-y-[1px]"
+                                                        : "bg-background text-foreground hover:shadow-[2px_2px_0px_var(--foreground)] hover:-translate-x-[1px] hover:-translate-y-[1px]"
+                                                )}
+                                            >
+                                                {email.label}
+                                            </button>
+                                        ))}
+                                    </div>
+
+                                    {(() => {
+                                        const activeEmail = selectedProject.details.emails.find(e => e.id === activeEmailId) || selectedProject.details.emails[0];
+                                        if (!activeEmail) return null;
+                                        return (
+                                            <div className="flex flex-col lg:flex-row flex-1">
+                                                {/* Left Column: Email Client Mockup */}
+                                                <div className="w-full lg:w-[55%] p-4 sm:p-8 bg-muted/20 border-b-[4px] lg:border-b-0 lg:border-r-[4px] border-foreground">
+                                                    <div className="w-full bg-background border-[3px] border-foreground shadow-[6px_6px_0px_#000] rounded-lg overflow-hidden flex flex-col">
+                                                        {/* Browser Window Header */}
+                                                        <div className="bg-foreground text-background px-4 py-3 flex items-center justify-between border-b-[3px] border-foreground">
+                                                            <div className="flex items-center gap-1.5">
+                                                                <div className="w-3 h-3 rounded-full bg-[var(--nb-pink)] border-2 border-background" />
+                                                                <div className="w-3 h-3 rounded-full bg-[var(--nb-yellow)] border-2 border-background" />
+                                                                <div className="w-3 h-3 rounded-full bg-[var(--nb-green)] border-2 border-background" />
+                                                            </div>
+                                                            <span className="text-[10px] font-black uppercase tracking-wider opacity-85 flex items-center gap-1">
+                                                                <Mail size={12} /> Email Preview
+                                                            </span>
+                                                            <div className="w-12" /> {/* spacer */}
+                                                        </div>
+
+                                                        {/* Email Headers */}
+                                                        <div className="p-4 sm:p-6 border-b-[2px] border-foreground bg-background space-y-2 text-xs font-bold text-foreground">
+                                                            <div className="flex border-b border-muted/30 pb-2">
+                                                                <span className="w-16 text-muted-foreground uppercase text-[10px]">From:</span>
+                                                                <span className="font-semibold text-primary">6Dot5Ethnics &lt;hello@6dot5ethnics.com&gt;</span>
+                                                            </div>
+                                                            <div className="flex border-b border-muted/30 pb-2">
+                                                                <span className="w-16 text-muted-foreground uppercase text-[10px]">To:</span>
+                                                                <span className="font-semibold">[Name] &lt;subscriber@email.com&gt;</span>
+                                                            </div>
+                                                            <div className="flex border-b border-muted/30 pb-2">
+                                                                <span className="w-16 text-muted-foreground uppercase text-[10px]">Subject:</span>
+                                                                <span className="font-black text-foreground">{activeEmail.subject}</span>
+                                                            </div>
+                                                            <div className="flex pb-1">
+                                                                <span className="w-16 text-muted-foreground uppercase text-[10px]">Preview:</span>
+                                                                <span className="text-muted-foreground italic font-medium">{activeEmail.previewText}</span>
+                                                            </div>
+                                                        </div>
+
+                                                        {/* Email Body Content */}
+                                                        <div className="p-6 sm:p-10 bg-[#FDFCF7] overflow-y-auto max-h-[500px] text-sm sm:text-base font-serif leading-relaxed text-foreground space-y-4">
+                                                            {/* Parse and render the body with custom buttons */}
+                                                            {(() => {
+                                                                const bodyText = activeEmail.body;
+                                                                const parts = bodyText.split(/(\[[^\]]+\])/g);
+                                                                return parts.map((part, idx) => {
+                                                                    if (part.startsWith('[') && part.endsWith(']')) {
+                                                                        const btnLabel = part.slice(1, -1);
+                                                                        const isPlaceholder = btnLabel.toLowerCase() === 'name' || btnLabel.toLowerCase().includes('recommendation');
+                                                                        if (isPlaceholder) {
+                                                                            return <span key={idx} className="font-bold text-foreground">[{btnLabel}]</span>;
+                                                                        }
+                                                                        return (
+                                                                            <span key={idx} className="block my-6 text-center">
+                                                                                <span className="inline-block px-8 py-3 bg-[var(--nb-orange)] text-white text-xs font-black uppercase border-[3px] border-foreground shadow-[4px_4px_0px_#000] rounded-none transform hover:translate-y-[-2px] hover:shadow-[6px_6px_0px_#000] transition-all select-none">
+                                                                                    {btnLabel}
+                                                                                </span>
+                                                                            </span>
+                                                                        );
+                                                                    }
+                                                                    return <span key={idx} className="whitespace-pre-line font-serif leading-relaxed">{part}</span>;
+                                                                });
+                                                            })()}
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                {/* Right Column: Copywriting Strategy & Info */}
+                                                <div className="flex-1 p-6 sm:p-10 space-y-8 flex flex-col justify-between">
+                                                    <div className="space-y-8">
+                                                        <div className="space-y-3">
+                                                            <div className="flex items-center gap-2">
+                                                                <span className="nb-badge px-2.5 py-1 bg-foreground text-background border-foreground text-[10px] font-black uppercase tracking-wider">
+                                                                    {selectedProject.subCategory}
+                                                                </span>
+                                                                <span className="text-[10px] font-black text-muted-foreground uppercase tracking-widest">
+                                                                    Campaign Flow
+                                                                </span>
+                                                            </div>
+                                                            <h2 className="text-2xl sm:text-4xl font-black uppercase tracking-tight leading-none text-foreground">
+                                                                {activeEmail.label.replace(/^\d+\.\s*/, "")}
+                                                            </h2>
+                                                            <p className="text-xs text-muted-foreground font-medium">
+                                                                Part of the campaign: <span className="font-extrabold text-foreground">{selectedProject.title}</span>
+                                                            </p>
+                                                        </div>
+
+                                                        {/* Strategy Brief */}
+                                                        <div className="space-y-6">
+                                                            <div className="space-y-2 p-5 border-[3px] border-foreground bg-[#FFFBF2] shadow-[4px_4px_0px_#000]">
+                                                                <h4 className="text-xs font-black uppercase tracking-wider text-[#B2822A]">Target Audience Segment</h4>
+                                                                <p className="text-sm font-bold text-foreground/80 leading-relaxed">
+                                                                    {activeEmail.audience}
+                                                                </p>
+                                                            </div>
+
+                                                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                                                <div className="space-y-2 p-4 border-[2.5px] border-foreground bg-[#F0FDF4] shadow-[2px_2px_0px_#000]">
+                                                                    <h4 className="text-[10px] font-black uppercase tracking-wider text-emerald-800">Campaign Segment Goal</h4>
+                                                                    <p className="text-xs font-black uppercase text-emerald-950">
+                                                                        {activeEmail.goal}
+                                                                    </p>
+                                                                </div>
+                                                                <div className="space-y-2 p-4 border-[2.5px] border-foreground bg-[#F0F9FF] shadow-[2px_2px_0px_#000]">
+                                                                    <h4 className="text-[10px] font-black uppercase tracking-wider text-sky-800">Tone of Voice</h4>
+                                                                    <p className="text-xs font-black uppercase text-sky-950">
+                                                                        Authentic, Honest, Human
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+
+                                                            <div className="space-y-3 p-5 border-[3px] border-foreground bg-[#FFF1F2] shadow-[4px_4px_0px_#000]">
+                                                                <h4 className="text-xs font-black uppercase tracking-wider text-rose-800">Copywriting Strategy & Insight</h4>
+                                                                <p className="text-xs sm:text-sm text-rose-950 font-semibold leading-relaxed">
+                                                                    {activeEmail.strategy}
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div className="pt-6 border-t-[2px] border-foreground/10 text-center lg:text-left">
+                                                        <p className="text-[9px] font-bold uppercase tracking-[0.25em] text-muted-foreground">
+                                                            CRM Lifecycle Copywriting Strategy by Sudharsan
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        );
+                                    })()}
+                                </div>
+                            ) : selectedProject.details.emailDetails ? (
+                                <div className="flex flex-col lg:flex-row flex-1 border-t-[4px] border-foreground">
+                                    {/* Left Column: Email Client Mockup */}
+                                    <div className="w-full lg:w-[55%] p-4 sm:p-8 bg-muted/20 border-b-[4px] lg:border-b-0 lg:border-r-[4px] border-foreground">
+                                        <div className="w-full bg-background border-[3px] border-foreground shadow-[6px_6px_0px_#000] rounded-lg overflow-hidden flex flex-col">
+                                            {/* Browser Window Header */}
+                                            <div className="bg-foreground text-background px-4 py-3 flex items-center justify-between border-b-[3px] border-foreground">
+                                                <div className="flex items-center gap-1.5">
+                                                    <div className="w-3 h-3 rounded-full bg-[var(--nb-pink)] border-2 border-background" />
+                                                    <div className="w-3 h-3 rounded-full bg-[var(--nb-yellow)] border-2 border-background" />
+                                                    <div className="w-3 h-3 rounded-full bg-[var(--nb-green)] border-2 border-background" />
+                                                </div>
+                                                <span className="text-[10px] font-black uppercase tracking-wider opacity-85 flex items-center gap-1">
+                                                    <Mail size={12} /> Email Preview
+                                                </span>
+                                                <div className="w-12" /> {/* spacer */}
+                                            </div>
+
+                                            {/* Email Headers */}
+                                            <div className="p-4 sm:p-6 border-b-[2px] border-foreground bg-background space-y-2 text-xs font-bold text-foreground">
+                                                <div className="flex border-b border-muted/30 pb-2">
+                                                    <span className="w-16 text-muted-foreground uppercase text-[10px]">From:</span>
+                                                    <span className="font-semibold text-primary">6Dot5Ethnics &lt;hello@6dot5ethnics.com&gt;</span>
+                                                </div>
+                                                <div className="flex border-b border-muted/30 pb-2">
+                                                    <span className="w-16 text-muted-foreground uppercase text-[10px]">To:</span>
+                                                    <span className="font-semibold">[Name] &lt;subscriber@email.com&gt;</span>
+                                                </div>
+                                                <div className="flex border-b border-muted/30 pb-2">
+                                                    <span className="w-16 text-muted-foreground uppercase text-[10px]">Subject:</span>
+                                                    <span className="font-black text-foreground">{selectedProject.details.emailDetails.subject}</span>
+                                                </div>
+                                                <div className="flex pb-1">
+                                                    <span className="w-16 text-muted-foreground uppercase text-[10px]">Preview:</span>
+                                                    <span className="text-muted-foreground italic font-medium">{selectedProject.details.emailDetails.previewText}</span>
+                                                </div>
+                                            </div>
+
+                                            {/* Email Body Content */}
+                                            <div className="p-6 sm:p-10 bg-background/50 overflow-y-auto max-h-[500px] text-sm sm:text-base font-serif leading-relaxed text-foreground space-y-4">
+                                                {/* Parse and render the body with custom buttons */}
+                                                {(() => {
+                                                    const bodyText = selectedProject.details.emailDetails.body;
+                                                    const parts = bodyText.split(/(\[[^\]]+\])/g);
+                                                    return parts.map((part, index) => {
+                                                        if (part.startsWith('[') && part.endsWith(']')) {
+                                                            const btnLabel = part.slice(1, -1);
+                                                            const isPlaceholder = btnLabel.toLowerCase() === 'name' || btnLabel.toLowerCase().includes('recommendation');
+                                                            if (isPlaceholder) {
+                                                                return <span key={index} className="font-bold text-foreground">[{btnLabel}]</span>;
+                                                            }
+                                                            return (
+                                                                <span key={index} className="block my-6 text-center">
+                                                                    <span className="inline-block px-8 py-3 bg-[var(--nb-yellow)] text-foreground text-xs font-black uppercase border-[3px] border-foreground shadow-[4px_4px_0px_#000] rounded-none transform hover:translate-y-[-2px] hover:shadow-[6px_6px_0px_#000] transition-all select-none">
+                                                                        {btnLabel}
+                                                                    </span>
+                                                                </span>
+                                                            );
+                                                        }
+                                                        return <span key={index} className="whitespace-pre-line font-serif leading-relaxed">{part}</span>;
+                                                    });
+                                                })()}
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    {/* Right Column: Copywriting Strategy & Info */}
+                                    <div className="flex-1 p-6 sm:p-10 space-y-8 flex flex-col justify-between">
+                                        <div className="space-y-8">
+                                            <div className="space-y-3">
+                                                <div className="flex items-center gap-2">
+                                                    <span className="nb-badge px-2.5 py-1 bg-[var(--nb-orange)] text-white text-[10px] font-black uppercase tracking-wider">
+                                                        {selectedProject.subCategory}
+                                                    </span>
+                                                    <span className="text-[10px] font-black text-muted-foreground uppercase tracking-widest">
+                                                        Target Campaign
+                                                    </span>
+                                                </div>
+                                                <h2 className="text-2xl sm:text-4xl font-black uppercase tracking-tight leading-none text-foreground">
+                                                    {selectedProject.title}
+                                                </h2>
+                                            </div>
+
+                                            {/* Strategy Brief */}
+                                            <div className="space-y-6">
+                                                <div className="space-y-2 p-5 border-[3px] border-foreground bg-[var(--nb-yellow)]/10 shadow-[4px_4px_0px_#000]">
+                                                    <h4 className="text-xs font-black uppercase tracking-wider text-primary">Target Audience</h4>
+                                                    <p className="text-sm font-bold text-foreground/80 leading-relaxed">
+                                                        {selectedProject.details.emailDetails.audience}
+                                                    </p>
+                                                </div>
+
+                                                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                                    <div className="space-y-2 p-4 border-[2.5px] border-foreground bg-background">
+                                                        <h4 className="text-[10px] font-black uppercase tracking-wider text-muted-foreground">Campaign Goal</h4>
+                                                        <p className="text-sm font-extrabold uppercase text-primary text-xs">
+                                                            {selectedProject.details.emailDetails.goal}
+                                                        </p>
+                                                    </div>
+                                                    <div className="space-y-2 p-4 border-[2.5px] border-foreground bg-background">
+                                                        <h4 className="text-[10px] font-black uppercase tracking-wider text-muted-foreground">Tone of Voice</h4>
+                                                        <p className="text-sm font-extrabold uppercase text-foreground text-xs">
+                                                            Authentic, Honest, Human
+                                                        </p>
+                                                    </div>
+                                                </div>
+
+                                                <div className="space-y-3 p-5 border-[3px] border-foreground bg-muted/40">
+                                                    <h4 className="text-xs font-black uppercase tracking-wider text-primary">Copywriting Strategy & Insight</h4>
+                                                    <p className="text-xs sm:text-sm text-muted-foreground font-semibold leading-relaxed">
+                                                        {selectedProject.details.emailDetails.strategy}
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div className="pt-6 border-t-[2px] border-foreground/10 text-center lg:text-left">
+                                            <p className="text-[9px] font-bold uppercase tracking-[0.25em] text-muted-foreground">
+                                                CRM Lifecycle Copywriting Strategy by Sudharsan
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             ) : (
