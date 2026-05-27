@@ -294,6 +294,116 @@ P.S. We can only hold your cart for another 48 hours. After that, it goes back t
                 }
             ]
         }
+    },
+    {
+        title: "6DOT5 ETHNICS: Occasion-Based Email Campaigns",
+        mainCategory: "Copywriting",
+        subCategory: "EMAIL COPY",
+        description: "Festive email marketing campaigns (Diwali, New Year, and Pongal) designed to engage existing customers with emotional storytelling and timed exclusive offers.",
+        link: "#",
+        details: {
+            headline: "Celebrate with Legacy. Saree stories that feel like home.",
+            subCopy: "Festive campaigns designed to speak to cultural pride and reward customer loyalty.",
+            campaignFocus: "High-intent festive and event-based email strategy (Diwali 2025, New Year 2026, and Pongal 2026) for 6Dot5Ethnics.",
+            creativeInsight: "Aligning email timing with cultural rhythms and building authentic, sensory narratives that lead with celebration rather than pure sales pitches.",
+            brandPositioning: "6Dot5Ethnics — Pure Handloom Silk, Direct from Weaver to Deserving Hands.",
+            deliverables: [],
+            emails: [
+                {
+                    id: "diwali",
+                    label: "1. Diwali 2025",
+                    subject: "This Diwali, let the saree do the shining.",
+                    previewText: "Our Diwali collection is here. And so is something special for you.",
+                    audience: "Women who've bought from 6Dot5Ethnics before. They know the quality. Diwali is the biggest ethnic wear moment of the year — this email needs to feel like a celebration, not a sales pitch.",
+                    goal: "Emotion + offer (Send: 10 days before Diwali)",
+                    body: `Hi [Name],
+
+Diwali is almost here.
+
+The diyas are coming out. The mithai boxes are being filled. And somewhere in your house, someone is already asking "what are you wearing this year?"
+
+We think we have the answer.
+
+Our Diwali 2025 collection just dropped. Handwoven Kanjeevarams in deep reds, rich golds, and jewel toned silks that were made for exactly this kind of light. The kind of sarees that don't just look good in photos. They feel like an occasion all by themselves.
+
+And because you have been with us before, you get first access. And 20% off.
+
+[Shop the Diwali Collection]
+
+Use code DIWALI20, valid until 15th October 2025.
+
+From our family to yours, have a Diwali that glows in all the right ways.
+
+With love,
+6Dot5Ethnics
+
+P.S. Orders placed before 18th October will arrive in time for the celebrations. Don't wait too long.`,
+                    strategy: "Opens with the sensory world of Diwali before mentioning a single product. \"First access\" makes the existing customer feel privileged, not targeted. The P.S. deadline is specific (18th October) which is far more credible than a generic \"order soon.\""
+                },
+                {
+                    id: "newyear",
+                    label: "2. New Year 2026",
+                    subject: "New year. Same you. Better saree.",
+                    previewText: "Start 2026 in something worth remembering.",
+                    audience: "Existing customers entering the new year. Less about tradition, more about fresh starts and self expression. New Year is a moment of personal intention, not community celebration.",
+                    goal: "Emotion + offer (Send: 29th or 30th December)",
+                    body: `Hi [Name],
+
+2025 is almost done.
+
+You showed up for it. Through the chaos, the calendar, the occasions, the outfits, you showed up. And somewhere in there, you wore a 6Dot5Ethnics saree and made someone's event look better than it deserved to.
+
+We noticed. And we are grateful.
+
+As you step into 2026, we wanted to give you something to step into it with.
+
+Our New Year collection is a quiet celebration. Understated silks, soft borders, and colours that do not shout. Because you have earned the kind of confidence that does not need to.
+
+[Explore the New Year Edit]
+
+As a thank you for being part of our story this year, here is 15% off with no minimum order.
+
+Use code NEW2026, valid through 10th January 2026.
+
+Here is to a new year that fits you perfectly.
+
+With love,
+6Dot5Ethnics`,
+                    strategy: "Acknowledges the year that passed before selling anything. \"You showed up for it\" makes the customer feel seen, not targeted. The collection description \"colours that do not shout\" appeals to the mature, confident buyer. Contractions removed where they felt forced, kept where they feel natural in conversation."
+                },
+                {
+                    id: "pongal",
+                    label: "3. Pongal 2026",
+                    subject: "Pongal is 4 days away. Your saree should be ready.",
+                    previewText: "New Pongal collection. And a little thank you from us.",
+                    audience: "Existing customers, with a strong lean toward Tamil-speaking audiences for whom Pongal is deeply cultural. This email needs to feel rooted and warm, not performative.",
+                    goal: "Emotion + offer (Send: 10th January 2026)",
+                    body: `Hi [Name],
+
+Pongal is almost here.
+
+The kolam will be drawn. The pot will overflow. The family will gather. And in the middle of all of it, someone will look at you and ask, "new saree ah?"
+
+Say yes.
+
+Our Pongal 2026 collection is everything this festival deserves. Bright marigold yellows, traditional checks, deep turmeric golds, and handwoven cottons that breathe as well as they look. Sarees that feel like home.
+
+Because that is what Pongal is. Not just a harvest festival. A reminder of where you come from and how good it feels to go back.
+
+[Shop the Pongal Collection]
+
+You have been with us through the seasons. Here is 18% off as our way of saying, iniya Pongal nalvazhthukkal.
+
+Use code PONGAL2026, valid until 14th January 2026.
+
+With love,
+6Dot5Ethnics
+
+P.S. Express delivery is available for orders placed before 12th January. You will have it in time.`,
+                    strategy: "\"New saree ah?\" is written in the cadence of how Tamil families actually speak. The festival description grounds the email in the real sensory experience of Pongal before pivoting to product. Closing in Tamil is a deliberate touch that signals cultural authenticity. The 18% off feels specific and intentional, not a round number pulled from thin air."
+                }
+            ]
+        }
     }
 ]
 
@@ -344,37 +454,35 @@ export function WritingShowcase() {
 
                 {/* Main Category Toggle */}
                 <div className="flex justify-center w-full">
-                    <div className="flex flex-wrap justify-center gap-4">
-                    <button
-                        onClick={() => {
-                            setMainCategory("Content writing")
-                            setSubCategory("ALL")
-                        }}
-                        className={cn(
-                            "flex items-center gap-2 px-6 py-2 border-[3px] border-foreground font-black uppercase text-sm transition-all cursor-pointer",
-                            mainCategory === "Content writing"
-                                ? "bg-foreground text-background shadow-[4px_4px_0px_var(--muted-foreground)] -translate-x-1 -translate-y-1"
-                                : "bg-background text-foreground shadow-[2px_2px_0px_var(--foreground)] hover:shadow-[3px_3px_0px_var(--foreground)] hover:-translate-x-[1px] hover:-translate-y-[1px]"
-                        )}
-                    >
-                        <div className={cn("w-3 h-3 rounded-full border-2", mainCategory === "Content writing" ? "bg-background border-background" : "bg-foreground border-foreground")} />
-                        Content writing
-                    </button>
-                    <button
-                        onClick={() => {
-                            setMainCategory("Copywriting")
-                            setSubCategory("ALL")
-                        }}
-                        className={cn(
-                            "flex items-center gap-2 px-6 py-2 border-[3px] border-foreground font-black uppercase text-sm transition-all cursor-pointer",
-                            mainCategory === "Copywriting"
-                                ? "bg-[var(--nb-orange)] text-white shadow-[4px_4px_0px_var(--foreground)] -translate-x-1 -translate-y-1"
-                                : "bg-background text-foreground shadow-[2px_2px_0px_var(--foreground)] hover:shadow-[3px_3px_0px_var(--foreground)] hover:-translate-x-[1px] hover:-translate-y-[1px]"
-                        )}
-                    >
-                        <div className={cn("w-3 h-3 rounded-full border-2", mainCategory === "Copywriting" ? "bg-white border-white" : "bg-[var(--nb-orange)] border-[var(--nb-orange)]")} />
-                        Copywriting
-                    </button>
+                    <div className="inline-flex border-[3px] border-foreground bg-background p-1.5 shadow-[4px_4px_0px_var(--foreground)]">
+                        <button
+                            onClick={() => {
+                                setMainCategory("Content writing")
+                                setSubCategory("ALL")
+                            }}
+                            className={cn(
+                                "px-4 py-2 sm:px-6 sm:py-2.5 text-[10px] sm:text-xs md:text-sm font-black uppercase tracking-wider transition-all cursor-pointer border-[2px]",
+                                mainCategory === "Content writing"
+                                    ? "bg-[var(--nb-yellow)] text-foreground border-foreground shadow-[2px_2px_0px_var(--foreground)] -translate-x-[2px] -translate-y-[2px]"
+                                    : "bg-transparent text-foreground border-transparent hover:bg-muted/40"
+                            )}
+                        >
+                            Content writing
+                        </button>
+                        <button
+                            onClick={() => {
+                                setMainCategory("Copywriting")
+                                setSubCategory("ALL")
+                            }}
+                            className={cn(
+                                "px-4 py-2 sm:px-6 sm:py-2.5 text-[10px] sm:text-xs md:text-sm font-black uppercase tracking-wider transition-all cursor-pointer border-[2px]",
+                                mainCategory === "Copywriting"
+                                    ? "bg-[var(--nb-orange)] text-white border-foreground shadow-[2px_2px_0px_var(--foreground)] -translate-x-[2px] -translate-y-[2px]"
+                                    : "bg-transparent text-foreground border-transparent hover:bg-muted/40"
+                            )}
+                        >
+                            Copywriting
+                        </button>
                     </div>
                 </div>
             </div>
@@ -564,14 +672,14 @@ export function WritingShowcase() {
                             initial={{ opacity: 0, scale: 0.9, y: 20 }}
                             animate={{ opacity: 1, scale: 1, y: 0 }}
                             exit={{ opacity: 0, scale: 0.9, y: 20 }}
-                            className="relative w-full max-w-5xl max-h-[92vh] bg-background border-[4px] border-foreground shadow-[12px_12px_0px_#000] overflow-y-auto flex flex-col"
+                            className="relative w-full max-w-5xl max-h-[92vh] bg-background border-[4px] border-foreground shadow-[12px_12px_0px_#000] flex flex-col overflow-hidden animate-in fade-in zoom-in-95 duration-200"
                         >
                             {/* Modal Close Button */}
                             <button 
                                 onClick={() => setSelectedProject(null)}
-                                className="absolute top-4 right-4 z-20 p-2 bg-background border-[3px] border-foreground hover:bg-[var(--nb-pink)] transition-colors"
+                                className="absolute top-3.5 right-4 z-30 p-2 bg-background border-[3px] border-foreground hover:bg-[var(--nb-pink)] transition-colors shadow-[2px_2px_0px_#000] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none cursor-pointer"
                             >
-                                <X size={24} />
+                                <X size={20} />
                             </button>
 
                             {/* Modal Header & Tabs */}
@@ -604,7 +712,7 @@ export function WritingShowcase() {
 
                             {/* Modal Content Pane */}
                             {selectedProject.fullPageImage && modalTab === "preview" ? (
-                                <div className="w-full bg-background flex justify-center p-4">
+                                <div className="w-full bg-background flex justify-center p-4 overflow-y-auto flex-1">
                                     <div className="w-full max-w-4xl border-[4px] border-foreground shadow-[8px_8px_0px_#000] overflow-hidden aspect-[16/7.5] bg-white">
                                         <img 
                                             src={selectedProject.fullPageImage} 
@@ -614,19 +722,19 @@ export function WritingShowcase() {
                                     </div>
                                 </div>
                             ) : selectedProject.details.emails ? (
-                                <div className="flex flex-col flex-1 border-t-[4px] border-foreground">
+                                <div className="flex flex-col flex-1 overflow-hidden border-t-[4px] border-foreground">
                                     {/* Email Toggles / Tabs Bar */}
-                                    <div className="bg-muted/50 p-4 border-b-[4px] border-foreground flex flex-wrap gap-2 items-center">
+                                    <div className="bg-[#FFFDF7] p-4 border-b-[4px] border-foreground flex flex-wrap gap-2 items-center pr-16 select-none">
                                         <span className="text-[10px] font-black uppercase tracking-widest text-muted-foreground mr-2">Campaign Flow:</span>
                                         {selectedProject.details.emails.map((email) => (
                                             <button
                                                 key={email.id}
                                                 onClick={() => setActiveEmailId(email.id)}
                                                 className={cn(
-                                                    "px-3.5 py-1.5 text-xs font-black uppercase border-[2.5px] border-foreground transition-all cursor-pointer",
+                                                    "px-3 py-1.5 text-[10px] sm:text-xs font-black uppercase border-[2px] border-foreground transition-all cursor-pointer",
                                                     activeEmailId === email.id
-                                                        ? "bg-[var(--nb-orange)] text-white shadow-[3px_3px_0px_#000] -translate-x-[1px] -translate-y-[1px]"
-                                                        : "bg-background text-foreground hover:shadow-[2px_2px_0px_var(--foreground)] hover:-translate-x-[1px] hover:-translate-y-[1px]"
+                                                        ? "bg-[var(--nb-orange)] text-white shadow-[2px_2px_0px_#000] -translate-x-[2px] -translate-y-[2px]"
+                                                        : "bg-background text-foreground hover:bg-muted/40"
                                                 )}
                                             >
                                                 {email.label}
@@ -638,10 +746,10 @@ export function WritingShowcase() {
                                         const activeEmail = selectedProject.details.emails.find(e => e.id === activeEmailId) || selectedProject.details.emails[0];
                                         if (!activeEmail) return null;
                                         return (
-                                            <div className="flex flex-col lg:flex-row flex-1">
+                                            <div className="flex flex-col lg:flex-row flex-1 overflow-y-auto">
                                                 {/* Left Column: Email Client Mockup */}
                                                 <div className="w-full lg:w-[55%] p-4 sm:p-8 bg-muted/20 border-b-[4px] lg:border-b-0 lg:border-r-[4px] border-foreground">
-                                                    <div className="w-full bg-background border-[3px] border-foreground shadow-[6px_6px_0px_#000] rounded-lg overflow-hidden flex flex-col">
+                                                    <div className="w-full bg-background border-[3px] border-foreground shadow-[6px_6px_0px_#000] overflow-hidden flex flex-col">
                                                         {/* Browser Window Header */}
                                                         <div className="bg-foreground text-background px-4 py-3 flex items-center justify-between border-b-[3px] border-foreground">
                                                             <div className="flex items-center gap-1.5">
@@ -676,7 +784,7 @@ export function WritingShowcase() {
                                                         </div>
 
                                                         {/* Email Body Content */}
-                                                        <div className="p-6 sm:p-10 bg-[#FDFCF7] overflow-y-auto max-h-[500px] text-sm sm:text-base font-serif leading-relaxed text-foreground space-y-4">
+                                                        <div className="p-6 sm:p-10 bg-[#FDFCF7] text-sm sm:text-base font-serif leading-relaxed text-foreground space-y-4">
                                                             {/* Parse and render the body with custom buttons */}
                                                             {(() => {
                                                                 const bodyText = activeEmail.body;
@@ -704,9 +812,9 @@ export function WritingShowcase() {
                                                 </div>
 
                                                 {/* Right Column: Copywriting Strategy & Info */}
-                                                <div className="flex-1 p-6 sm:p-10 space-y-8 flex flex-col justify-between">
-                                                    <div className="space-y-8">
-                                                        <div className="space-y-3">
+                                                <div className="flex-1 p-6 sm:p-8 space-y-6 flex flex-col justify-between">
+                                                    <div className="space-y-6">
+                                                        <div className="space-y-2">
                                                             <div className="flex items-center gap-2">
                                                                 <span className="nb-badge px-2.5 py-1 bg-foreground text-background border-foreground text-[10px] font-black uppercase tracking-wider">
                                                                     {selectedProject.subCategory}
@@ -715,7 +823,7 @@ export function WritingShowcase() {
                                                                     Campaign Flow
                                                                 </span>
                                                             </div>
-                                                            <h2 className="text-2xl sm:text-4xl font-black uppercase tracking-tight leading-none text-foreground">
+                                                            <h2 className="text-2xl sm:text-3xl font-black uppercase tracking-tight leading-none text-foreground">
                                                                 {activeEmail.label.replace(/^\d+\.\s*/, "")}
                                                             </h2>
                                                             <p className="text-xs text-muted-foreground font-medium">
@@ -723,33 +831,47 @@ export function WritingShowcase() {
                                                             </p>
                                                         </div>
 
-                                                        {/* Strategy Brief */}
-                                                        <div className="space-y-6">
-                                                            <div className="space-y-2 p-5 border-[3px] border-foreground bg-[#FFFBF2] shadow-[4px_4px_0px_#000]">
-                                                                <h4 className="text-xs font-black uppercase tracking-wider text-[#B2822A]">Target Audience Segment</h4>
-                                                                <p className="text-sm font-bold text-foreground/80 leading-relaxed">
+                                                        {/* Strategy Brief Cards */}
+                                                        <div className="space-y-4">
+                                                            {/* Target Audience */}
+                                                            <div className="space-y-2 p-5 border-[2.5px] border-foreground bg-[var(--nb-yellow)] shadow-[3px_3px_0px_#000]">
+                                                                <h4 className="text-[10px] font-black uppercase tracking-wider text-foreground flex items-center gap-1.5">
+                                                                    <span className="w-1.5 h-1.5 bg-foreground rounded-full" />
+                                                                    Target Audience Segment
+                                                                </h4>
+                                                                <p className="text-xs sm:text-sm font-extrabold text-foreground leading-relaxed">
                                                                     {activeEmail.audience}
                                                                 </p>
                                                             </div>
 
-                                                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                                                <div className="space-y-2 p-4 border-[2.5px] border-foreground bg-[#F0FDF4] shadow-[2px_2px_0px_#000]">
-                                                                    <h4 className="text-[10px] font-black uppercase tracking-wider text-emerald-800">Campaign Segment Goal</h4>
-                                                                    <p className="text-xs font-black uppercase text-emerald-950">
+                                                            {/* Goal and Tone */}
+                                                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                                                <div className="space-y-2 p-4 border-[2.5px] border-foreground bg-[var(--nb-green)] shadow-[3px_3px_0px_#000]">
+                                                                    <h4 className="text-[10px] font-black uppercase tracking-wider text-foreground flex items-center gap-1.5">
+                                                                        <span className="w-1.5 h-1.5 bg-foreground rounded-full" />
+                                                                        Campaign Goal
+                                                                    </h4>
+                                                                    <p className="text-xs sm:text-sm font-extrabold text-foreground">
                                                                         {activeEmail.goal}
                                                                     </p>
                                                                 </div>
-                                                                <div className="space-y-2 p-4 border-[2.5px] border-foreground bg-[#F0F9FF] shadow-[2px_2px_0px_#000]">
-                                                                    <h4 className="text-[10px] font-black uppercase tracking-wider text-sky-800">Tone of Voice</h4>
-                                                                    <p className="text-xs font-black uppercase text-sky-950">
+                                                                <div className="space-y-2 p-4 border-[2.5px] border-foreground bg-[var(--nb-blue)] shadow-[3px_3px_0px_#000]">
+                                                                    <h4 className="text-[10px] font-black uppercase tracking-wider text-foreground flex items-center gap-1.5">
+                                                                        <span className="w-1.5 h-1.5 bg-foreground rounded-full" />
+                                                                        Tone of Voice
+                                                                    </h4>
+                                                                    <p className="text-xs sm:text-sm font-extrabold text-foreground">
                                                                         Authentic, Honest, Human
                                                                     </p>
                                                                 </div>
                                                             </div>
 
-                                                            <div className="space-y-3 p-5 border-[3px] border-foreground bg-[#FFF1F2] shadow-[4px_4px_0px_#000]">
-                                                                <h4 className="text-xs font-black uppercase tracking-wider text-rose-800">Copywriting Strategy & Insight</h4>
-                                                                <p className="text-xs sm:text-sm text-rose-950 font-semibold leading-relaxed">
+                                                            {/* Copywriting Strategy */}
+                                                            <div className="space-y-3 p-5 border-[2.5px] border-foreground bg-[var(--nb-pink)] shadow-[4px_4px_0px_#000] border-l-[8px] border-l-foreground">
+                                                                <h4 className="text-xs font-black uppercase tracking-wider text-foreground flex items-center gap-1.5">
+                                                                    🚀 Copywriting Strategy & Insight
+                                                                </h4>
+                                                                <p className="text-xs sm:text-sm text-foreground font-bold leading-relaxed whitespace-pre-line">
                                                                     {activeEmail.strategy}
                                                                 </p>
                                                             </div>
@@ -767,7 +889,7 @@ export function WritingShowcase() {
                                     })()}
                                 </div>
                             ) : selectedProject.details.emailDetails ? (
-                                <div className="flex flex-col lg:flex-row flex-1 border-t-[4px] border-foreground">
+                                <div className="flex flex-col lg:flex-row flex-1 border-t-[4px] border-foreground overflow-y-auto">
                                     {/* Left Column: Email Client Mockup */}
                                     <div className="w-full lg:w-[55%] p-4 sm:p-8 bg-muted/20 border-b-[4px] lg:border-b-0 lg:border-r-[4px] border-foreground">
                                         <div className="w-full bg-background border-[3px] border-foreground shadow-[6px_6px_0px_#000] rounded-lg overflow-hidden flex flex-col">
@@ -805,7 +927,7 @@ export function WritingShowcase() {
                                             </div>
 
                                             {/* Email Body Content */}
-                                            <div className="p-6 sm:p-10 bg-background/50 overflow-y-auto max-h-[500px] text-sm sm:text-base font-serif leading-relaxed text-foreground space-y-4">
+                                            <div className="p-6 sm:p-10 bg-[#FDFCF7] text-sm sm:text-base font-serif leading-relaxed text-foreground space-y-4">
                                                 {/* Parse and render the body with custom buttons */}
                                                 {(() => {
                                                     const bodyText = selectedProject.details.emailDetails.body;
@@ -815,11 +937,11 @@ export function WritingShowcase() {
                                                             const btnLabel = part.slice(1, -1);
                                                             const isPlaceholder = btnLabel.toLowerCase() === 'name' || btnLabel.toLowerCase().includes('recommendation');
                                                             if (isPlaceholder) {
-                                                                return <span key={index} className="font-bold text-foreground">[{btnLabel}]</span>;
+                                                                 return <span key={index} className="font-bold text-foreground">[{btnLabel}]</span>;
                                                             }
                                                             return (
                                                                 <span key={index} className="block my-6 text-center">
-                                                                    <span className="inline-block px-8 py-3 bg-[var(--nb-yellow)] text-foreground text-xs font-black uppercase border-[3px] border-foreground shadow-[4px_4px_0px_#000] rounded-none transform hover:translate-y-[-2px] hover:shadow-[6px_6px_0px_#000] transition-all select-none">
+                                                                    <span className="inline-block px-8 py-3 bg-[var(--nb-orange)] text-white text-xs font-black uppercase border-[3px] border-foreground shadow-[4px_4px_0px_#000] rounded-none transform hover:translate-y-[-2px] hover:shadow-[6px_6px_0px_#000] transition-all select-none">
                                                                         {btnLabel}
                                                                     </span>
                                                                 </span>
@@ -833,9 +955,9 @@ export function WritingShowcase() {
                                     </div>
 
                                     {/* Right Column: Copywriting Strategy & Info */}
-                                    <div className="flex-1 p-6 sm:p-10 space-y-8 flex flex-col justify-between">
-                                        <div className="space-y-8">
-                                            <div className="space-y-3">
+                                    <div className="flex-1 p-6 sm:p-8 space-y-6 flex flex-col justify-between">
+                                        <div className="space-y-6">
+                                            <div className="space-y-2">
                                                 <div className="flex items-center gap-2">
                                                     <span className="nb-badge px-2.5 py-1 bg-[var(--nb-orange)] text-white text-[10px] font-black uppercase tracking-wider">
                                                         {selectedProject.subCategory}
@@ -844,38 +966,52 @@ export function WritingShowcase() {
                                                         Target Campaign
                                                     </span>
                                                 </div>
-                                                <h2 className="text-2xl sm:text-4xl font-black uppercase tracking-tight leading-none text-foreground">
+                                                <h2 className="text-2xl sm:text-3xl font-black uppercase tracking-tight leading-none text-foreground">
                                                     {selectedProject.title}
                                                 </h2>
                                             </div>
 
-                                            {/* Strategy Brief */}
-                                            <div className="space-y-6">
-                                                <div className="space-y-2 p-5 border-[3px] border-foreground bg-[var(--nb-yellow)]/10 shadow-[4px_4px_0px_#000]">
-                                                    <h4 className="text-xs font-black uppercase tracking-wider text-primary">Target Audience</h4>
-                                                    <p className="text-sm font-bold text-foreground/80 leading-relaxed">
+                                            {/* Strategy Brief Cards */}
+                                            <div className="space-y-4">
+                                                {/* Target Audience */}
+                                                <div className="space-y-2 p-5 border-[2.5px] border-foreground bg-[var(--nb-yellow)] shadow-[3px_3px_0px_#000]">
+                                                    <h4 className="text-[10px] font-black uppercase tracking-wider text-foreground flex items-center gap-1.5">
+                                                        <span className="w-1.5 h-1.5 bg-foreground rounded-full" />
+                                                        Target Audience Segment
+                                                    </h4>
+                                                    <p className="text-xs sm:text-sm font-extrabold text-foreground leading-relaxed">
                                                         {selectedProject.details.emailDetails.audience}
                                                     </p>
                                                 </div>
 
-                                                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                                    <div className="space-y-2 p-4 border-[2.5px] border-foreground bg-background">
-                                                        <h4 className="text-[10px] font-black uppercase tracking-wider text-muted-foreground">Campaign Goal</h4>
-                                                        <p className="text-sm font-extrabold uppercase text-primary text-xs">
+                                                {/* Goal and Tone */}
+                                                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                                    <div className="space-y-2 p-4 border-[2.5px] border-foreground bg-[var(--nb-green)] shadow-[3px_3px_0px_#000]">
+                                                        <h4 className="text-[10px] font-black uppercase tracking-wider text-foreground flex items-center gap-1.5">
+                                                            <span className="w-1.5 h-1.5 bg-foreground rounded-full" />
+                                                            Campaign Goal
+                                                        </h4>
+                                                        <p className="text-xs sm:text-sm font-extrabold text-foreground">
                                                             {selectedProject.details.emailDetails.goal}
                                                         </p>
                                                     </div>
-                                                    <div className="space-y-2 p-4 border-[2.5px] border-foreground bg-background">
-                                                        <h4 className="text-[10px] font-black uppercase tracking-wider text-muted-foreground">Tone of Voice</h4>
-                                                        <p className="text-sm font-extrabold uppercase text-foreground text-xs">
+                                                    <div className="space-y-2 p-4 border-[2.5px] border-foreground bg-[var(--nb-blue)] shadow-[3px_3px_0px_#000]">
+                                                        <h4 className="text-[10px] font-black uppercase tracking-wider text-foreground flex items-center gap-1.5">
+                                                            <span className="w-1.5 h-1.5 bg-foreground rounded-full" />
+                                                            Tone of Voice
+                                                        </h4>
+                                                        <p className="text-xs sm:text-sm font-extrabold text-foreground">
                                                             Authentic, Honest, Human
                                                         </p>
                                                     </div>
                                                 </div>
 
-                                                <div className="space-y-3 p-5 border-[3px] border-foreground bg-muted/40">
-                                                    <h4 className="text-xs font-black uppercase tracking-wider text-primary">Copywriting Strategy & Insight</h4>
-                                                    <p className="text-xs sm:text-sm text-muted-foreground font-semibold leading-relaxed">
+                                                {/* Copywriting Strategy */}
+                                                <div className="space-y-3 p-5 border-[2.5px] border-foreground bg-[var(--nb-pink)] shadow-[4px_4px_0px_#000] border-l-[8px] border-l-foreground">
+                                                    <h4 className="text-xs font-black uppercase tracking-wider text-foreground flex items-center gap-1.5">
+                                                        🚀 Copywriting Strategy & Insight
+                                                    </h4>
+                                                    <p className="text-xs sm:text-sm text-foreground font-bold leading-relaxed whitespace-pre-line">
                                                         {selectedProject.details.emailDetails.strategy}
                                                     </p>
                                                 </div>
@@ -890,7 +1026,7 @@ export function WritingShowcase() {
                                     </div>
                                 </div>
                             ) : (
-                                <div className="flex flex-col md:flex-row flex-1">
+                                <div className="flex flex-col md:flex-row flex-1 overflow-y-auto">
                                     {/* Image Section */}
                                     {selectedProject.image && !selectedProject.fullPageImage && (
                                         <div className="w-full md:w-2/5 border-b-[4px] md:border-b-0 md:border-r-[4px] border-foreground bg-muted md:sticky md:top-0 md:h-auto h-auto max-h-[50vh] md:max-h-none overflow-hidden flex-shrink-0">
@@ -972,7 +1108,7 @@ export function WritingShowcase() {
                                         </div>
 
                                         <div className="pt-8 border-t-[2px] border-foreground/10 text-center">
-                                            <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-muted-foreground">
+                                            <p className="text-[10px] font-bold uppercase tracking-[0.25em] text-muted-foreground">
                                                 Strategic Copywriting & Creative Strategy by Sudharsan
                                             </p>
                                         </div>

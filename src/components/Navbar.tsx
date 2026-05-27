@@ -20,87 +20,79 @@ export function Navbar() {
 
     return (
         <>
-            <nav 
-                className="w-full bg-background border-b-[4px] md:border-b-[6px] border-foreground flex items-stretch relative z-[100] h-16 md:h-24 font-sans"
-                style={{ 
-                    backgroundImage: 'radial-gradient(var(--foreground) 1px, transparent 1px)', 
-                    backgroundSize: '16px 16px',
-                }}
-            >
-                <div className="absolute inset-0 bg-background/90 -z-10" />
+            <header className="sticky top-0 z-[100] w-full bg-background border-b-[3.5px] border-foreground font-sans">
+                {/* Main Navbar */}
+                <nav className="w-full flex items-center justify-between h-16 md:h-20 px-6 md:px-12">
+                    {/* Logo Section */}
+                    <Link
+                        href="/"
+                        className="flex items-center bg-transparent transition-all group relative z-10"
+                    >
+                        <span className="text-sm md:text-lg font-black uppercase tracking-widest text-foreground hover:text-primary transition-colors">
+                            Sudharsan Karthikeyan
+                        </span>
+                    </Link>
 
-                {/* Logo Section */}
-                <Link
-                    href="/"
-                    className="flex-grow md:flex-shrink-0 px-6 md:px-12 flex items-center justify-start bg-transparent transition-all group relative z-10"
-                >
-                    <span className="text-xs md:text-xl font-black uppercase tracking-tighter whitespace-nowrap text-foreground">
-                        Sudharsan Karthikeyan
-                    </span>
-                </Link>
+                    {/* Desktop Nav Links Section */}
+                    <div className="hidden md:flex items-center gap-4 relative z-10 bg-transparent">
+                        {navLinks.map((link) => {
+                            const isActive = pathname === link.href
+                            return (
+                                <Link
+                                    key={link.name}
+                                    href={link.href}
+                                    className={cn(
+                                        "px-5 py-2 text-xs md:text-sm font-black uppercase tracking-wider transition-all border-[2.5px] border-foreground",
+                                        isActive 
+                                            ? `${link.color} text-foreground shadow-[3px_3px_0px_#000] -translate-x-[2px] -translate-y-[2px]` 
+                                            : "bg-background text-foreground shadow-[3px_3px_0px_#000] -translate-x-[2px] -translate-y-[2px] hover:bg-muted/40 active:translate-x-0 active:translate-y-0 active:shadow-none"
+                                    )}
+                                >
+                                    {link.name}
+                                </Link>
+                            )
+                        })}
+                    </div>
 
-                {/* Desktop Nav Links Section */}
-                <div className="hidden md:flex items-center ml-auto px-8 gap-6 flex-nowrap h-full relative z-10 bg-transparent">
-                    {navLinks.map((link) => {
-                        const isActive = pathname === link.href
-                        return (
-                            <Link
-                                key={link.name}
-                                href={link.href}
-                                className={cn(
-                                    "flex-shrink-0 px-6 py-2.5 text-xs font-black uppercase tracking-widest whitespace-nowrap transition-all duration-300 border-[3px] border-foreground",
-                                    isActive 
-                                        ? `${link.color} text-foreground shadow-[4px_4px_0px_#000] -translate-x-1 -translate-y-1` 
-                                        : `bg-background text-foreground shadow-none hover:${link.color} hover:shadow-[4px_4px_0px_#000] hover:-translate-x-1 hover:-translate-y-1`
-                                )}
-                            >
-                                {link.name}
-                            </Link>
-                        )
-                    })}
-                </div>
-
-                {/* Mobile Menu Toggle */}
-                <button 
-                    onClick={() => setIsOpen(!isOpen)}
-                    className="md:hidden ml-auto px-6 flex items-center justify-center bg-primary text-foreground font-black uppercase text-xs tracking-widest border-l-[3px] border-foreground hover:bg-foreground hover:text-background transition-colors active:translate-y-1"
-                >
-                    {isOpen ? <X className="w-6 h-6" /> : <span className="flex items-center gap-2">MENU <Menu className="w-5 h-5" /></span>}
-                </button>
-            </nav>
+                    {/* Mobile Menu Toggle */}
+                    <div className="flex md:hidden items-center z-10">
+                        <button 
+                            onClick={() => setIsOpen(!isOpen)}
+                            className="w-10 h-10 flex items-center justify-center border-[2.5px] border-foreground bg-background text-foreground hover:bg-muted/40 transition-colors"
+                        >
+                            {isOpen ? <X size={20} /> : <Menu size={20} />}
+                        </button>
+                    </div>
+                </nav>
+            </header>
 
             {/* Mobile Menu Overlay */}
             <AnimatePresence>
                 {isOpen && (
                     <motion.div
-                        initial={{ opacity: 0, y: -20 }}
+                        initial={{ opacity: 0, y: -10 }}
                         animate={{ opacity: 1, y: 0 }}
-                        exit={{ opacity: 0, y: -20 }}
-                        className="fixed inset-0 z-[90] bg-background pt-20 px-6 pb-10 flex flex-col md:hidden overflow-y-auto"
-                        style={{ 
-                            backgroundImage: 'radial-gradient(var(--foreground) 1px, transparent 1px)', 
-                            backgroundSize: '24px 24px',
-                        }}
+                        exit={{ opacity: 0, y: -10 }}
+                        className="fixed inset-0 z-[90] bg-background pt-24 px-6 pb-10 flex flex-col md:hidden overflow-y-auto"
                     >
-                        <div className="absolute inset-0 bg-background/95 -z-10" />
-                        <div className="flex flex-col gap-4 mt-8">
+                        <div className="flex flex-col gap-5 mt-6">
                             {navLinks.map((link, i) => {
                                 const isActive = pathname === link.href
                                 return (
                                     <motion.div
                                         key={link.name}
-                                        initial={{ opacity: 0, x: -20 }}
+                                        initial={{ opacity: 0, x: -10 }}
                                         animate={{ opacity: 1, x: 0 }}
-                                        transition={{ delay: i * 0.1 }}
+                                        transition={{ delay: i * 0.05 }}
                                     >
                                         <Link
                                             href={link.href}
                                             onClick={() => setIsOpen(false)}
                                             className={cn(
-                                                "block w-full px-6 py-5 text-lg font-black uppercase tracking-widest border-[4px] border-foreground text-center",
+                                                "block w-full px-6 py-4 text-base font-black uppercase tracking-widest border-[3px] border-foreground text-center transition-all",
                                                 isActive 
-                                                    ? `${link.color} shadow-[6px_6px_0px_#000]` 
-                                                    : `bg-white hover:${link.color} transition-colors`
+                                                    ? `${link.color} text-foreground shadow-[4px_4px_0px_#000] -translate-x-[2px] -translate-y-[2px]` 
+                                                    : "bg-white text-foreground shadow-[4px_4px_0px_#000] -translate-x-[2px] -translate-y-[2px] active:translate-x-0 active:translate-y-0 active:shadow-none"
                                             )}
                                         >
                                             {link.name}
