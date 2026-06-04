@@ -40,7 +40,7 @@ export function ContactSection({
                                     Let{"'"}s Connect
                                 </div>
                             )}
-                            <h2 className="text-3xl md:text-6xl font-sans font-black uppercase leading-tight max-w-5xl mx-auto tracking-tighter">
+                            <h2 className="text-2xl sm:text-3xl md:text-4xl font-sans font-black uppercase leading-tight max-w-4xl mx-auto tracking-tighter">
                                 &quot;CURRENTLY OPEN TO SENIOR MARKETING ROLES. LET'S TALK STRATEGY.&quot;
                             </h2>
                         </div>

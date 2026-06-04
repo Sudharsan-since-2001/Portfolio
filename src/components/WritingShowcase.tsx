@@ -7,7 +7,7 @@ import { ArrowRight, PenTool, ExternalLink, X, Mail } from "lucide-react"
 
 // --- Data Types ---
 type MainCategory = "Content writing" | "Copywriting"
-type SubCategory = "ALL" | "BLOG / ARTICLES" | "AD COPY" | "EMAIL COPY" | "LANDING PAGE" | "SOCIAL MEDIA" | "CASE STUDIES"
+type SubCategory = "ALL" | "BLOG / ARTICLES" | "AD COPY" | "EMAIL COPY" | "LANDING PAGE" | "SOCIAL MEDIA" | "CASE STUDIES" | "GHOST WRITING"
 
 interface WritingProject {
     title: string
@@ -26,7 +26,9 @@ interface WritingProject {
         brandPositioning: string
         campaignFocus: string
         deliverables: { title: string; desc: string }[]
+        articleText?: string
         emailDetails?: {
+            from?: string
             subject: string
             previewText: string
             audience: string
@@ -37,6 +39,7 @@ interface WritingProject {
         emails?: {
             id: string
             label: string
+            from?: string
             subject: string
             previewText: string
             audience: string
@@ -49,6 +52,119 @@ interface WritingProject {
 
 // --- Writing Projects Data ---
 const writingProjects: WritingProject[] = [
+    {
+        title: "You Are Not Lazy. You Are Exhausted. There Is a Difference.",
+        mainCategory: "Content writing",
+        subCategory: "BLOG / ARTICLES",
+        readTime: "8 min read",
+        description: "An essay exploring the critical physiological and psychological differences between laziness and exhaustion, and why pressure only makes exhaustion worse.",
+        link: "#",
+        details: {
+            headline: "There is a version of tired that sleep does not fix.",
+            subCopy: "And understanding that difference might be the most important thing you do for yourself this year.",
+            campaignFocus: "Essay on Mental Health",
+            creativeInsight: "Addresses deep chronic stress by distinguishing choice (laziness) from deficit (exhaustion) and offering specific recovery steps.",
+            brandPositioning: "Sudharsan Karthikeyan: Thought leadership and personal essays on mental wellness and modern work culture.",
+            deliverables: [],
+            articleText: `There is a version of tired that sleep does not fix.
+
+You know the one. You wake up after eight hours and still feel like you have not rested. You cancel plans not because you do not want to go, but because the idea of getting ready feels like climbing a mountain. You sit down to do something simple and your brain just will not start. You stare at the screen. You open a tab, close it, open it again. Nothing happens.
+
+And then the voice starts. The one that says you are being dramatic. That other people have harder lives and still show up. That you are just not trying hard enough. That you are, at the core of it, lazy.
+
+Most of us have been calling it that about ourselves for years. I have. And it took me a long time to understand that what I was actually dealing with had a different name entirely.
+
+It was not laziness. It was exhaustion. And those two things require completely opposite responses.
+
+Why We Confuse the Two
+Laziness, as we typically define it, is a choice. It is the decision not to do something you are capable of doing, because you cannot be bothered. It implies that the energy and motivation are there, but the willingness is not.
+
+Exhaustion is the opposite. The willingness is there. The energy is not. Your body and mind are running on a deficit so deep that even tasks that should feel easy start to feel impossible. It is not a character flaw. It is a physiological state.
+
+The problem is that from the outside, and often from the inside too, they can look identical. In both cases, things do not get done. In both cases, you fall behind. In both cases, people around you might notice that you are not performing the way you used to.
+
+The difference is in what you need. Laziness responds to a push. Exhaustion responds to rest. When you apply pressure to exhaustion, you do not get productivity. You get breakdown.
+
+And yet push is almost always what we reach for. More deadlines. More guilt. More telling ourselves to just get on with it. We treat our exhausted nervous systems like a car that needs to be revved harder, when what they actually need is to be pulled over and refuelled.
+
+What Is Actually Happening in Your Body
+When you experience prolonged stress, whether from work, relationships, financial pressure, or simply the relentless pace of modern life, your body produces cortisol. Cortisol is your primary stress hormone and in short bursts, it is useful. It sharpens focus, increases energy, and helps you respond to challenges.
+
+The problem begins when the stress does not stop.
+
+When cortisol stays elevated for weeks or months, your body starts to adapt in ways that feel a lot like what people call laziness. Your prefrontal cortex, the part of the brain responsible for motivation, planning, and starting tasks, begins to downregulate its activity. Your dopamine system, which generates the feeling of wanting to do things, becomes less responsive. Your body starts conserving energy wherever it can because at a biological level, it has concluded that you are in a prolonged survival situation and non-essential functions need to be rationed.
+
+Starting your work presentation is a non-essential function when your nervous system thinks you are under threat.
+
+This is not weakness. This is your body doing exactly what it was designed to do. It is protecting you. The challenge is that the threat your body is responding to is not a predator in the forest. It is a calendar full of meetings, an inbox full of unread messages, and the quiet background hum of never quite being caught up.
+
+Five Signs You Are Exhausted, Not Lazy
+These are not diagnostic criteria. They are patterns. If several of them sound familiar, they are worth paying attention to.
+
+1. You used to be able to do this easily
+Laziness tends to be consistent. Exhaustion has a before and after. If there was a time, not too long ago, when you were productive, motivated, and on top of things, and now you are not, that shift is significant. Something changed. That something is usually accumulated stress that finally crossed a threshold.
+
+2. Rest does not restore you
+You take a weekend off and come back Monday feeling exactly the same. You sleep in and wake up tired. You go on a short holiday and within two days of returning, you are back to feeling depleted. This is one of the clearest signs of deep exhaustion. The recovery mechanism itself has become impaired.
+
+3. Small decisions feel disproportionately hard
+What to eat for lunch. Which email to reply to first. Whether to go to the gym or not. Decisions that used to happen automatically now feel like they require genuine effort. This is called decision fatigue and it is a direct result of a nervous system that has been running in overdrive for too long.
+
+4. You feel guilty about not doing things even when you are resting
+You sit down to watch something and cannot enjoy it because your brain is listing everything you should be doing instead. You cannot be fully present in a conversation because part of your mind is still at work. The inability to switch off is not a productivity trait. It is a symptom of a nervous system that has forgotten how to regulate itself.
+
+5. Your body is speaking when your mind will not listen
+Frequent headaches. A tight chest. Shoulders that live somewhere near your ears. Digestive issues that appear and disappear without obvious cause. Waking up at 3am with your mind already running. Your body keeps score of everything your mind tries to push through. When it starts sending these signals consistently, it is asking you to stop and pay attention.
+
+The Difference Between Rest and Recovery
+Here is something that took me too long to understand. Rest and recovery are not the same thing.
+
+Rest is passive. It is the absence of activity. Sitting on the sofa. Sleeping. Taking a break from work. Rest is necessary but on its own, for someone who is deeply exhausted, it is often not sufficient.
+
+Recovery is active. It is doing things that specifically restore the resources your nervous system has depleted. And different kinds of depletion require different kinds of recovery.
+
+If you are mentally exhausted from high cognitive load work, staring at your phone during your break is not recovery. You are still feeding your brain stimulation and information. True cognitive recovery looks like a walk without headphones. Sitting somewhere quiet. Doing something with your hands that does not require decision-making.
+
+If you are emotionally exhausted from managing relationships, conflict, or caring for others, being alone in a quiet room is probably what your nervous system needs. Not more social input, even enjoyable social input.
+
+If you are physically exhausted from poor sleep and sedentary stress, gentle movement, natural light, and consistent sleep timing do more than any number of hours lying in bed.
+
+The question is not just "am I resting?" The question is "am I recovering from the specific kind of depletion I am carrying?"
+
+What Your Exhausted Self Actually Needs From You
+This is the part most articles skip because it does not fit neatly into a listicle. What exhaustion actually needs from you is not a new productivity system or a better morning routine. It needs you to stop treating it like a problem to be solved and start treating it like information to be listened to.
+
+Exhaustion is not a failure of discipline. It is a signal that something in your life has been asking too much of you for too long. Sometimes that something is external. A job that takes more than it gives. A relationship that drains without replenishing. A pace of life that was never sustainable.
+
+Sometimes it is internal. The way you talk to yourself. The standards you hold yourself to. The inability to consider your own needs as legitimate before they become a crisis.
+
+In either case, the first step is not a solution. It is honesty. Sitting with the question of what is actually depleting you, not just what you are not managing to do, but what is taking from you faster than anything is putting back.
+
+That question, asked honestly, tends to point toward something real.
+
+When to Consider Speaking to Someone
+There is a point where exhaustion crosses into something that needs more than rest and self-awareness to address. If you have been feeling this way for more than a few weeks, if it is affecting your relationships, your work, or your basic ability to function, and if nothing you are doing seems to be making a meaningful difference, speaking to a therapist or counsellor is worth considering.
+
+This is still something many people in India approach with hesitation. There is a version of strength in our culture that means handling things alone. But speaking to someone about what you are carrying is not a sign that you cannot manage. It is a sign that you understand the difference between what you can sort out on your own and what you need support to work through. That distinction is not weakness. It is clarity.
+
+You do not need to be in crisis to deserve support. You do not need to have a diagnosis to talk to someone. You just need to be a person who has been carrying something heavy for a while and is ready to put some of it down.
+
+That is enough of a reason.
+
+One Thing Before You Close This Tab
+If you read this far, something in here probably landed.
+
+You do not have to fix everything today. You do not have to overhaul your life or book a therapy appointment or meditate for thirty minutes or any of the other things the internet will suggest before the week is out.
+
+Just do one thing. Tonight, before you pick up your phone or open another tab, ask yourself one honest question.
+
+What has been asking the most of me lately?
+
+You do not need to answer it out loud. You do not need to solve it. Just let yourself know that you asked. That you noticed. That you considered yourself worth the question.
+
+That is where everything else begins.`
+        }
+    },
     {
         title: "The most important space experiment of 2023, and almost nobody heard about it till 2026.",
         mainCategory: "Content writing",
@@ -187,7 +303,7 @@ Welcome. We're glad you're here.
 
 We're 6Dot5Ethnics - a small team obsessed with one thing: getting authentic Kanjipuram silk sarees from the looms of Tamil Nadu to women who actually deserve them.
 
-No middlemen. No markups. No machine-made imitations dressed up in fancy packaging.
+We are directly from weavers.
 
 Every saree on our site was woven by hand. It took a master weaver anywhere between 7 to 15 days to make it. And it'll be at your door in 5.
 
@@ -400,9 +516,136 @@ With love,
 6Dot5Ethnics
 
 P.S. Express delivery is available for orders placed before 12th January. You will have it in time.`,
-                    strategy: "\"New saree ah?\" is written in the cadence of how Tamil families actually speak. The festival description grounds the email in the real sensory experience of Pongal before pivoting to product. Closing in Tamil is a deliberate touch that signals cultural authenticity. The 18% off feels specific and intentional, not a round number pulled from thin air."
+                    strategy: "\"New saree ah?\" is written in the cadence of how Tamil families actually speak. The festival description grounds the email in the real sensory experience of Pongal before pivoting to product. Closing in Tamil is a deliberate touch that signals cultural authenticity. The 18% off feels specific and intentional, not a round number pulled from air."
                 }
             ]
+        }
+    },
+    {
+        title: "Ghostwritten Newsletter: Men Fashion Tamil",
+        mainCategory: "Content writing",
+        subCategory: "GHOST WRITING",
+        description: "A ghostwritten educational newsletter issue on trial room fit rules for creator Sanju (Men Fashion Tamil), tailored for young Tamil men.",
+        link: "#",
+        readTime: "2 min read",
+        details: {
+            headline: "You are buying the wrong size. That is why your clothes never look good.",
+            subCopy: "It is not your body. It is not your budget. It is one mistake almost every guy makes.",
+            campaignFocus: "Educate subscribers and drive traffic/views to YouTube styling guides.",
+            creativeInsight: "Injecting natural colloquial Tamil-English rhythms ('this is too fitted da') to mirror the creator's voice and build peer-level authenticity.",
+            brandPositioning: "Sanju (Men Fashion Tamil) — Practical fashion and grooming guides for the everyday Tamil guy.",
+            deliverables: [],
+            emailDetails: {
+                from: "Sanju | Men Fashion Tamil <newsletter@menfashiontamil.in>",
+                subject: "You are buying the wrong size. That is why your clothes never look good.",
+                previewText: "It is not your body. It is not your budget. It is one mistake almost every guy makes.",
+                audience: "Tamil men aged 18 to 32. College students, early career guys, people who watch Sanju's YouTube and want to look better but do not know where to start. Speaks Tamil-English naturally.",
+                goal: "Educate subscribers & drive YouTube video views. Sent as Issue #12 of the newsletter.",
+                body: `Hi [Name],
+
+Let me say something that no clothing brand will ever tell you.
+
+The reason you do not look good in your clothes has nothing to do with how much you spent on them.
+
+I see it every week. Guys spending 2000, 3000, sometimes 5000 rupees on a shirt and still looking like they borrowed it from their older brother. And guys spending 400 rupees at a local store and looking clean, put together, confident.
+
+The difference is not the brand. It is the fit.
+
+Here is the honest truth. Most Indian men buy one size bigger than they need. We grew up in homes where clothes were bought to "last." Amma bought your school shirt a size up so you could wear it for two years. That habit followed you into adulthood. And it is silently ruining every outfit you own.
+
+A shirt that fits your shoulders correctly will always look better than an expensive shirt that does not. Always. No exception.
+
+So before your next purchase, do this one thing. Try the size that feels slightly uncomfortable in the trial room. Not tight. Just not loose. That feeling you have of "this is too fitted da" is usually the correct size. Your eyes are calibrated to baggy because that is all you have worn.
+
+Recalibrate. One purchase at a time.
+
+This week I put up a video on exactly how to check fit in a trial room in under 2 minutes. Watch it before you go shopping next. Link is below.
+
+[Watch the trial room fit guide video]
+
+See you next Tuesday.
+
+Sanju
+Men Fashion Tamil
+
+If a friend needs to hear this, forward it. It might save him from another bad purchase.`,
+                strategy: "Opens with a hook challenging budget/body assumptions. Relates to cultural nostalgia ('Amma buying oversized school uniforms') to explain baggy shopping habits. Uses natural colloquialisms ('this is too fitted da') to make styling advice feel like a text from a friend rather than a lecture."
+            }
+        }
+    },
+    {
+        title: "Ghostwritten Newsletter: Fitness & Consistency",
+        mainCategory: "Content writing",
+        subCategory: "GHOST WRITING",
+        description: "A ghostwritten educational newsletter issue on building a realistic fitness routine, debunking the 'discipline' myth for Tamil men.",
+        link: "#",
+        readTime: "2 min read",
+        details: {
+            headline: "Fitness routines fail when they are designed only for your best days.",
+            subCopy: "Real fitness is not about being perfect. It is about repeating small things consistently for a long time.",
+            campaignFocus: "Educate subscribers on fitness consistency and drive traffic/views to YouTube fitness routine guides.",
+            creativeInsight: "Injects cultural context (Tamil family food, tea kadai snacks, weddings) to relate directly to the target demographic's lifestyle and normalize their fitness journey.",
+            brandPositioning: "Sanju (Men Fashion Tamil): Practical fashion, fitness, and lifestyle advice for the everyday Tamil guy.",
+            deliverables: [],
+            emailDetails: {
+                from: "Sanju | Men Fashion Tamil <newsletter@menfashiontamil.in>",
+                subject: "Why your fitness routine keeps failing (It is not a discipline problem)",
+                previewText: "Fitness routines fail when they are designed only for your best days. Let us build one that actually lasts.",
+                audience: "Tamil men who keep stopping and restarting fitness every few months and think the problem is “discipline.”",
+                goal: "Educate subscribers & drive YouTube video views. Sent as Issue #13 of the newsletter.",
+                body: `Hi [Name],
+
+I think most men are much harder on themselves than they should be when it comes to fitness.
+
+Especially after missing a few workouts.
+
+You go consistently for a while, things feel good, and you finally feel like you are getting your life together. Then slowly, normal life gets in the way.
+
+You stay up late for a few days. Some family function comes up during the weekend. Work becomes stressful. You skip gym for two or three days and suddenly getting back feels harder than starting.
+
+That is usually where the cycle breaks.
+
+You tell yourself you will restart properly next week. Then next month. Then “after this busy phase.”
+
+I have done this so many times myself.
+
+Earlier, every time I got motivated, I would build the most unrealistic routine possible. Trying to eat perfectly clean overnight. Working out too aggressively. Watching fitness videos and convincing myself this time everything would permanently change.
+
+For a few days, it always felt amazing.
+
+But eventually I understood something important.
+
+Fitness routines fail when they are designed only for your best days.
+
+Anybody can follow a strict routine when motivation is high and life is peaceful. The real question is whether the routine still works when life becomes messy, stressful, and unpredictable.
+
+That is where most people struggle.
+
+Especially in our lifestyle.
+
+Tamil households are built around family food, random occasions, eating outside with friends, tea kadai snacks, weddings, travel, late night work, and weekends that never go according to plan. Trying to follow some unrealistic “perfect fitness life” inside all this usually lasts only for a few weeks.
+
+The biggest progress I made happened only after I stopped trying to be perfect.
+
+Instead of asking,
+“How fast can I transform?”
+
+I started asking,
+“What kind of routine can I realistically follow for the next one year?”
+
+That changed everything for me.
+
+Because real fitness is usually boring. It is just repeating small things consistently for a long time. Eating slightly better. Training regularly even if the workout is not perfect. Sleeping properly more often. Walking more. Staying consistent even after bad weeks instead of quitting completely.
+
+This week on the channel, I spoke about how to build a realistic fitness routine for Tamil men who want results without turning fitness into a full-time personality.
+
+See you next Tuesday.
+
+Sanju
+
+Men Fashion Tamil`,
+                strategy: "Opens by validating the guilt over missed workouts to break the cycle of self-blame. Translates western fitness concepts into localized Tamil realities (tea kadai, family dinners, random weddings) to make the solution feel practical and achievable."
+            }
         }
     }
 ]
@@ -427,7 +670,7 @@ export function WritingShowcase() {
 
     const subCategories: SubCategory[] = mainCategory === "Copywriting"
         ? ["ALL", "AD COPY", "EMAIL COPY", "SOCIAL MEDIA", "LANDING PAGE"]
-        : ["ALL", "BLOG / ARTICLES", "CASE STUDIES"]
+        : ["ALL", "BLOG / ARTICLES", "CASE STUDIES", "GHOST WRITING"]
 
     const filteredProjects = writingProjects.filter(project => {
         const matchesMain = project.mainCategory === mainCategory
@@ -439,7 +682,41 @@ export function WritingShowcase() {
         <div className="space-y-12">
             {/* Header with highlight */}
             <div className="space-y-6 w-full flex flex-col items-center text-center">
-                <h2 className="text-3xl sm:text-5xl md:text-6xl font-black uppercase leading-tight tracking-tighter text-center max-w-4xl mx-auto">
+                {/* Main Category Toggle */}
+                <div className="flex justify-center w-full">
+                    <div className="flex flex-wrap justify-center gap-2 sm:gap-3">
+                        <button
+                            onClick={() => {
+                                setMainCategory("Content writing")
+                                setSubCategory("ALL")
+                            }}
+                            className={cn(
+                                "px-4 py-2.5 sm:px-6 sm:py-3 text-[10px] sm:text-xs md:text-sm font-black uppercase tracking-wider border-[2.5px] sm:border-[3px] border-foreground transition-all cursor-pointer",
+                                mainCategory === "Content writing"
+                                    ? "bg-[var(--nb-yellow)] text-foreground shadow-[3px_3px_0px_var(--foreground)] sm:shadow-[4px_4px_0px_var(--foreground)] -translate-x-[2px] -translate-y-[2px]"
+                                    : "bg-background text-foreground shadow-[2px_2px_0px_var(--foreground)] hover:shadow-[3px_3px_0px_var(--foreground)] hover:-translate-x-[1px] hover:-translate-y-[1px]"
+                            )}
+                        >
+                            Content writing
+                        </button>
+                        <button
+                            onClick={() => {
+                                setMainCategory("Copywriting")
+                                setSubCategory("ALL")
+                            }}
+                            className={cn(
+                                "px-4 py-2.5 sm:px-6 sm:py-3 text-[10px] sm:text-xs md:text-sm font-black uppercase tracking-wider border-[2.5px] sm:border-[3px] border-foreground transition-all cursor-pointer",
+                                mainCategory === "Copywriting"
+                                    ? "bg-[var(--nb-orange)] text-white shadow-[3px_3px_0px_var(--foreground)] sm:shadow-[4px_4px_0px_var(--foreground)] -translate-x-[2px] -translate-y-[2px]"
+                                    : "bg-background text-foreground shadow-[2px_2px_0px_var(--foreground)] hover:shadow-[3px_3px_0px_var(--foreground)] hover:-translate-x-[1px] hover:-translate-y-[1px]"
+                            )}
+                        >
+                            Copywriting
+                        </button>
+                    </div>
+                </div>
+
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-black uppercase leading-tight tracking-tighter text-center max-w-4xl mx-auto">
                     Words that work.{" "}
                     <span className="relative inline-block px-2">
                         <span className="relative z-10 text-foreground">Copy that converts.</span>
@@ -451,40 +728,6 @@ export function WritingShowcase() {
                         />
                     </span>
                 </h2>
-
-                {/* Main Category Toggle */}
-                <div className="flex justify-center w-full">
-                    <div className="inline-flex border-[3px] border-foreground bg-background p-1.5 shadow-[4px_4px_0px_var(--foreground)]">
-                        <button
-                            onClick={() => {
-                                setMainCategory("Content writing")
-                                setSubCategory("ALL")
-                            }}
-                            className={cn(
-                                "px-4 py-2 sm:px-6 sm:py-2.5 text-[10px] sm:text-xs md:text-sm font-black uppercase tracking-wider transition-all cursor-pointer border-[2px]",
-                                mainCategory === "Content writing"
-                                    ? "bg-[var(--nb-yellow)] text-foreground border-foreground shadow-[2px_2px_0px_var(--foreground)] -translate-x-[2px] -translate-y-[2px]"
-                                    : "bg-transparent text-foreground border-transparent hover:bg-muted/40"
-                            )}
-                        >
-                            Content writing
-                        </button>
-                        <button
-                            onClick={() => {
-                                setMainCategory("Copywriting")
-                                setSubCategory("ALL")
-                            }}
-                            className={cn(
-                                "px-4 py-2 sm:px-6 sm:py-2.5 text-[10px] sm:text-xs md:text-sm font-black uppercase tracking-wider transition-all cursor-pointer border-[2px]",
-                                mainCategory === "Copywriting"
-                                    ? "bg-[var(--nb-orange)] text-white border-foreground shadow-[2px_2px_0px_var(--foreground)] -translate-x-[2px] -translate-y-[2px]"
-                                    : "bg-transparent text-foreground border-transparent hover:bg-muted/40"
-                            )}
-                        >
-                            Copywriting
-                        </button>
-                    </div>
-                </div>
             </div>
 
             {/* Sub-Category Filter Chips */}
@@ -506,12 +749,7 @@ export function WritingShowcase() {
             </div>
 
             {/* Project Grid */}
-            <div className={cn(
-                "w-full",
-                mainCategory === "Copywriting" 
-                    ? "columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6" 
-                    : "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
-            )}>
+            <div className="w-full columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6">
                 <AnimatePresence mode="popLayout">
                     {filteredProjects.length > 0 ? (
                         filteredProjects.map((project) => (
@@ -523,10 +761,20 @@ export function WritingShowcase() {
                                 exit={{ opacity: 0, scale: 0.9 }}
                                 transition={{ duration: 0.3 }}
                                 className={cn(
-                                    mainCategory === "Copywriting" 
-                                        ? "break-inside-avoid"
-                                        : "nb-card flex flex-col bg-background group overflow-hidden"
+                                    "break-inside-avoid mb-6",
+                                    mainCategory === "Content writing" 
+                                        ? "nb-card flex flex-col bg-background group overflow-hidden cursor-pointer"
+                                        : ""
                                 )}
+                                onClick={() => {
+                                    if (mainCategory === "Content writing") {
+                                        if (project.details) {
+                                            setSelectedProject(project)
+                                        } else {
+                                            window.open(project.link, "_blank", "noopener,noreferrer")
+                                        }
+                                    }
+                                }}
                             >
                                 {mainCategory === "Copywriting" ? (
                                     project.image ? (
@@ -585,74 +833,66 @@ export function WritingShowcase() {
                                         </div>
                                     )
                                 ) : (
-                                    <>
-                                        {project.image && (
-                                            <div 
-                                                className="w-full h-48 sm:h-56 border-b-[2px] border-foreground overflow-hidden bg-muted flex-shrink-0 cursor-pointer relative"
-                                                onClick={() => project.details && setSelectedProject(project)}
-                                            >
-                                                <img 
-                                                    src={project.image} 
-                                                    alt={project.title}
-                                                    className={cn(
-                                                        "w-full h-full object-cover transition-transform duration-500 group-hover:scale-105",
-                                                        project.fullPageImage ? "object-top" : "object-center"
-                                                    )}
-                                                />
-                                                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors" />
-                                            </div>
-                                        )}
-                                        <div className="p-5 flex-grow flex flex-col">
-                                            <div className="flex-grow space-y-4 mb-6">
-                                                <div className="flex justify-between items-start">
-                                                    <span className="nb-badge px-2.5 py-1 bg-muted text-muted-foreground text-[10px] font-black uppercase">
-                                                        {project.subCategory}
-                                                    </span>
-                                                    {(project.readTime || project.results) && (
-                                                        <span className="text-[10px] font-black uppercase text-primary">
-                                                            {project.readTime || project.results}
-                                                        </span>
-                                                    )}
+                                    <div className="flex flex-col h-full justify-between bg-gradient-to-br from-[#FFFDF9] to-[#F7F2E8] p-6 min-h-[220px]">
+                                        <div className="space-y-4">
+                                            {project.image && (
+                                                <div 
+                                                    className="w-full h-48 sm:h-56 border-[3px] border-foreground overflow-hidden bg-muted relative mb-4 shadow-[3px_3px_0px_#000]"
+                                                >
+                                                    <img 
+                                                        src={project.image} 
+                                                        alt={project.title}
+                                                        className={cn(
+                                                            "w-full h-full object-cover transition-transform duration-500 group-hover:scale-105",
+                                                            project.fullPageImage ? "object-top" : "object-center"
+                                                        )}
+                                                    />
+                                                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors" />
                                                 </div>
-                                                <h3 className="text-xl font-black uppercase leading-tight group-hover:text-primary transition-colors">
-                                                    {project.title}
-                                                </h3>
-                                                <p className="text-sm text-muted-foreground leading-relaxed font-medium line-clamp-3">
-                                                    {project.description}
-                                                </p>
-                                            </div>
-                                            {project.details ? (
-                                                <button 
-                                                    onClick={() => setSelectedProject(project)}
-                                                    className="nb-btn w-full py-3 bg-background text-foreground flex items-center justify-center gap-2 text-xs group-hover:bg-[var(--nb-yellow)] transition-colors font-black uppercase"
-                                                >
-                                                    <span>View Project</span>
-                                                    <ArrowRight size={14} />
-                                                </button>
-                                            ) : (
-                                                <a 
-                                                    href={project.link} 
-                                                    target="_blank" 
-                                                    rel="noopener noreferrer" 
-                                                    className="nb-btn w-full py-3 bg-background text-foreground flex items-center justify-center gap-2 text-xs group-hover:bg-[var(--nb-yellow)] transition-colors font-black uppercase"
-                                                >
-                                                    <span>{mainCategory === "Content writing" ? "Read Article" : "View Project"}</span>
-                                                    <ArrowRight size={14} />
-                                                </a>
                                             )}
+                                            <div className="flex justify-between items-center">
+                                                <span className={cn(
+                                                    "nb-badge px-2.5 py-1 text-[9px] font-black uppercase tracking-[0.12em] border-[2px] border-foreground shadow-[2px_2px_0px_#000]",
+                                                    project.subCategory === "BLOG / ARTICLES" && "bg-[#C4A0FF] text-foreground",
+                                                    project.subCategory === "CASE STUDIES" && "bg-[#90C8FF] text-foreground",
+                                                    project.subCategory === "GHOST WRITING" && "bg-[#FF90B3] text-foreground",
+                                                    !["BLOG / ARTICLES", "CASE STUDIES", "GHOST WRITING"].includes(project.subCategory) && "bg-[var(--nb-yellow)] text-foreground"
+                                                )}>
+                                                    {project.subCategory}
+                                                </span>
+                                                {(project.readTime || project.results) && (
+                                                    <span className="text-[10px] font-black uppercase text-primary tracking-wider">
+                                                        {project.readTime || project.results}
+                                                    </span>
+                                                )}
+                                            </div>
+                                            <h3 className="text-base sm:text-lg font-black tracking-tight text-foreground leading-snug group-hover:text-primary transition-colors pt-1">
+                                                {project.title}
+                                            </h3>
+                                            <p className="text-xs text-muted-foreground/90 leading-relaxed font-medium line-clamp-3">
+                                                {project.description}
+                                            </p>
                                         </div>
-                                    </>
+                                        <div className="pt-4 mt-6 border-t-[2px] border-dashed border-foreground/15 flex items-center justify-between text-[10px] font-black uppercase tracking-wider text-foreground group-hover:text-primary transition-colors">
+                                            <span>
+                                                {project.subCategory === "BLOG / ARTICLES" ? "Read Essay" :
+                                                 project.subCategory === "GHOST WRITING" ? "Read Newsletter" :
+                                                 project.subCategory === "CASE STUDIES" ? "View Case Study" : "View Details"}
+                                            </span>
+                                            <div className="w-6 h-6 border-[2px] border-foreground bg-background flex items-center justify-center shadow-[2px_2px_0px_#000] group-hover:translate-x-0.5 group-hover:bg-[var(--nb-yellow)] transition-all">
+                                                <ArrowRight size={12} className="text-foreground" />
+                                            </div>
+                                        </div>
+                                    </div>
                                 )}
                             </motion.div>
                         ))
                     ) : (
-                        <motion.div 
-                            initial={{ opacity: 0 }}
-                            animate={{ opacity: 1 }}
+                        <div 
                             className="col-span-full py-20 text-center border-[3px] border-dashed border-muted-foreground/30"
                         >
                             <p className="text-muted-foreground font-black uppercase tracking-widest">No projects found in this category yet.</p>
-                        </motion.div>
+                        </div>
                     )}
                 </AnimatePresence>
             </div>
@@ -767,7 +1007,7 @@ export function WritingShowcase() {
                                                         <div className="p-4 sm:p-6 border-b-[2px] border-foreground bg-background space-y-2 text-xs font-bold text-foreground">
                                                             <div className="flex border-b border-muted/30 pb-2">
                                                                 <span className="w-16 text-muted-foreground uppercase text-[10px]">From:</span>
-                                                                <span className="font-semibold text-primary">6Dot5Ethnics &lt;hello@6dot5ethnics.com&gt;</span>
+                                                                <span className="font-semibold text-primary">{activeEmail.from || "6Dot5Ethnics <hello@6dot5ethnics.com>"}</span>
                                                             </div>
                                                             <div className="flex border-b border-muted/30 pb-2">
                                                                 <span className="w-16 text-muted-foreground uppercase text-[10px]">To:</span>
@@ -910,7 +1150,7 @@ export function WritingShowcase() {
                                             <div className="p-4 sm:p-6 border-b-[2px] border-foreground bg-background space-y-2 text-xs font-bold text-foreground">
                                                 <div className="flex border-b border-muted/30 pb-2">
                                                     <span className="w-16 text-muted-foreground uppercase text-[10px]">From:</span>
-                                                    <span className="font-semibold text-primary">6Dot5Ethnics &lt;hello@6dot5ethnics.com&gt;</span>
+                                                    <span className="font-semibold text-primary">{selectedProject.details.emailDetails.from || "6Dot5Ethnics <hello@6dot5ethnics.com>"}</span>
                                                 </div>
                                                 <div className="flex border-b border-muted/30 pb-2">
                                                     <span className="w-16 text-muted-foreground uppercase text-[10px]">To:</span>
@@ -1025,9 +1265,83 @@ export function WritingShowcase() {
                                         </div>
                                     </div>
                                 </div>
+) : selectedProject.details.articleText ? (
+                                <div className="flex-1 p-6 sm:p-10 md:p-16 overflow-y-auto bg-[#FDFCF7]">
+                                    <div className="max-w-3xl mx-auto space-y-8">
+                                        <div className="space-y-4">
+                                            <span className="nb-badge px-2.5 py-1 bg-foreground text-background border-foreground text-[9px] font-black uppercase tracking-[0.15em]">
+                                                {selectedProject.subCategory}
+                                            </span>
+                                            <h1 className="text-3xl sm:text-4xl md:text-5xl font-black uppercase leading-tight tracking-tighter text-foreground">
+                                                {selectedProject.title}
+                                            </h1>
+                                            {selectedProject.details.subCopy && (
+                                                <p className="text-base sm:text-lg font-bold text-muted-foreground leading-relaxed italic">
+                                                    {selectedProject.details.subCopy}
+                                                </p>
+                                            )}
+                                            <div className="flex flex-wrap items-center gap-4 text-[10px] font-black uppercase tracking-wider text-muted-foreground pt-2">
+                                                <span>By Sudharsan Karthikeyan</span>
+                                                <span className="hidden sm:inline">•</span>
+                                                <span>{selectedProject.readTime || "8 min read"}</span>
+                                                <span className="hidden sm:inline">•</span>
+                                                <span className="text-primary">Mental Health</span>
+                                            </div>
+                                        </div>
+                                        <div className="h-[2px] bg-foreground/20" />
+                                        <div className="space-y-6">
+                                            {selectedProject.details.articleText.split("\n\n").map((para, idx) => {
+                                                const trimmed = para.trim();
+                                                if (!trimmed) return null;
+
+                                                // Check if it's one of the main headers
+                                                const isMainHeader = [
+                                                    "Why We Confuse the Two",
+                                                    "What Is Actually Happening in Your Body",
+                                                    "Five Signs You Are Exhausted, Not Lazy",
+                                                    "The Difference Between Rest and Recovery",
+                                                    "What Your Exhausted Self Actually Needs From You",
+                                                    "When to Consider Speaking to Someone",
+                                                    "One Thing Before You Close This Tab"
+                                                ].includes(trimmed);
+
+                                                // Check if it's a list subheader like "1. You used to be able..."
+                                                const isListHeader = /^\d+\.\s/.test(trimmed);
+
+                                                if (isMainHeader) {
+                                                    return (
+                                                        <h2 key={idx} className="text-xl sm:text-2xl font-black uppercase tracking-tight text-foreground pt-6 pb-2 font-sans border-b-[2px] border-foreground/10">
+                                                            {trimmed}
+                                                        </h2>
+                                                    );
+                                                }
+
+                                                if (isListHeader) {
+                                                    return (
+                                                        <h3 key={idx} className="text-base sm:text-lg font-black uppercase tracking-tight text-primary pt-4 pb-1 font-sans">
+                                                            {trimmed}
+                                                        </h3>
+                                                    );
+                                                }
+
+                                                // Normal paragraph
+                                                return (
+                                                    <p 
+                                                        key={idx} 
+                                                        className={cn(
+                                                            "font-serif text-sm sm:text-base leading-relaxed text-foreground/90 font-medium",
+                                                            idx === 0 ? "first-letter:text-5xl first-letter:font-black first-letter:float-left first-letter:mr-3 first-letter:mt-1 first-letter:text-primary first-letter:font-sans" : ""
+                                                        )}
+                                                    >
+                                                        {trimmed}
+                                                    </p>
+                                                );
+                                            })}
+                                        </div>
+                                    </div>
+                                </div>
                             ) : (
                                 <div className="flex flex-col md:flex-row flex-1 overflow-y-auto">
-                                    {/* Image Section */}
                                     {selectedProject.image && !selectedProject.fullPageImage && (
                                         <div className="w-full md:w-2/5 border-b-[4px] md:border-b-0 md:border-r-[4px] border-foreground bg-muted md:sticky md:top-0 md:h-auto h-auto max-h-[50vh] md:max-h-none overflow-hidden flex-shrink-0">
                                             <img 

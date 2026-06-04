@@ -25,7 +25,7 @@ export default function ContactPage() {
                                 <div className="inline-block nb-badge px-4 py-2 bg-[var(--nb-yellow)] text-foreground mb-4">
                                     Let{"'"}s Connect
                                 </div>
-                                <h1 className="text-4xl md:text-6xl font-sans font-black uppercase leading-tight max-w-5xl mx-auto">
+                                <h1 className="text-2xl sm:text-3xl md:text-4xl font-sans font-black uppercase leading-tight max-w-4xl mx-auto tracking-tighter">
                                     &quot;CURRENTLY OPEN TO SENIOR MARKETING ROLES. LET'S TALK STRATEGY.&quot;
                                 </h1>
                             </div>
