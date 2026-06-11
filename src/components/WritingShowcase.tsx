@@ -47,11 +47,47 @@ interface WritingProject {
             body: string
             strategy: string
         }[]
+        adDetails?: {
+            platform: string
+            format: string
+            primaryText: string
+            headline: string
+            cta: string
+            description: string
+        }
     }
 }
 
 // --- Writing Projects Data ---
 const writingProjects: WritingProject[] = [
+    {
+        title: "Esha Processing: B2B Saree Finishing Ad Copy",
+        mainCategory: "Copywriting",
+        subCategory: "AD COPY",
+        description: "High-converting Facebook/Instagram ad copy for a professional saree finishing service (Esha Processing) targeting retail store owners in Salem.",
+        link: "#",
+        image: "/projects/saree-finishing-ad.png",
+        details: {
+            headline: "Customers judge a saree within seconds. Make every saree look premium before it reaches your shelves.",
+            subCopy: "Try your first batch at 50% off. Call or WhatsApp now.",
+            campaignFocus: "B2B Lead Generation for Esha Processing (Calendaring, Mangling & Decatizing).",
+            creativeInsight: "Saree shop owners know that visual presentation directly affects sales speed and price perception. The copy speaks directly to this B2B paint point ('Customers judge a saree within seconds') and offers an irresistible low-friction trial ('first batch at 50% off') to lower the barrier to entry.",
+            brandPositioning: "Esha Processing — Salem's trusted finisher for the last decade, offering premium calendaring, mangling & decatizing.",
+            deliverables: [
+                { title: "Primary Text Copy", desc: "Facebook/Instagram ad copy designed to capture B2B interest." },
+                { title: "Targeting Strategy", desc: "Salem-based saree manufacturers, wholesalers, and retail shops." },
+                { title: "Introductory Offer", desc: "50% off the first batch to incentivize low-risk testing." }
+            ],
+            adDetails: {
+                platform: "Facebook / Instagram",
+                format: "Single Image Ad",
+                primaryText: "Customers judge a saree within seconds. Make every saree look premium before it reaches your shelves.  Esha Processing handles calendaring, mangling & decatizing so your stock always looks shop-ready—on time, every time. Salem's trusted finisher for last decade. Try your first batch at 50% off. Call or WhatsApp now.",
+                headline: "Saree Finishing Service — Esha Processing",
+                cta: "WhatsApp Now",
+                description: "Salem's Trusted Finisher for over 10 Years"
+            }
+        }
+    },
     {
         title: "You Are Not Lazy. You Are Exhausted. There Is a Difference.",
         mainCategory: "Content writing",
@@ -779,26 +815,44 @@ export function WritingShowcase() {
                                 {mainCategory === "Copywriting" ? (
                                     project.image ? (
                                         <div 
-                                            className="w-full relative group cursor-pointer border-[3px] border-foreground shadow-[4px_4px_0px_var(--foreground)] hover:shadow-[6px_6px_0px_var(--foreground)] hover:-translate-y-1 hover:-translate-x-1 transition-all overflow-hidden"
+                                            className="w-full p-6 relative group cursor-pointer border-[3px] border-foreground bg-gradient-to-br from-[#FFFDF9] to-[#F7F2E8] shadow-[4px_4px_0px_var(--foreground)] hover:shadow-[6px_6px_0px_var(--foreground)] hover:-translate-y-1 hover:-translate-x-1 transition-all flex flex-col justify-between min-h-[220px]"
                                             onClick={() => project.details && setSelectedProject(project)}
                                         >
-                                            <div className={cn(
-                                                "w-full overflow-hidden",
-                                                project.subCategory === "LANDING PAGE" ? "aspect-[16/10]" : ""
-                                            )}>
-                                                <img 
-                                                    src={project.image} 
-                                                    alt={project.title}
-                                                    className={cn(
-                                                        "w-full transition-transform duration-500 group-hover:scale-105",
-                                                        project.subCategory === "LANDING PAGE" ? "h-full object-cover object-top" : "h-auto object-cover"
+                                            <div className="space-y-4">
+                                                <div 
+                                                    className="w-full overflow-hidden border-[2.5px] border-foreground bg-muted relative mb-4 shadow-[3px_3px_0px_#000]"
+                                                >
+                                                    <img 
+                                                        src={project.image} 
+                                                        alt={project.title}
+                                                        className="w-full object-cover aspect-[16/10] transition-transform duration-500 group-hover:scale-105"
+                                                    />
+                                                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors" />
+                                                </div>
+                                                <div className="flex justify-between items-center">
+                                                    <span className="nb-badge px-3 py-1 bg-foreground text-background border-foreground text-[9px] font-black uppercase tracking-[0.15em]">
+                                                        {project.subCategory}
+                                                    </span>
+                                                    {project.results && (
+                                                        <span className="text-[10px] font-black uppercase text-primary tracking-wider">
+                                                            {project.results}
+                                                        </span>
                                                     )}
-                                                />
+                                                </div>
+                                                <div className="space-y-2">
+                                                    <h3 className="text-lg sm:text-xl font-black uppercase leading-tight text-foreground group-hover:text-primary transition-colors">
+                                                        {project.title}
+                                                    </h3>
+                                                    <p className="text-xs text-muted-foreground leading-relaxed font-medium line-clamp-3">
+                                                        {project.description}
+                                                    </p>
+                                                </div>
                                             </div>
-                                            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors flex items-center justify-center">
-                                                <span className="opacity-0 group-hover:opacity-100 bg-[var(--nb-yellow)] text-foreground px-4 py-2 text-xs font-black uppercase border-[2px] border-foreground shadow-[2px_2px_0px_#000] transform translate-y-4 group-hover:translate-y-0 transition-all">
-                                                    View Project
-                                                </span>
+                                            <div className="pt-4 mt-4 border-t-[2px] border-foreground/10 flex items-center justify-between text-[10px] font-black uppercase tracking-wider text-foreground group-hover:text-primary transition-colors">
+                                                <span>View Strategy & Copy</span>
+                                                <div className="w-6 h-6 border-[2px] border-foreground bg-background flex items-center justify-center shadow-[2px_2px_0px_#000] group-hover:translate-x-0.5 group-hover:bg-[var(--nb-yellow)] transition-all">
+                                                    <ArrowRight size={12} className="text-foreground" />
+                                                </div>
                                             </div>
                                         </div>
                                     ) : (
@@ -1127,6 +1181,144 @@ export function WritingShowcase() {
                                             </div>
                                         );
                                     })()}
+                                </div>
+                            ) : selectedProject.details.adDetails ? (
+                                <div className="flex flex-col lg:flex-row flex-1 border-t-[4px] border-foreground overflow-y-auto">
+                                    {/* Left Column: Social Ad Mockup */}
+                                    <div className="w-full lg:w-[50%] p-4 sm:p-6 bg-muted/20 border-b-[4px] lg:border-b-0 lg:border-r-[4px] border-foreground flex items-center justify-center">
+                                        <div className="w-full max-w-[420px] bg-background border-[3px] border-foreground shadow-[6px_6px_0px_#000] overflow-hidden flex flex-col">
+                                            {/* Window Header */}
+                                            <div className="bg-foreground text-background px-4 py-2 flex items-center justify-between border-b-[3px] border-foreground">
+                                                <div className="flex items-center gap-1.5">
+                                                    <div className="w-3 h-3 rounded-full bg-[var(--nb-pink)] border-2 border-background" />
+                                                    <div className="w-3 h-3 rounded-full bg-[var(--nb-yellow)] border-2 border-background" />
+                                                    <div className="w-3 h-3 rounded-full bg-[var(--nb-green)] border-2 border-background" />
+                                                </div>
+                                                <span className="text-[10px] font-black uppercase tracking-wider opacity-85 flex items-center gap-1">
+                                                    ✨ Ad Copy Preview
+                                                </span>
+                                                <div className="w-12" />
+                                            </div>
+
+                                            {/* Social Post Header */}
+                                            <div className="p-4 flex items-center gap-3 border-b-[2px] border-foreground/10">
+                                                <div className="w-10 h-10 rounded-full border-[2.5px] border-foreground bg-[var(--nb-orange)] flex items-center justify-center font-black text-white text-xs">
+                                                    EP
+                                                </div>
+                                                <div>
+                                                    <h4 className="text-xs font-black uppercase tracking-wider text-foreground">Esha Processing</h4>
+                                                    <p className="text-[9px] font-black uppercase text-muted-foreground tracking-wider flex items-center gap-1">
+                                                        Sponsored • 🌐
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            {/* Primary Text */}
+                                            <div className="px-4 py-3 text-xs sm:text-sm font-medium leading-relaxed text-foreground whitespace-pre-wrap">
+                                                {selectedProject.details.adDetails.primaryText}
+                                            </div>
+
+                                            {/* Ad Image */}
+                                            {selectedProject.image && (
+                                                <div className="w-full border-y-[3px] border-foreground overflow-hidden aspect-square bg-muted">
+                                                    <img 
+                                                        src={selectedProject.image} 
+                                                        alt="Ad Creative" 
+                                                        className="w-full h-full object-cover"
+                                                    />
+                                                </div>
+                                            )}
+
+                                            {/* Ad Footer / CTA Bar */}
+                                            <div className="p-4 bg-muted/10 flex items-center justify-between gap-4">
+                                                <div className="space-y-1 min-w-0 flex-1">
+                                                    <p className="text-[9px] font-black uppercase text-muted-foreground tracking-widest truncate">
+                                                        {selectedProject.details.adDetails.platform.toUpperCase()}
+                                                    </p>
+                                                    <h5 className="text-xs sm:text-sm font-black uppercase text-foreground truncate">
+                                                        {selectedProject.details.adDetails.headline}
+                                                    </h5>
+                                                    <p className="text-[10px] font-medium text-muted-foreground truncate">
+                                                        {selectedProject.details.adDetails.description}
+                                                    </p>
+                                                </div>
+                                                <div className="px-4 py-2 bg-[var(--nb-yellow)] text-foreground text-[10px] font-black uppercase border-[2px] border-foreground shadow-[3px_3px_0px_#000] whitespace-nowrap">
+                                                    {selectedProject.details.adDetails.cta}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    {/* Right Column: Copywriting Strategy & Info */}
+                                    <div className="flex-1 p-6 sm:p-8 space-y-6 flex flex-col justify-between">
+                                        <div className="space-y-6">
+                                            <div className="space-y-2">
+                                                <div className="flex items-center gap-2">
+                                                    <span className="nb-badge px-2.5 py-1 bg-[var(--nb-orange)] text-white text-[10px] font-black uppercase tracking-wider">
+                                                        {selectedProject.subCategory}
+                                                    </span>
+                                                    <span className="text-[10px] font-black text-muted-foreground uppercase tracking-widest">
+                                                        Target Campaign
+                                                    </span>
+                                                </div>
+                                                <h2 className="text-2xl sm:text-3xl font-black uppercase tracking-tight leading-none text-foreground">
+                                                    {selectedProject.title}
+                                                </h2>
+                                            </div>
+
+                                            {/* Strategy Brief Cards */}
+                                            <div className="space-y-4">
+                                                {/* Target Audience */}
+                                                <div className="space-y-2 p-5 border-[2.5px] border-foreground bg-[var(--nb-yellow)] shadow-[3px_3px_0px_#000]">
+                                                    <h4 className="text-[10px] font-black uppercase tracking-wider text-foreground flex items-center gap-1.5">
+                                                        <span className="w-1.5 h-1.5 bg-foreground rounded-full" />
+                                                        Target Audience Segment
+                                                    </h4>
+                                                    <p className="text-xs sm:text-sm font-extrabold text-foreground leading-relaxed">
+                                                        Saree Manufacturers, Wholesalers, and Retail Showroom Owners in Salem & surrounding textile hubs.
+                                                    </p>
+                                                </div>
+
+                                                {/* Goal and Tone */}
+                                                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                                    <div className="space-y-2 p-4 border-[2.5px] border-foreground bg-[var(--nb-green)] shadow-[3px_3px_0px_#000]">
+                                                        <h4 className="text-[10px] font-black uppercase tracking-wider text-foreground flex items-center gap-1.5">
+                                                            <span className="w-1.5 h-1.5 bg-foreground rounded-full" />
+                                                            Campaign Goal
+                                                        </h4>
+                                                        <p className="text-xs sm:text-sm font-extrabold text-foreground">
+                                                            B2B Lead Generation & Trial Bookings
+                                                        </p>
+                                                    </div>
+                                                    <div className="space-y-2 p-4 border-[2.5px] border-foreground bg-[var(--nb-blue)] shadow-[3px_3px_0px_#000]">
+                                                        <h4 className="text-[10px] font-black uppercase tracking-wider text-foreground flex items-center gap-1.5">
+                                                            <span className="w-1.5 h-1.5 bg-foreground rounded-full" />
+                                                            Tone of Voice
+                                                        </h4>
+                                                        <p className="text-xs sm:text-sm font-extrabold text-foreground">
+                                                            Professional, Authoritative, Direct
+                                                        </p>
+                                                    </div>
+                                                </div>
+
+                                                {/* Copywriting Strategy */}
+                                                <div className="space-y-3 p-5 border-[2.5px] border-foreground bg-[var(--nb-pink)] shadow-[4px_4px_0px_#000] border-l-[8px] border-l-foreground">
+                                                    <h4 className="text-xs font-black uppercase tracking-wider text-foreground flex items-center gap-1.5">
+                                                        🚀 Copywriting Strategy & Insight
+                                                    </h4>
+                                                    <p className="text-xs sm:text-sm text-foreground font-bold leading-relaxed whitespace-pre-line">
+                                                        {selectedProject.details.creativeInsight}
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div className="pt-6 border-t-[2px] border-foreground/10 text-center lg:text-left">
+                                            <p className="text-[9px] font-bold uppercase tracking-[0.25em] text-muted-foreground">
+                                                Ad Copy & B2B Strategy by Sudharsan
+                                            </p>
+                                        </div>
+                                    </div>
                                 </div>
                             ) : selectedProject.details.emailDetails ? (
                                 <div className="flex flex-col lg:flex-row flex-1 border-t-[4px] border-foreground overflow-y-auto">
