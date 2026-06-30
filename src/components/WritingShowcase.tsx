@@ -7,7 +7,7 @@ import { ArrowRight, PenTool, ExternalLink, X, Mail } from "lucide-react"
 
 // --- Data Types ---
 type MainCategory = "Content writing" | "Copywriting"
-type SubCategory = "ALL" | "BLOG / ARTICLES" | "AD COPY" | "EMAIL COPY" | "LANDING PAGE" | "SOCIAL MEDIA" | "CASE STUDIES" | "GHOST WRITING"
+type SubCategory = "ALL" | "BLOG / ARTICLES" | "AD COPY" | "EMAIL COPY" | "LANDING PAGE" | "SOCIAL MEDIA" | "CASE STUDIES" | "GHOST WRITING" | "BOOKS"
 
 interface WritingProject {
     title: string
@@ -273,7 +273,7 @@ That is where everything else begins.`
     {
         title: "The Lovers of Neptune",
         mainCategory: "Content writing",
-        subCategory: "BLOG / ARTICLES",
+        subCategory: "BOOKS",
         readTime: "Novel Fragment",
         description: "A captivating exploration of science fiction and human connection set on the farthest reaches of our solar system.",
         link: "https://the-lovers-of-neptune.vercel.app/"
@@ -747,6 +747,18 @@ Men Fashion Tamil`,
     }
 ]
 
+const subCategoryColors: Record<SubCategory, string> = {
+    "ALL": "bg-foreground text-background",
+    "BLOG / ARTICLES": "bg-[#C4A0FF] text-foreground",
+    "CASE STUDIES": "bg-[#90C8FF] text-foreground",
+    "GHOST WRITING": "bg-[#FF90B3] text-foreground",
+    "BOOKS": "bg-[#8FEFBF] text-foreground",
+    "AD COPY": "bg-[#FFD275] text-foreground",
+    "EMAIL COPY": "bg-[#FFA285] text-foreground",
+    "SOCIAL MEDIA": "bg-[#E599FF] text-foreground",
+    "LANDING PAGE": "bg-[#8EE6E6] text-foreground"
+}
+
 export function WritingShowcase() {
     const [mainCategory, setMainCategory] = React.useState<MainCategory>("Content writing")
     const [subCategory, setSubCategory] = React.useState<SubCategory>("ALL")
@@ -767,7 +779,7 @@ export function WritingShowcase() {
 
     const subCategories: SubCategory[] = mainCategory === "Copywriting"
         ? ["ALL", "AD COPY", "EMAIL COPY", "SOCIAL MEDIA", "LANDING PAGE"]
-        : ["ALL", "BLOG / ARTICLES", "CASE STUDIES", "GHOST WRITING"]
+        : ["ALL", "BLOG / ARTICLES", "CASE STUDIES", "GHOST WRITING", "BOOKS"]
 
     const filteredProjects = writingProjects.filter(project => {
         const matchesMain = project.mainCategory === mainCategory
@@ -828,16 +840,16 @@ export function WritingShowcase() {
             </div>
 
             {/* Sub-Category Filter Chips */}
-            <div className="flex flex-wrap gap-2 w-full">
+            <div className="flex flex-wrap justify-center gap-2 sm:gap-3 w-full">
                 {subCategories.map((cat) => (
                     <button
                         key={cat}
                         onClick={() => setSubCategory(cat)}
                         className={cn(
-                            "px-4 py-1.5 border-[2px] border-foreground text-[10px] sm:text-xs font-black uppercase transition-all cursor-pointer",
+                            "px-4 py-1.5 border-[2px] border-foreground text-[10px] sm:text-xs font-black uppercase transition-all cursor-pointer shadow-[2px_2px_0px_var(--foreground)] hover:shadow-[4px_4px_0px_var(--foreground)] hover:-translate-x-[2px] hover:-translate-y-[2px]",
                             subCategory === cat
-                                ? "bg-foreground text-background shadow-[3px_3px_0px_var(--muted-foreground)] -translate-x-[1px] -translate-y-[1px]"
-                                : "bg-background text-foreground shadow-[1px_1px_0px_var(--foreground)] hover:shadow-[2px_2px_0px_var(--foreground)] hover:-translate-x-[1px] hover:-translate-y-[1px]"
+                                ? `${subCategoryColors[cat]} shadow-[4px_4px_0px_var(--foreground)] -translate-x-[2px] -translate-y-[2px]`
+                                : "bg-background text-foreground"
                         )}
                     >
                         {cat}
@@ -978,7 +990,8 @@ export function WritingShowcase() {
                                                     project.subCategory === "BLOG / ARTICLES" && "bg-[#C4A0FF] text-foreground",
                                                     project.subCategory === "CASE STUDIES" && "bg-[#90C8FF] text-foreground",
                                                     project.subCategory === "GHOST WRITING" && "bg-[#FF90B3] text-foreground",
-                                                    !["BLOG / ARTICLES", "CASE STUDIES", "GHOST WRITING"].includes(project.subCategory) && "bg-[var(--nb-yellow)] text-foreground"
+                                                    project.subCategory === "BOOKS" && "bg-[#8FEFBF] text-foreground",
+                                                    !["BLOG / ARTICLES", "CASE STUDIES", "GHOST WRITING", "BOOKS"].includes(project.subCategory) && "bg-[var(--nb-yellow)] text-foreground"
                                                 )}>
                                                     {project.subCategory}
                                                 </span>
@@ -999,7 +1012,8 @@ export function WritingShowcase() {
                                             <span>
                                                 {project.subCategory === "BLOG / ARTICLES" ? "Read Essay" :
                                                  project.subCategory === "GHOST WRITING" ? "Read Newsletter" :
-                                                 project.subCategory === "CASE STUDIES" ? "View Case Study" : "View Details"}
+                                                 project.subCategory === "CASE STUDIES" ? "View Case Study" :
+                                                 project.subCategory === "BOOKS" ? "Read Fragment" : "View Details"}
                                             </span>
                                             <div className="w-6 h-6 border-[2px] border-foreground bg-background flex items-center justify-center shadow-[2px_2px_0px_#000] group-hover:translate-x-0.5 group-hover:bg-[var(--nb-yellow)] transition-all">
                                                 <ArrowRight size={12} className="text-foreground" />

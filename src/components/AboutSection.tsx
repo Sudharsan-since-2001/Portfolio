@@ -54,16 +54,16 @@ export function AboutSection({
                         <div className="p-6 sm:p-10 md:p-16">
                             <div className="max-w-4xl space-y-6 sm:space-y-8 text-lg sm:text-xl md:text-2xl text-foreground font-semibold leading-[1.6] md:leading-[1.8]">
                                 <p>
-                                    Most brands have something worth saying. Very few say it in a way anyone remembers.
+                                    I{"'"}ve worked with brands that had something real to say but sounded like everyone else. That{"'"}s the problem I solve.
                                 </p>
                                 <p>
-                                    That gap is where I work. For four years, across fashion, real estate, and politics, I{"'"}ve been the person figuring out what a brand actually stands for and then building the content ecosystem around that idea.
+                                    For four years, across fashion, real estate, politics, and beauty and personal care, I{"'"}ve been the person figuring out what a brand actually stands for and then building the content ecosystem around that idea.
                                 </p>
                                 <p>
-                                    SEO that compounds. Copy that converts. Campaigns with an 8x ROAS.
+                                    Campaigns that delivered 8x ROAS. Brands from zero visibility to owning their market. Content that actually sticks.
                                 </p>
                                 <p>
-                                    I write. I strategize. I manage teams. I follow the data.
+                                    If you want to be memorable, we should talk.
                                 </p>
 
                                 <div className="pt-6 sm:pt-8 flex flex-col items-end w-full">
