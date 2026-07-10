@@ -66,6 +66,7 @@ interface WritingProject {
             headlineRationale?: string
             successMetrics?: string
         }
+        tag?: string
     }
 }
 
@@ -150,6 +151,94 @@ const writingProjects: WritingProject[] = [
         }
     },
     {
+        title: "7 Wedding Venue Trends Taking Over Tamil Nadu Weddings in 2026",
+        mainCategory: "Content writing",
+        subCategory: "BLOG / ARTICLES",
+        readTime: "5 min read",
+        description: "A conversational, locally-focused blog post analyzing the cultural and practical shifts in how modern couples in Tamil Nadu choose their wedding venues in 2026.",
+        link: "#",
+        details: {
+            headline: "Finding the Venue That Fits",
+            subCopy: "How heritage properties, morning muhurthams, and regional live counters are shaping Tamil Nadu weddings in 2026.",
+            campaignFocus: "Position the client's platform as the go-to discovery hub by sharing high-value, locally-aware wedding venue insights rather than a direct sales pitch.",
+            creativeInsight: "Tamil weddings are rarely a two-person decision. By addressing both the couple's desire for aesthetic history/sustainability and the families' practical needs (natural lighting, morning muhurthams, and guest-centric menus), the copy builds multi-generational trust. Concrete regional specifics like Karaikudi mansions, ECR resorts, and filter coffee counters replace generic wedding advice to build instant local authority.",
+            brandPositioning: "Wedding Venue Discovery Platform (Tamil Nadu) — A verified venue aggregator helping couples compare options without cold calls.",
+            deliverables: [
+                { title: "SEO Editorial Copy", desc: "Targeting high-intent search terms like 'wedding venue trends Tamil Nadu 2026'." },
+                { title: "Regional Content Framework", desc: "Weaving local landmarks (Karaikudi, Kodaikanal) and culinary specificities." },
+                { title: "Soft-Conversion CTA Strategy", desc: "Placing a friction-reducing call-to-action only after establishing emotional resonance." }
+            ],
+            tag: "SEO Copywriting",
+            articleText: `A few years ago, picking a wedding venue in Tamil Nadu was almost boring in how simple it was. Kalyana mandapam, enough parking, decent catering, done.
+
+That's not how it works anymore.
+
+Couples across Tamil Nadu are spending weeks going back and forth on venues, because the venue isn't just a hall booking anymore. It's the thing relatives talk about at the next family function. It's what shows up in every photo that gets shared in the family WhatsApp group for years. For a lot of couples, it's the first big decision that sets the tone for everything else.
+
+Here's what's actually shaping those decisions in 2026.
+
+1. Heritage Properties Are Winning Over Star Hotels
+
+Five star hotels in Chennai and Coimbatore are still around, still comfortable, still convenient. But they've stopped being the automatic first choice.
+
+What's replacing them? Restored Chettinad mansions in Karaikudi with courtyards that have hosted a hundred years of family functions before yours. Old agraharam houses in Kumbakonam and Thanjavur, the kind with pillared verandahs and tiled roofs. Colonial bungalows around Pondicherry. Palaces near Madurai that have clearly seen better days and are more beautiful for it.
+
+There's something a brand new banquet hall just can't fake. History does half the decorating for you.
+
+2. Morning Muhurtham Weddings Are Having a Moment
+
+Evening weddings and late night receptions ruled for decades. Nobody questioned it, even when everyone was falling asleep by the time dinner was served.
+
+Now more couples are planning ceremonies around an early morning muhurtham and wrapping the main events by afternoon. The reasons are practical once you hear them. Natural light means better photos without needing a dozen LED panels. Guests aren't standing around bored through a three hour delay before the actual rituals start. Elders don't have to sit through a function till midnight.
+
+The part nobody mentions enough is what happens after. When the ceremony wraps by early afternoon, the couple actually gets an evening to breathe instead of collapsing into it exhausted.
+
+3. Live Chettinad and Regional Counters Are Replacing the Endless Buffet
+
+Nobody remembers dish forty two on a hundred item buffet line.
+
+They remember standing next to a live counter watching someone make dosas or appams to order. They remember Chettinad chicken or a mutton kuzhambu served straight out of a copper handi, steam and all, or a filter coffee counter doing the tumbler pour right in front of them. Food made in front of you just hits differently than food that's been sitting under a chafing dish for two hours.
+
+This is why regional, live cooking stations, built around Chettinad, Kongunadu, or Madurai style menus, are quietly taking over from the old buffet setup. It's not really about the food being better than before. It's about the theatre of watching it happen.
+
+4. Guest Lists Are Shrinking, and Nobody's Mad About It
+
+There's been a real shift away from the "invite the whole village" approach that used to define big fat Tamil weddings.
+
+More couples are cutting their guest list to 150, sometimes even 80, and putting that saved budget into things guests actually notice. A welcome hamper with local snacks instead of a generic printed card. A seating plan that isn't just names taped to a chair. A menu built around what people at that specific wedding will actually eat, instead of forty items nobody touches past the first ten.
+
+Smaller doesn't mean smaller in impact. If anything, it means every guest, even the far relative from Trichy who came just for the muhurtham, gets treated like they matter.
+
+5. Venues That Don't Need Decorating
+
+A lot of decorators have been saying this quietly for years, and couples are finally listening: if the venue already looks good, stop spending lakhs on stage décor.
+
+Resorts along ECR with the backwaters right behind the mandapam. Estate bungalows in Kodaikanal or Coonoor with pine trees doing the work no flower arch ever could. Temple town properties near Rameswaram or Kanchipuram where the architecture alone photographs better than a rented set. Couples are hunting for these specifically because the pictures come out looking effortless, and whatever gets saved on décor gets spent on food or photography instead.
+
+6. Sustainability Stopped Being a Talking Point and Became Normal
+
+A few years back, an eco friendly wedding was something couples mentioned proudly in interviews. Now it's just how weddings get planned.
+
+Locally grown jasmine and marigold instead of imported flowers flown in from somewhere else. Banana leaf service making a comeback, partly for tradition, partly because it cuts down on plastic. Digital invites replacing printed cards that end up in the bin within a week. Caterers sourcing vegetables from nearby farms because it's fresher and it's simpler logistics.
+
+Nobody's making a big statement out of it. It's just how sensible planning looks like now.
+
+7. One Venue, Every Event
+
+Here's a headache almost every Tamil wedding has run into at some point, moving guests between separate venues for the nichayathartham, mehendi, sangeet, wedding, and reception, sometimes across two or three days.
+
+More couples are skipping that entirely by booking one property, often a resort near Mahabalipuram or a large heritage estate, that can host the whole thing over three or four days. Everyone stays in one place. Nobody's asking for directions to the next hall. Elders who can't travel much don't have to. And relatives who normally only wave hello between events actually end up spending real time together this way.
+
+Finding the Venue That Fits
+
+Trends will keep shifting every year in Tamil Nadu weddings, that part never really stops.
+
+But the venue that works isn't always the grandest one or the priciest one on the shortlist. It's the one that fits the two families getting brought together and the kind of celebration they're picturing, whether that's a 200 year old Chettinad mansion in Karaikudi or a quiet garden with good morning light and nothing else.
+
+If you're comparing venues right now, our platform lists verified options across Tamil Nadu in all of these categories, so you can shortlist and compare without spending your evenings on the phone chasing quotes from five different mandapams.`
+        }
+    },
+    {
         title: "You Are Not Lazy. You Are Exhausted. There Is a Difference.",
         mainCategory: "Content writing",
         subCategory: "BLOG / ARTICLES",
@@ -163,6 +252,7 @@ const writingProjects: WritingProject[] = [
             creativeInsight: "Addresses deep chronic stress by distinguishing choice (laziness) from deficit (exhaustion) and offering specific recovery steps.",
             brandPositioning: "Sudharsan Karthikeyan: Thought leadership and personal essays on mental wellness and modern work culture.",
             deliverables: [],
+            tag: "Mental Health",
             articleText: `There is a version of tired that sleep does not fix.
 
 You know the one. You wake up after eight hours and still feel like you have not rested. You cancel plans not because you do not want to go, but because the idea of getting ready feels like climbing a mountain. You sit down to do something simple and your brain just will not start. You stare at the screen. You open a tab, close it, open it again. Nothing happens.
@@ -763,12 +853,17 @@ export function WritingShowcase() {
     const [mainCategory, setMainCategory] = React.useState<MainCategory>("Content writing")
     const [subCategory, setSubCategory] = React.useState<SubCategory>("ALL")
     const [selectedProject, setSelectedProject] = React.useState<WritingProject | null>(null)
-    const [modalTab, setModalTab] = React.useState<"strategy" | "preview">("strategy")
+    const [modalTab, setModalTab] = React.useState<"strategy" | "preview" | "article">("strategy")
     const [activeEmailId, setActiveEmailId] = React.useState<string>("")
 
     React.useEffect(() => {
         if (selectedProject) {
-            setModalTab("strategy")
+            if (selectedProject.details?.articleText) {
+                // If it has articleText, default to reading the article
+                setModalTab("article")
+            } else {
+                setModalTab("strategy")
+            }
             if (selectedProject.details?.emails && selectedProject.details.emails.length > 0) {
                 setActiveEmailId(selectedProject.details.emails[0].id)
             } else {
@@ -1066,7 +1161,7 @@ export function WritingShowcase() {
                                         className={cn(
                                             "px-4 py-2 text-xs font-black uppercase border-[2.5px] border-foreground transition-all cursor-pointer",
                                             modalTab === "strategy"
-                                                ? "bg-foreground text-background shadow-[2px_2px_0px_var(--muted-foreground)] -translate-x-[1px] -translate-y-[1px]"
+                                                ? "bg-[var(--nb-orange)] text-white shadow-[2px_2px_0px_var(--foreground)] -translate-x-[1px] -translate-y-[1px]"
                                                 : "bg-background text-foreground hover:shadow-[2px_2px_0px_var(--foreground)] hover:-translate-x-[1px] hover:-translate-y-[1px]"
                                         )}
                                     >
@@ -1082,6 +1177,31 @@ export function WritingShowcase() {
                                         )}
                                     >
                                         Full Web Page Preview
+                                    </button>
+                                </div>
+                            ) : selectedProject.details?.articleText && selectedProject.details?.campaignFocus ? (
+                                <div className="flex border-b-[4px] border-foreground bg-muted p-3 gap-3 items-center pr-16 select-none flex-wrap">
+                                    <button
+                                        onClick={() => setModalTab("article")}
+                                        className={cn(
+                                            "px-4 py-2 text-xs font-black uppercase border-[2.5px] border-foreground transition-all cursor-pointer",
+                                            modalTab === "article"
+                                                ? "bg-[var(--nb-orange)] text-white shadow-[2px_2px_0px_var(--foreground)] -translate-x-[1px] -translate-y-[1px]"
+                                                : "bg-background text-foreground hover:shadow-[2px_2px_0px_var(--foreground)] hover:-translate-x-[1px] hover:-translate-y-[1px]"
+                                        )}
+                                    >
+                                        Read Article
+                                    </button>
+                                    <button
+                                        onClick={() => setModalTab("strategy")}
+                                        className={cn(
+                                            "px-4 py-2 text-xs font-black uppercase border-[2.5px] border-foreground transition-all cursor-pointer",
+                                            modalTab === "strategy"
+                                                ? "bg-[var(--nb-orange)] text-white shadow-[2px_2px_0px_var(--foreground)] -translate-x-[1px] -translate-y-[1px]"
+                                                : "bg-background text-foreground hover:shadow-[2px_2px_0px_var(--foreground)] hover:-translate-x-[1px] hover:-translate-y-[1px]"
+                                        )}
+                                    >
+                                        Strategy Brief
                                     </button>
                                 </div>
                             ) : null}
@@ -1512,7 +1632,7 @@ export function WritingShowcase() {
                                         </div>
                                     </div>
                                 </div>
-) : selectedProject.details.articleText ? (
+) : selectedProject.details.articleText && modalTab === "article" ? (
                                 <div className="flex-1 p-6 sm:p-10 md:p-16 overflow-y-auto bg-[#FDFCF7]">
                                     <div className="max-w-3xl mx-auto space-y-8">
                                         <div className="space-y-4">
@@ -1532,7 +1652,7 @@ export function WritingShowcase() {
                                                 <span className="hidden sm:inline">•</span>
                                                 <span>{selectedProject.readTime || "8 min read"}</span>
                                                 <span className="hidden sm:inline">•</span>
-                                                <span className="text-primary">Mental Health</span>
+                                                <span className="text-primary">{selectedProject.details.tag || "Writing"}</span>
                                             </div>
                                         </div>
                                         <div className="h-[2px] bg-foreground/20" />
@@ -1549,7 +1669,8 @@ export function WritingShowcase() {
                                                     "The Difference Between Rest and Recovery",
                                                     "What Your Exhausted Self Actually Needs From You",
                                                     "When to Consider Speaking to Someone",
-                                                    "One Thing Before You Close This Tab"
+                                                    "One Thing Before You Close This Tab",
+                                                    "Finding the Venue That Fits"
                                                 ].includes(trimmed);
 
                                                 // Check if it's a list subheader like "1. You used to be able..."
@@ -1584,6 +1705,86 @@ export function WritingShowcase() {
                                                     </p>
                                                 );
                                             })}
+                                        </div>
+                                    </div>
+                                </div>
+                            ) : selectedProject.details?.articleText && modalTab === "strategy" ? (
+                                <div className="flex-1 p-6 sm:p-10 md:p-16 overflow-y-auto bg-[#FDFCF7]">
+                                    <div className="max-w-3xl mx-auto space-y-12">
+                                        {/* Header */}
+                                        <div className="space-y-4">
+                                            <span className="nb-badge px-2.5 py-1 bg-foreground text-background border-foreground text-[9px] font-black uppercase tracking-[0.15em]">
+                                                Strategy Brief
+                                            </span>
+                                            <h1 className="text-3xl sm:text-4xl md:text-5xl font-black uppercase leading-tight tracking-tighter text-foreground">
+                                                {selectedProject.title}
+                                            </h1>
+                                            {selectedProject.details?.subCopy && (
+                                                <p className="text-lg sm:text-xl font-serif leading-relaxed text-muted-foreground italic">
+                                                    &ldquo;{selectedProject.details.subCopy}&rdquo;
+                                                </p>
+                                            )}
+                                        </div>
+
+                                        <div className="h-[2px] bg-foreground/20" />
+
+                                        {/* Strategy Grid */}
+                                        <div className="grid grid-cols-1 gap-8">
+                                            {/* Editorial Goal & Target Audience */}
+                                            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                                <div className="p-6 border-[2.5px] border-foreground bg-[var(--nb-yellow)] shadow-[4px_4px_0px_#000] space-y-3">
+                                                    <h4 className="text-xs font-black uppercase tracking-wider text-foreground flex items-center gap-1.5">
+                                                        <span className="w-1.5 h-1.5 bg-foreground rounded-full" />
+                                                        Editorial Objective
+                                                    </h4>
+                                                    <p className="text-xs sm:text-sm font-semibold text-foreground/90 leading-relaxed">
+                                                        {selectedProject.details.campaignFocus}
+                                                    </p>
+                                                </div>
+
+                                                <div className="p-6 border-[2.5px] border-foreground bg-[var(--nb-blue)] shadow-[4px_4px_0px_#000] space-y-3">
+                                                    <h4 className="text-xs font-black uppercase tracking-wider text-foreground flex items-center gap-1.5">
+                                                        <span className="w-1.5 h-1.5 bg-foreground rounded-full" />
+                                                        Strategic Insight
+                                                    </h4>
+                                                    <p className="text-xs sm:text-sm font-semibold text-foreground/90 leading-relaxed">
+                                                        {selectedProject.details.creativeInsight}
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            {/* Brand Context */}
+                                            <div className="p-6 border-[2.5px] border-foreground bg-[var(--nb-pink)] shadow-[4px_4px_0px_#000] space-y-3">
+                                                <h4 className="text-xs font-black uppercase tracking-wider text-foreground flex items-center gap-1.5">
+                                                    📢 Brand & Platform Context
+                                                </h4>
+                                                <p className="text-xs sm:text-sm font-bold text-foreground leading-relaxed">
+                                                    {selectedProject.details.brandPositioning}
+                                                </p>
+                                            </div>
+
+                                            {/* Deliverables / Details (if present) */}
+                                            {selectedProject.details?.deliverables && selectedProject.details.deliverables.length > 0 && (
+                                                <div className="space-y-4">
+                                                    <h4 className="text-xs font-black uppercase tracking-widest text-primary text-center">What This Delivers</h4>
+                                                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                                        {selectedProject.details.deliverables.map((item, idx) => (
+                                                            <div key={idx} className="p-4 border-[2px] border-foreground bg-background shadow-[3px_3px_0px_#000]">
+                                                                <div className="space-y-1">
+                                                                    <h5 className="text-xs font-black uppercase text-primary">{item.title}</h5>
+                                                                    <p className="text-[10px] sm:text-xs text-muted-foreground font-semibold leading-relaxed">{item.desc}</p>
+                                                                </div>
+                                                            </div>
+                                                        ))}
+                                                    </div>
+                                                </div>
+                                            )}
+                                        </div>
+
+                                        <div className="pt-6 border-t-[2px] border-foreground/10 text-center">
+                                            <p className="text-[10px] font-bold uppercase tracking-[0.25em] text-muted-foreground">
+                                                Editorial Strategy & Copywriting by Sudharsan
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
