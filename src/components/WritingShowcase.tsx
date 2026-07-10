@@ -239,6 +239,284 @@ If you're comparing venues right now, our platform lists verified options across
         }
     },
     {
+        title: "Why Web3 Still Confuses Most People (And Why It Doesn't Have To)",
+        mainCategory: "Content writing",
+        subCategory: "BLOG / ARTICLES",
+        readTime: "8 min read",
+        description: "A jargon-free educational blog post demystifying Web3 and digital ownership through everyday analogies like passports, DVDs, and loyalty cards.",
+        link: "#",
+        details: {
+            headline: "Demystifying Web3",
+            subCopy: "Why Web3 Still Confuses Most People (And Why It Doesn't Have To)",
+            campaignFocus: "To simplify complex Web3 concepts for beginners while building trust and positioning the brand as an accessible source of knowledge. The article is designed to educate readers before introducing them to Web3 products or services.",
+            creativeInsight: "Web3 got introduced to most people through jargon and hype. By using relatable analogies (wallet = passport, digital ownership = physical DVD) and real-world corporate initiatives (Nike, Starbucks, LVMH), we bypass the technical friction and explain the 'why' behind the tech.",
+            brandPositioning: "A Web3 startup or blockchain technology company looking to educate potential users and businesses about Web3 in a clear, approachable way.",
+            deliverables: [
+                { title: "SEO Editorial Copy", desc: "Targeting high-intent search terms like 'Web3', 'digital ownership', and 'blockchain technology'." },
+                { title: "Analogical Content Framework", desc: "Translating technical jargon (wallets, smart contracts) into clear, everyday concepts." },
+                { title: "Business Adoption Analysis", desc: "Providing real-world brand case studies to demonstrate practical corporate value." }
+            ],
+            tag: "SEO Copywriting",
+            articleText: `Ask five people what Web3 actually means and you'll get five different answers. Someone says crypto. Someone else says NFTs. One person brings up the metaverse, and somebody always says "the future of the internet" without explaining what that future actually looks like.
+
+None of that is really their fault.
+
+Web3 got introduced to most people through jargon and hype before anyone bothered explaining what problem it's solving. Wallets, gas fees, smart contracts, consensus mechanisms, decentralized this and that. If your first exposure to a topic is a wall of unfamiliar words, of course it feels confusing. The idea underneath all of it isn't complicated. It's just been explained badly, over and over, by people more excited about the technology than about making it click for anyone else.
+
+Why It's Even Called Web3
+
+Look at how the internet actually evolved and the name starts making sense.
+
+Web1 was mostly for reading. Static pages, basic company sites, information you could look at but not really interact with. Then Web2 showed up, and everything changed. Social media, online shopping, streaming, cloud storage. Suddenly anyone could publish something and reach millions of people without needing a printing press or a TV network.
+
+But there was a catch nobody really warned us about. Almost everything we use daily now lives inside someone else's platform. Meta owns your social graph. Google owns your search history and a good chunk of your email. Amazon owns your purchase history and, in some cases, your entire storefront if you're a seller on it.
+
+Web3 is basically one question dressed up as a movement: what if people owned more of that themselves?
+
+It's Not Really About Cryptocurrency
+
+The most common mix up is treating Web3 as just another word for crypto.
+
+Crypto is part of it, sure. But describing Web3 through crypto alone is a bit like describing the entire internet through online banking. Yes, banking happens online. No, that's nowhere close to the whole picture.
+
+Blockchain, the tech underneath most of this, can support payments, but it can also support things like verifying whether a Louis Vuitton bag is real (LVMH's Aura consortium actually does this with several luxury brands), tracking a shipment through a supply chain, or letting Reddit users own a collectible avatar that isn't tied to Reddit's own servers. The common thread across all of it isn't money. It's giving people a claim over something digital that doesn't disappear the moment a company decides to shut a feature down.
+
+A Wallet Is Closer to a Passport Than a Purse
+
+Say "wallet" and people picture money. Fair enough, given the name.
+
+But in Web3, a wallet is doing something closer to what a passport does. Instead of creating a new username and password for every single app you sign up for, a wallet can prove who you are across a bunch of different places while you decide exactly what gets shared and what doesn't.
+
+Nike tried a version of this with .SWOOSH, letting members hold virtual sneakers and access perks tied to the same wallet across different drops. Whether that specific project takes off long term or not, it shows where the idea is headed. Eventually a single wallet could hold your event tickets, your gym membership, a certificate from a course you finished, and your crypto, all in one place that belongs to you rather than to five different companies.
+
+Ownership Actually Changes Something
+
+Here's a simple way to feel the difference. You pay for a movie on a streaming platform, and if that platform loses the licensing rights next year, the movie can just vanish from your account. You paid, but you never really owned anything.
+
+Compare that to a physical DVD sitting on a shelf. Ten years from now, it still plays. Nobody can take it back.
+
+That's the shift Web3 is chasing in digital form. Concert tickets, digital art, in game items, all of it can be built so it belongs to the person holding it, not just to whichever company's servers happen to be running that day. Starbucks tried exactly this with its Odyssey program, turning loyalty stamps into ownable digital collectibles members could actually keep and trade. It didn't run forever, but for the time it existed, it was a working example of the idea, not just a whitepaper concept.
+
+Why Businesses Actually Care
+
+For most businesses looking into this, it was never really about chasing new technology for its own sake. It's about the relationship with the customer holding still for longer than one purchase.
+
+A rewards program that works across five different partner brands instead of just one store. A festival where your ticket turns into a keepsake you can actually resell or show off after the event's long over. A brand letting you check, with actual proof, that what you bought is real and not a knockoff. None of this replaces how these businesses already operate. It adds a layer that was genuinely hard to build before blockchain made shared, tamper proof records this easy.
+
+The Real Obstacle Isn't the Technology
+
+Here's the part that gets ignored a lot. Blockchain itself isn't really what's holding Web3 back.
+
+It's the experience of using it.
+
+If setting up a wallet takes twenty minutes and three tutorials, most people give up before they even get started. If sending a digital asset feels like it might go wrong and there's no undo button, people stay cautious. Nobody sat down and learned TCP/IP before using the internet for the first time. The internet won because using it eventually required knowing almost nothing about how it worked underneath.
+
+Web3 will probably follow that same road. The winners in this space won't be the projects with the most impressive tech under the hood. They'll be the ones where a first time user never even notices the blockchain part is happening.
+
+So Is Web3 Actually the Future
+
+Honestly, nobody knows for sure, and anyone who claims certainty either way is overselling it a little.
+
+Plenty of Web3 projects have already folded. Others will fade out the same way. But every major shift in technology looked messy and half baked before it became normal. Cloud computing sounded abstract and pointless to a lot of businesses right up until it wasn't. Mobile apps were dismissed as a gimmick before smartphones made them unavoidable.
+
+Web3 might not turn into the sweeping reinvention its loudest supporters keep promising. What seems far more likely is quieter than that: pieces of it, digital ownership, portable identity, records nobody can secretly alter, slowly becoming normal parts of things people already use, without most of them ever needing to know the word blockchain at all.
+
+Wrapping Up
+
+You don't need to understand a single line of Solidity or memorize what a consensus mechanism does to get what Web3 is actually about.
+
+Strip away the jargon and it's just a rethink of who owns what online, and who gets to prove it. The more this gets explained through things people can actually picture, a passport, a DVD, a loyalty card that survives longer than one app, the easier it gets to see why so many companies are still willing to bet on it, even after the hype died down.`
+        }
+    },
+    {
+        title: "7 Web3 Trends Businesses Should Watch in 2026",
+        mainCategory: "Content writing",
+        subCategory: "BLOG / ARTICLES",
+        readTime: "6 min read",
+        description: "A B2B thought leadership blog post outlining the most commercially relevant Web3 developments in 2026, focusing on real-world business value over crypto speculation.",
+        link: "#",
+        details: {
+            headline: "Looking Beyond the Hype",
+            subCopy: "7 Web3 Trends Businesses Should Watch in 2026",
+            campaignFocus: "To provide business decision-makers with practical insights into emerging Web3 trends, helping them separate long-term opportunities from short-lived hype while establishing the brand as a credible source of industry knowledge.",
+            creativeInsight: "Commercially focused B2B thought leadership that bypasses crypto speculation. Each trend is paired with tangible real-world business cases (BlackRock, LVMH, EU, Adobe) to present a grounded ROI-driven outlook.",
+            brandPositioning: "A Web3 infrastructure company, blockchain consultancy, or enterprise technology platform looking to educate business leaders and position itself as a trusted voice in the industry.",
+            deliverables: [
+                { title: "SEO B2B Blog Copy", desc: "Targeting search queries like 'Web3 trends 2026' and 'enterprise blockchain'." },
+                { title: "Case Study Integration", desc: "Weaving real brand initiatives (Coinbase, BlackRock, Adobe) to establish corporate viability." },
+                { title: "Strategic Trend Analysis", desc: "Mapping commercial opportunities like RWA tokenization and stablecoin settlements." }
+            ],
+            tag: "B2B Thought Leadership",
+            articleText: `Not long ago, most Web3 conversations in boardrooms were really just crypto price conversations wearing a fancier name. NFTs, token prices, vague promises about a decentralized future nobody could quite explain.
+
+That's shifted. The questions now are a lot more grounded. Does tokenizing an asset actually cut the cost of managing it? Does a portable digital identity make onboarding faster? Where is this stuff actually mature enough to bet money on right now, instead of just watching from the sidelines?
+
+Here are seven places where that shift is playing out in 2026.
+
+1. Real World Assets Are Moving On Chain
+
+The most interesting part of Web3 right now isn't happening in digital art. It's happening in bond markets.
+
+BlackRock's BUIDL fund and Franklin Templeton's tokenized money market fund are already putting real institutional money behind the idea that treasury bonds, private credit, and real estate can be represented and traded on chain. This isn't a thought experiment anymore, there's billions of dollars sitting in tokenized funds already.
+
+What it actually changes is settlement speed and who gets access. A fractional share of a commercial property or a government bond becomes tradeable in ways that used to require a broker, a lawyer, and about two weeks of paperwork.
+
+2. Digital Identity Is Finally Becoming the User's Problem to Solve, Not the Platform's
+
+Nobody enjoys uploading their passport for the fifteenth time this year just to open another account.
+
+Projects like Worldcoin's World ID and the EU's push toward a digital identity wallet are both chasing the same basic idea, prove something specific about yourself (your age, your citizenship, whether you're a verified human) without handing over your entire file to every company that asks.
+
+For a business, this means onboarding that doesn't feel like an interrogation. Fewer drop offs at signup, fewer support tickets from people locked out because a document didn't upload properly.
+
+3. AI and Blockchain Are Starting to Need Each Other
+
+These two get talked about like separate industries, but they're actually starting to solve each other's biggest weakness.
+
+AI is extraordinary at producing content and terrible at proving where that content came from. Blockchain is exactly the opposite, it's built for keeping an unchangeable record of origin and ownership. Put them together and you get things like content provenance tracking, the kind Adobe's Content Credentials initiative is already pushing for images and video.
+
+As AI generated content becomes harder to tell apart from the real thing, this pairing stops being a nice idea and starts being infrastructure.
+
+4. Stablecoins Quietly Became the Most Useful Thing in the Room
+
+Stablecoins never get the headlines that Bitcoin does. They're also, arguably, doing more actual business work than anything else in this space.
+
+USDC and USDT settlements now move billions of dollars daily, and a growing chunk of that isn't speculation, it's companies paying overseas suppliers and contractors without waiting three days for a wire transfer to clear or losing a percentage to a currency conversion fee.
+
+If your business pays anyone across a border regularly, this is probably the single most practical Web3 tool available to you right now, no NFT required.
+
+5. Loyalty Programs Are Getting Untethered From a Single Brand
+
+Most loyalty points are basically fake money that only works in one store and expires if you don't use it fast enough.
+
+Starbucks tried something different with its Odyssey program, letting members hold digital collectibles tied to their loyalty status that they could actually keep and trade, not just redeem and lose. It didn't run forever, but it proved the model works, rewards that behave more like an asset than a coupon.
+
+Brands that get this right end up with customers who feel like they own something, instead of customers racing to spend points before an expiry date quietly resets them to zero.
+
+6. The User Experience Finally Stopped Being Embarrassing
+
+For years, the technology was never really the problem. Using it was.
+
+Setting up a wallet used to mean writing down a twelve word phrase, praying you never lost it, and hoping a transaction fee wouldn't randomly spike mid purchase. Account abstraction and gasless transactions are quietly fixing most of that. Coinbase's smart wallet and similar tools now let someone sign up with an email and barely notice a blockchain is involved at all.
+
+This matters more than almost anything else on this list. Nobody adopts a technology because the whitepaper is impressive. They adopt it because it stops getting in their way.
+
+7. Regulation Stopped Being the Excuse to Wait
+
+For a long time, "we're waiting for regulatory clarity" was corporate speak for "we don't want to touch this yet."
+
+That excuse is getting harder to make. The EU's MiCA framework is already in force, and similar frameworks are moving through legislatures elsewhere. Clarity doesn't mean permission to do anything, but it does mean legal and compliance teams finally have something concrete to check a project against instead of shrugging and saying "it's complicated."
+
+Compliance used to be the wall stopping innovation here. Increasingly, it's the thing that lets a project actually get approved internally.
+
+Looking Beyond the Hype
+
+Web3 is entering the boring, useful phase, and that's actually a good sign, not a bad one.
+
+The conversation has moved from speculation toward specific problems: settlement speed, identity verification, cross border payments, proving where content came from. None of that makes for a great headline, but all of it makes for a decent business case.
+
+Not every business needs all seven of these, and honestly, not every one of these will still matter in two years. The ones worth acting on now are usually the boring ones: cheaper payments, faster onboarding, less friction. The flashy stuff can wait until it's actually ready.`
+        }
+    },
+    {
+        title: "Why Your Digital Wallet Could Replace Passwords One Day",
+        mainCategory: "Content writing",
+        subCategory: "BLOG / ARTICLES",
+        readTime: "8 min read",
+        description: "An educational essay explaining how Web3 wallets could transform digital authentication by replacing traditional usernames and passwords with a more secure, user-controlled identity system.",
+        link: "#",
+        details: {
+            headline: "The Real Win Here",
+            subCopy: "Why Your Digital Wallet Could Replace Passwords One Day",
+            campaignFocus: "To explain how Web3 wallets could transform digital authentication by replacing traditional usernames and passwords with a more secure, user-controlled identity system. The goal is to educate readers while positioning the brand as a trusted source of product and industry knowledge.",
+            creativeInsight: "Connects with readers immediately through a ubiquitous digital frustration (forgotten passwords), then introduces wallet authentication as the solution using everyday analogies (SIM cards, passports) and clear business ROI metrics (reduced security risk, lower signup churn).",
+            brandPositioning: "A Web3 startup, blockchain infrastructure company, or digital identity platform looking to educate users about the practical benefits of wallet-based authentication and decentralized identity.",
+            deliverables: [
+                { title: "Product Education Article", desc: "Targeting keyword queries like 'Digital Wallet' and 'passwordless authentication'." },
+                { title: "Identity Analogy Matrix", desc: "Explaining credentials using SIM card, passport, and physical DVD concepts." },
+                { title: "Business Case Summary", desc: "Detailing risk reduction, signup conversion, and support ticket overhead savings." }
+            ],
+            tag: "Product Education",
+            articleText: `How many times have you clicked "Forgot Password" this year? Be honest, it's probably more than you'd like to admit.
+
+Work apps, shopping sites, banking, streaming, social media, the average person is juggling dozens of logins at any given time, each with its own rules about capital letters, special characters, and security questions you made up once and now can't remember the answer to.
+
+We've just accepted this as the tax we pay for living online. But it doesn't actually have to work this way, and the fix has a lot less to do with cryptocurrency than most people assume.
+
+The Password Problem Nobody Really Solved
+
+Passwords were supposed to protect us. Somewhere along the way they turned into one of the most annoying parts of using the internet.
+
+Make it too simple and it's easy to guess. Make it too complex and you'll forget it within a week. Reuse the same one everywhere, which almost everyone does despite knowing better, and one breach on some random shopping site suddenly puts your email and banking accounts at risk too.
+
+Businesses feel this from the other direction. Password resets flood support queues. Data breaches expose millions of credentials at once. Multi factor authentication helps security but adds enough friction that a chunk of new users just abandon signup halfway through.
+
+The system works, technically. It just works by making everyone tired.
+
+Think of a SIM Card, Not a Login
+
+When you switch phones, you don't reapply for a new phone number. You pull the SIM card out of the old phone and put it in the new one, and your number, your contacts, your identity on the network just comes with you.
+
+A Web3 wallet is starting to work the same way for your identity online. Instead of creating a brand new username and password combination for every single app, the wallet becomes the thing that travels with you and proves who you are, wherever you go. You decide what gets shared with each app, and the app only gets what it actually needs, nothing more.
+
+It's not really a new account. It's the same identity, carried somewhere new.
+
+A Wallet Holds More Than Money
+
+Say the word wallet and people picture a digital version of the leather one in their pocket, just holding currency.
+
+That's a narrow way to think about what these are turning into. A wallet can hold crypto, sure, but it's also starting to hold event tickets, gym memberships, course certificates, gaming items, and proof of identity, all under one roof instead of scattered across fifteen different apps you forgot you even installed.
+
+Managing all of that through one identity instead of fifteen separate logins isn't a small convenience. It's the difference between carrying one card that works everywhere and carrying a stack of cards you can never find the right one from.
+
+Sign In Without Typing Another Password
+
+Sign in with Ethereum, usually just called SIWE, is one of the clearer examples of where this is headed. Instead of typing an email and password, you authenticate with your wallet, and the site confirms it's really you without asking for yet another set of credentials.
+
+Coinbase's smart wallet takes this further by letting someone start with just an email address while the actual blockchain machinery runs quietly underneath, completely invisible to the person using it. Nobody has to learn what a seed phrase is just to sign up for something.
+
+That's the real goal here. Not turning everyone into a crypto expert. Just making the technology boring enough that nobody thinks about it at all.
+
+Why This Actually Matters to Businesses
+
+Every extra step at signup costs you customers who give up halfway through. Every forgotten password becomes a support ticket somebody has to answer. Every leaked credential becomes a security incident somebody has to explain to their boss.
+
+Wallet based authentication chips away at all three of those problems at once. Instead of managing a database of usernames and passwords that's basically a liability waiting to happen, businesses verify people through an identity the person actually controls. Customers get more privacy. Businesses get less risk sitting in their servers. Both sides come out ahead here, which is rare enough in tech that it's worth pointing out.
+
+Sharing Less, Not More
+
+A common assumption is that digital identity means businesses get to see even more of your personal information than they already do.
+
+It's usually the opposite. Say you're buying something that's restricted to people over eighteen. Right now, you'd probably upload a full government ID showing your name, your address, your exact birthdate, way more than the store actually needed to know.
+
+A proper digital identity system just confirms the one fact that matters: this person is over eighteen. That's it. The business gets exactly what it needed and nothing else, and you're not handing your entire identity over to a checkout page just to prove one thing about yourself.
+
+What's Actually Still in the Way
+
+None of this makes wallets ready to fully replace passwords tomorrow. A few real problems still need solving.
+
+Losing access to a wallet and getting it back needs to be far simpler than it is right now. Security needs to get stronger without getting more complicated for the person using it. Rules around this differ wildly from one country to the next and that's not settling down anytime soon. And the whole thing has to feel effortless to someone who's never heard the word blockchain and has zero interest in learning it.
+
+That last part isn't a new problem though. Most people use cloud storage with no idea how distributed servers actually work. Nobody thinks about content delivery networks while watching something on a streaming app. Technology wins the moment people stop noticing it's even there.
+
+Will Passwords Actually Go Away
+
+Not overnight, and probably not for a very long time. Passwords have been baked into the internet for decades and they'll stick around alongside whatever replaces them, likely for years after that.
+
+But the direction is pretty clear at this point. Instead of every single platform making you build a brand new identity from scratch, things are drifting toward one identity you actually carry with you between them. Whether Web3 specifically ends up being the thing that does it, or some mix of technologies gets there instead, is genuinely still up in the air.
+
+What isn't up in the air is what people actually want out of all this. Not more accounts to keep track of. Fewer.
+
+The Real Win Here
+
+The point was never really about killing off the password as a concept.
+
+It's about killing off the friction that came with it. If wallet based identity actually takes hold, signing in stops being a chore, people keep more control over their own information, and businesses spend less time babysitting logins and more time building things worth logging into in the first place.
+
+And if that future actually shows up, Web3's biggest win won't be that everyone finally understands how blockchain works. It'll be that nobody has to think about it at all.`
+        }
+    },
+    {
         title: "You Are Not Lazy. You Are Exhausted. There Is a Difference.",
         mainCategory: "Content writing",
         subCategory: "BLOG / ARTICLES",
@@ -1148,14 +1426,14 @@ export function WritingShowcase() {
                             {/* Modal Close Button */}
                             <button 
                                 onClick={() => setSelectedProject(null)}
-                                className="absolute top-3.5 right-4 z-30 p-2 bg-background border-[3px] border-foreground hover:bg-[var(--nb-pink)] transition-colors shadow-[2px_2px_0px_#000] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none cursor-pointer"
+                                className="absolute top-3.5 right-6 sm:right-10 md:right-16 z-30 p-2 bg-background border-[3px] border-foreground hover:bg-[var(--nb-pink)] transition-colors shadow-[2px_2px_0px_#000] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none cursor-pointer"
                             >
                                 <X size={20} />
                             </button>
 
                             {/* Modal Header & Tabs */}
                             {selectedProject.fullPageImage ? (
-                                <div className="flex border-b-[4px] border-foreground bg-muted p-3 gap-3 items-center pr-16 select-none flex-wrap">
+                                <div className="flex border-b-[4px] border-foreground bg-muted py-3 px-6 sm:px-10 md:px-16 gap-3 items-center select-none flex-wrap">
                                     <button
                                         onClick={() => setModalTab("strategy")}
                                         className={cn(
@@ -1180,7 +1458,7 @@ export function WritingShowcase() {
                                     </button>
                                 </div>
                             ) : selectedProject.details?.articleText && selectedProject.details?.campaignFocus ? (
-                                <div className="flex border-b-[4px] border-foreground bg-muted p-3 gap-3 items-center pr-16 select-none flex-wrap">
+                                <div className="flex border-b-[4px] border-foreground bg-muted py-3 px-6 sm:px-10 md:px-16 gap-3 items-center select-none flex-wrap">
                                     <button
                                         onClick={() => setModalTab("article")}
                                         className={cn(
@@ -1220,7 +1498,7 @@ export function WritingShowcase() {
                             ) : selectedProject.details.emails ? (
                                 <div className="flex flex-col flex-1 overflow-hidden border-t-[4px] border-foreground">
                                     {/* Email Toggles / Tabs Bar */}
-                                    <div className="bg-[#FFFDF7] p-4 border-b-[4px] border-foreground flex flex-wrap gap-2 items-center pr-16 select-none">
+                                    <div className="bg-[#FFFDF7] py-3 px-6 sm:px-10 md:px-16 border-b-[4px] border-foreground flex flex-wrap gap-2 items-center select-none">
                                         <span className="text-[10px] font-black uppercase tracking-widest text-muted-foreground mr-2">Campaign Flow:</span>
                                         {selectedProject.details.emails.map((email) => (
                                             <button
@@ -1636,26 +1914,26 @@ export function WritingShowcase() {
                                 <div className="flex-1 p-6 sm:p-10 md:p-16 overflow-y-auto bg-[#FDFCF7]">
                                     <div className="max-w-3xl mx-auto space-y-8">
                                         <div className="space-y-4">
-                                            <span className="nb-badge px-2.5 py-1 bg-foreground text-background border-foreground text-[9px] font-black uppercase tracking-[0.15em]">
+                                            <span className="text-[10px] font-black uppercase tracking-[0.2em] text-primary">
                                                 {selectedProject.subCategory}
                                             </span>
-                                            <h1 className="text-3xl sm:text-4xl md:text-5xl font-black uppercase leading-tight tracking-tighter text-foreground">
+                                            <h1 className="text-3xl sm:text-4xl md:text-5xl font-black leading-tight tracking-tight text-foreground font-serif">
                                                 {selectedProject.title}
                                             </h1>
                                             {selectedProject.details.subCopy && (
-                                                <p className="text-base sm:text-lg font-bold text-muted-foreground leading-relaxed italic">
+                                                <p className="text-lg sm:text-xl font-serif text-muted-foreground leading-relaxed italic">
                                                     {selectedProject.details.subCopy}
                                                 </p>
                                             )}
                                             <div className="flex flex-wrap items-center gap-4 text-[10px] font-black uppercase tracking-wider text-muted-foreground pt-2">
                                                 <span>By Sudharsan Karthikeyan</span>
-                                                <span className="hidden sm:inline">•</span>
+                                                <span className="hidden sm:inline opacity-30">•</span>
                                                 <span>{selectedProject.readTime || "8 min read"}</span>
-                                                <span className="hidden sm:inline">•</span>
+                                                <span className="hidden sm:inline opacity-30">•</span>
                                                 <span className="text-primary">{selectedProject.details.tag || "Writing"}</span>
                                             </div>
                                         </div>
-                                        <div className="h-[2px] bg-foreground/20" />
+                                        <div className="h-[1px] bg-foreground/10" />
                                         <div className="space-y-6">
                                             {selectedProject.details.articleText.split("\n\n").map((para, idx) => {
                                                 const trimmed = para.trim();
@@ -1670,7 +1948,16 @@ export function WritingShowcase() {
                                                     "What Your Exhausted Self Actually Needs From You",
                                                     "When to Consider Speaking to Someone",
                                                     "One Thing Before You Close This Tab",
-                                                    "Finding the Venue That Fits"
+                                                    "Finding the Venue That Fits",
+                                                    "Why It's Even Called Web3",
+                                                    "It's Not Really About Cryptocurrency",
+                                                    "A Wallet Is Closer to a Passport Than a Purse",
+                                                    "Ownership Actually Changes Something",
+                                                    "Why Businesses Actually Care",
+                                                    "The Real Obstacle Isn't the Technology",
+                                                    "So Is Web3 Actually the Future",
+                                                    "Wrapping Up",
+                                                    "Demystifying Web3"
                                                 ].includes(trimmed);
 
                                                 // Check if it's a list subheader like "1. You used to be able..."
@@ -1713,14 +2000,17 @@ export function WritingShowcase() {
                                     <div className="max-w-3xl mx-auto space-y-12">
                                         {/* Header */}
                                         <div className="space-y-4">
-                                            <span className="nb-badge px-2.5 py-1 bg-foreground text-background border-foreground text-[9px] font-black uppercase tracking-[0.15em]">
+                                            <span className="nb-badge px-2.5 py-1 bg-[var(--nb-orange)] text-white border-foreground text-[9px] font-black uppercase">
+                                                {selectedProject.subCategory}
+                                            </span>
+                                            <span className="text-[10px] font-black text-muted-foreground uppercase tracking-widest ml-2">
                                                 Strategy Brief
                                             </span>
-                                            <h1 className="text-3xl sm:text-4xl md:text-5xl font-black uppercase leading-tight tracking-tighter text-foreground">
+                                            <h1 className="text-2xl sm:text-4xl md:text-5xl font-black uppercase leading-tight tracking-tighter text-foreground">
                                                 {selectedProject.title}
                                             </h1>
                                             {selectedProject.details?.subCopy && (
-                                                <p className="text-lg sm:text-xl font-serif leading-relaxed text-muted-foreground italic">
+                                                <p className="text-lg font-bold leading-relaxed text-foreground italic">
                                                     &ldquo;{selectedProject.details.subCopy}&rdquo;
                                                 </p>
                                             )}
@@ -1737,17 +2027,17 @@ export function WritingShowcase() {
                                                         <span className="w-1.5 h-1.5 bg-foreground rounded-full" />
                                                         Editorial Objective
                                                     </h4>
-                                                    <p className="text-xs sm:text-sm font-semibold text-foreground/90 leading-relaxed">
+                                                    <p className="text-xs sm:text-sm font-extrabold text-foreground leading-relaxed">
                                                         {selectedProject.details.campaignFocus}
                                                     </p>
                                                 </div>
 
-                                                <div className="p-6 border-[2.5px] border-foreground bg-[var(--nb-blue)] shadow-[4px_4px_0px_#000] space-y-3">
+                                                <div className="p-6 border-[2.5px] border-foreground bg-[var(--nb-green)] shadow-[4px_4px_0px_#000] space-y-3">
                                                     <h4 className="text-xs font-black uppercase tracking-wider text-foreground flex items-center gap-1.5">
                                                         <span className="w-1.5 h-1.5 bg-foreground rounded-full" />
                                                         Strategic Insight
                                                     </h4>
-                                                    <p className="text-xs sm:text-sm font-semibold text-foreground/90 leading-relaxed">
+                                                    <p className="text-xs sm:text-sm font-extrabold text-foreground leading-relaxed">
                                                         {selectedProject.details.creativeInsight}
                                                     </p>
                                                 </div>
@@ -1758,7 +2048,7 @@ export function WritingShowcase() {
                                                 <h4 className="text-xs font-black uppercase tracking-wider text-foreground flex items-center gap-1.5">
                                                     📢 Brand & Platform Context
                                                 </h4>
-                                                <p className="text-xs sm:text-sm font-bold text-foreground leading-relaxed">
+                                                <p className="text-xs sm:text-sm font-extrabold text-foreground leading-relaxed">
                                                     {selectedProject.details.brandPositioning}
                                                 </p>
                                             </div>
