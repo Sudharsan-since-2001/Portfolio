@@ -7,7 +7,7 @@ import { ArrowRight, PenTool, ExternalLink, X, Mail } from "lucide-react"
 
 // --- Data Types ---
 type MainCategory = "Content writing" | "Copywriting"
-type SubCategory = "ALL" | "BLOG / ARTICLES" | "AD COPY" | "EMAIL COPY" | "LANDING PAGE" | "SOCIAL MEDIA" | "CASE STUDIES" | "GHOST WRITING" | "BOOKS"
+type SubCategory = "ALL" | "BLOG / ARTICLES" | "AD COPY" | "EMAIL COPY" | "LANDING PAGE" | "SOCIAL MEDIA" | "CASE STUDIES" | "GHOST WRITING" | "BOOKS" | "Patient Guide"
 
 interface WritingProject {
     title: string
@@ -514,6 +514,272 @@ The point was never really about killing off the password as a concept.
 It's about killing off the friction that came with it. If wallet based identity actually takes hold, signing in stops being a chore, people keep more control over their own information, and businesses spend less time babysitting logins and more time building things worth logging into in the first place.
 
 And if that future actually shows up, Web3's biggest win won't be that everyone finally understands how blockchain works. It'll be that nobody has to think about it at all.`
+        }
+    },
+    {
+        title: "Understanding Type 2 Diabetes: Symptoms, Causes, Treatment, and Prevention",
+        mainCategory: "Content writing",
+        subCategory: "BLOG / ARTICLES",
+        readTime: "9 min read",
+        description: "An educational, research-backed health article explaining the symptoms, causes, diagnosis, treatment, and prevention of Type 2 diabetes in an approachable, reassuring tone.",
+        link: "#",
+        details: {
+            headline: "Living Well With Type 2 Diabetes",
+            subCopy: "Understanding Type 2 Diabetes: Symptoms, Causes, Treatment, and Prevention",
+            campaignFocus: "To educate readers about the symptoms, causes, and management of Type 2 diabetes using clear, non-alarmist language, and build trust as an accessible health resource.",
+            creativeInsight: "Bypasses medical alarmism by framing diabetes as a highly manageable, well-understood condition. Uses relatable analogies (insulin as a key unlocking cells) and local research data (ICMR-INDIAB study) to build multi-generational trust and authority.",
+            brandPositioning: "A healthcare aggregator, wellness platform, or digital health clinic wanting to provide accessible, patient-first health education.",
+            deliverables: [
+                { title: "Patient Education Copy", desc: "Crafting a reassuring, research-driven article for patient education." },
+                { title: "Epidemiological Data Integration", desc: "Weaving statistics (ICMR-INDIAB study, IDF) to establish local and global context." },
+                { title: "Health Disclaimer & CTA", desc: "Structuring clear medical disclaimers and next-steps guidelines." }
+            ],
+            tag: "Healthcare Copywriting",
+            articleText: `Feeling thirsty more often than usual? Making a few extra trips to the bathroom, especially at night? Or maybe you've just been tired lately, the kind of tired that doesn't go away no matter how much you sleep.
+
+Most of us would put this down to stress, a busy week, or simply getting older. And often, that's exactly what it is. But sometimes, these small changes are early signs of Type 2 diabetes, a condition that affects a large number of people, including many who don't yet know they have it.
+
+To put things in perspective, the ICMR-INDIAB study, India's largest national survey on the subject, estimates that over 101 million people in the country are living with diabetes today, with another 136 million in the prediabetes stage. Globally, the International Diabetes Federation puts the number at close to 589 million adults. Numbers like these can feel heavy at first, but they also mean something important: this is an extremely well studied condition, and doctors know it well.
+
+Here's the reassuring part. Type 2 diabetes is one of the most well understood, well managed conditions in medicine today. With early diagnosis and the right care, most people go on to live full, active lives. Understanding what's actually happening in your body is the first step, so let's walk through it together.
+
+What Is Type 2 Diabetes, Really?
+
+Think of insulin as a key that unlocks your cells so glucose, the sugar your body gets from food, can move out of your bloodstream and into your cells for energy.
+
+In Type 2 diabetes, that key stops working as well as it should. Either your body doesn't produce enough insulin, or your cells stop responding to it the way they used to. Glucose builds up in the blood instead of being used, and over the years, that extra sugar can quietly put strain on the heart, kidneys, eyes, and nerves.
+
+None of this happens overnight, though. That's actually one of the more hopeful things about this condition. There's usually time to catch it early and change its course.
+
+Symptoms Worth Paying Attention To
+
+Type 2 diabetes tends to creep in slowly. Many people only find out during a routine checkup, sometimes years after the changes actually began. In fact, research suggests that nearly half of adults living with diabetes in our region don't yet know it. That's part of why regular health screenings matter so much, even when you're feeling perfectly fine.
+
+Some of the more common signs include feeling unusually thirsty, needing to urinate more often than normal, and a fatigue that doesn't quite lift even after rest. You might notice you're hungrier than usual despite eating regularly, or that your vision seems a little blurred at times. Small cuts that take longer to heal, more frequent skin or urinary infections, and a tingling sensation in the hands or feet are also worth mentioning to your doctor.
+
+Having one or two of these on their own doesn't mean you have diabetes. Plenty of things can cause fatigue or thirst. But if any of them stick around for a few weeks, it's worth getting checked, not because something is definitely wrong, but because it's the easiest way to find out either way.
+
+What Actually Causes It
+
+There's rarely one single reason someone develops Type 2 diabetes. It's usually a combination of things working together over time.
+
+Carrying extra weight, especially around the abdomen, plays a role, as does spending most of the day sitting rather than moving. Diets heavy in processed food and sugary drinks add to the load on the body over the years. Family history matters too. If a parent or sibling has diabetes, your own risk goes up, simply because some of this is written into our genes. Age plays a part as well, along with high blood pressure, cholesterol imbalances, and for some women, a history of gestational diabetes during pregnancy.
+
+The honest truth is that some of these factors, like age or family history, are out of anyone's hands. But a good number of the others genuinely respond to the choices we make every day, which is where there's real room to act.
+
+Who Should Be Watching More Closely
+
+If you're over 35, have a close family member with diabetes, carry extra weight, or lead a fairly inactive lifestyle, it's worth being a little more attentive to your health. The same goes if you've already been told your blood pressure runs high, if a doctor has ever mentioned prediabetes, or if you had gestational diabetes during a pregnancy.
+
+None of this means diabetes is inevitable for you. It just means a yearly checkup is worth prioritizing rather than postponing.
+
+How Doctors Actually Diagnose It
+
+The good news here is that diagnosis is genuinely simple. It usually comes down to a blood test, nothing invasive, nothing that requires much preparation beyond a few hours of fasting if needed.
+
+Doctors often start with an HbA1c test, which gives a picture of your average blood sugar over the past two to three months rather than just a single moment in time. A fasting blood sugar test, taken after roughly eight hours without food, is another common option. Sometimes a random blood sugar test is used instead, which can be done at any time of day regardless of your last meal.
+
+Whichever test your doctor recommends, they'll walk you through what the numbers mean and what, if anything, needs to happen next.
+
+What Treatment Actually Looks Like
+
+There's no single treatment plan that fits everyone, and that's a good thing. Your doctor will build one around your blood sugar levels, your overall health, and anything else going on in your body.
+
+For many people, it starts with food and movement. Meals built around vegetables, whole grains, lean protein, and healthy fats, with less added sugar, can make a genuine difference to blood sugar control. Regular activity, even something as simple as a brisk daily walk, helps your body use insulin more effectively. Some people need medication alongside these changes, whether that's tablets or, for others, insulin itself. None of these options are a sign that lifestyle changes failed. They're simply part of a fuller toolkit, and your doctor will help you find the right combination.
+
+Ongoing monitoring matters too, not as a chore, but as a way of staying ahead of the condition rather than reacting to it after the fact.
+
+Can It Be Prevented
+
+Not always, but often, yes, and the habits that help are refreshingly ordinary.
+
+Keeping your weight in a healthy range, staying active, eating meals built around whole foods rather than processed ones, cutting back on sugary drinks, and steering clear of smoking all genuinely lower the risk. So does keeping an eye on your blood pressure and cholesterol, and simply showing up for your annual checkup, especially if any of the risk factors above sound familiar.
+
+None of this requires drastic, all at once change. Small, steady habits tend to matter far more over the years than a strict routine that burns out after a month.
+
+When It's Time to See a Doctor
+
+If any of the symptoms mentioned earlier have been sticking around for a few weeks, that's worth a conversation with your doctor. The same goes if diabetes runs in your family, if you've been told you're prediabetic, or if you've noticed unexplained weight loss, blurred vision, or wounds that seem slow to heal.
+
+Getting checked early doesn't just bring peace of mind. It genuinely gives treatment the best chance to work well, before the condition has a chance to affect other parts of the body.
+
+Living Well With Type 2 Diabetes
+
+A diagnosis can feel like a lot to take in at first, and that's a completely normal reaction. But it's worth remembering that diabetes, more than most chronic conditions, responds well to consistent care.
+
+Millions of people manage this condition every day while still working, travelling, exercising, and living life fully. With the right treatment plan and a good relationship with your healthcare team, this becomes far more manageable than it might feel in the first few weeks after diagnosis.
+
+If any of this sounds familiar, there's no need to wait until symptoms get harder to ignore. A simple blood test can give you real answers, and real answers are usually the first step toward feeling better, not the thing to be afraid of.
+
+> **Disclaimer:** This article is intended for educational purposes only and should not be considered medical advice. If you have concerns about your health or symptoms, please consult a qualified healthcare professional for diagnosis and treatment.`
+        }
+    },
+    {
+        title: "Preparing for Your First MRI Scan",
+        mainCategory: "Content writing",
+        subCategory: "Patient Guide",
+        readTime: "6 min read",
+        description: "A friendly, reassuring, and step-by-step patient preparation guide for individuals undergoing their first MRI scan.",
+        link: "#",
+        details: {
+            headline: "Preparing for Your First MRI Scan",
+            subCopy: "Everything you need to know before, during, and after your scan.",
+            campaignFocus: "Patient Education & Health Literacy",
+            creativeInsight: "Reduces claustrophobia and clinical anxiety by using structured chronological guidance, friendly layperson analogies, and clear expectations for the scanner's sounds.",
+            brandPositioning: "Diagnostic imaging centers, private clinics, healthcare networks, or consumer health portals seeking high-trust patient-facing materials.",
+            deliverables: [
+                { title: "Patient-First Copywriting", desc: "Translating complex clinical procedures into calming, layperson-friendly guidance." },
+                { title: "Anxiety Reduction Structure", desc: "Chronologically addressing major patient anxiety triggers (noise, claustrophobia, implants)." },
+                { title: "FAQ Section Design", desc: "Structuring common patient questions for high scannability and quick reference." }
+            ],
+            tag: "Healthcare Copywriting",
+            articleText: `# Patient Guide: Preparing for Your First MRI Scan
+
+If your doctor has recommended an MRI, it's natural to have a few questions running through your mind. Maybe you're picturing the tunnel and wondering if you'll feel closed in. Maybe you're just wondering how long you'll need to lie still, or whether it's going to be uncomfortable in any way.
+
+Here's the reassuring part. An MRI is a safe, non-invasive scan that gives your doctor a detailed, clear picture of what's happening inside your body. Nothing about it involves needles near the area being scanned, radiation, or any real discomfort for most people. Knowing what to expect ahead of time tends to make the whole experience feel far more manageable.
+
+This guide walks you through everything, before, during, and after your scan.
+
+---
+
+# What Is an MRI Scan?
+
+MRI stands for Magnetic Resonance Imaging.
+
+Unlike X-rays or CT scans, an MRI uses a powerful magnetic field and radio waves, not radiation, to build detailed images of organs, muscles, joints, blood vessels, and other soft tissue inside the body. Because there's no radiation involved, it's often the preferred choice when your doctor needs a closer, more detailed look.
+
+Your doctor may recommend an MRI to examine the brain, spine, joints, heart, abdomen, or other areas depending on what they're investigating.
+
+---
+
+# Why Has My Doctor Recommended an MRI?
+
+An MRI helps your healthcare team get a clearer picture when something needs a closer look. It can help:
+
+* Investigate unexplained pain or discomfort
+* Diagnose injuries to muscles, ligaments, or joints
+* Examine the brain or spinal cord
+* Detect certain tumors or infections
+* Evaluate heart or blood vessel conditions
+* Monitor an existing condition over time
+* Check how well a treatment is working
+
+Your doctor will walk you through the specific reason it's been recommended in your case, so you're never left guessing why.
+
+---
+
+# How Should I Prepare for My MRI?
+
+The good news is that most MRI scans need very little preparation. A few simple steps beforehand just help everything go smoothly on the day.
+
+### Tell Your Healthcare Team About Any Medical Implants
+
+Before your appointment, let your care team know if you have any of the following. Most implants are perfectly compatible with MRI, but your team needs to know in advance so they can plan around it properly.
+
+* A pacemaker or implanted defibrillator
+* Cochlear (hearing) implants
+* Metal clips, stents, or artificial joints
+* An insulin pump
+* Any metal fragments from previous injuries or surgeries
+
+### Wear Comfortable Clothing
+
+You may be asked to change into a hospital gown, so comfort matters more than style here. If you're wearing your own clothes, it helps to avoid anything with metal zippers, buttons, underwire, or metallic thread woven into the fabric.
+
+### Leave Metal Items Behind
+
+Because the scanner works using a powerful magnet, a few everyday items need to stay outside the room. Before you go in, you'll be asked to remove:
+
+* Jewellery
+* Watches
+* Glasses
+* Hairpins
+* Belts with metal buckles
+* Coins and keys
+* Mobile phones
+* Credit or debit cards
+
+### Ask About Eating or Drinking
+
+Most MRI scans don't require any fasting at all. That said, if your scan involves a contrast dye or focuses on a specific area, your doctor may give you a few extra instructions about eating or drinking beforehand. Unless told otherwise, keep taking your regular medications as usual.
+
+---
+
+# What Happens During the Scan?
+
+When it's time, a radiographer will walk you through the process and answer any last minute questions before you begin.
+
+You'll lie down on a padded table that slowly slides into the scanner. During the scan, you'll be asked to stay as still as you can. The machine makes a tapping or knocking sound while it works, which surprises some people the first time, so you'll usually be offered earplugs or headphones for comfort. The radiographer can see and hear you the entire time, and you're free to speak up anytime you need something.
+
+Depending on what's being scanned, the whole thing usually takes somewhere between 20 and 60 minutes. The space inside can feel a little enclosed, but the vast majority of people get through it without any trouble at all.
+
+---
+
+# Does an MRI Scan Hurt?
+
+No. An MRI is painless.
+
+The table itself can feel a bit firm, and staying still for a while might get slightly tiring, but the scan itself won't cause any pain. If anything feels off or uncomfortable at any point, just let the radiographer know. They're listening the whole time.
+
+---
+
+# What If I'm Claustrophobic?
+
+You're far from the only one who feels this way, and it's genuinely okay to say so. If being inside the scanner worries you, mention it to your healthcare provider before your appointment rather than on the day itself.
+
+Depending on what would help you most, they may suggest:
+
+* Relaxation techniques to use during the scan
+* Listening to music, where available
+* Bringing a friend or family member along for support
+* Mild medication to help you relax, if appropriate
+
+The more open you can be about what's making you anxious, the better your care team can actually help.
+
+---
+
+# What Happens After the MRI?
+
+For most people, there's no recovery time needed at all. You can usually go straight back to your normal day right after the scan.
+
+If you were given medication to help you relax beforehand, it's worth arranging for someone to drive you home, just to be safe.
+
+Your images go to a radiologist, who studies them closely and prepares a report for your doctor. Your doctor will then sit down with you, walk through what the results mean, and let you know if anything further is needed.
+
+---
+
+# Frequently Asked Questions
+
+### Can I eat before my MRI?
+
+In most cases, yes. If fasting is needed for your specific scan, you'll be told in advance.
+
+### Will I receive contrast dye?
+
+Some scans use a contrast agent to sharpen the images further. Your doctor will tell you if it applies to you and explain anything extra you need to do beforehand.
+
+### Can I wear makeup?
+
+Some cosmetics contain tiny metallic particles, so it's best to check with your imaging centre's instructions before your appointment.
+
+### Is an MRI safe?
+
+Yes, for most people. As covered earlier, the main thing your care team needs to know beforehand is whether you have any implanted devices or metal in your body, since the scanner works through a strong magnetic field.
+
+### How soon will I get my results?
+
+This depends a bit on your healthcare provider, but in most cases, your doctor will go through the report with you within a few days.
+
+---
+
+# Before You Go In
+
+Your first MRI can feel like a lot of unknowns at once, and that's a completely normal thing to feel. But most people who go in nervous walk out surprised at how straightforward the whole thing actually was.
+
+Your care team is there for exactly this reason, to explain each step, answer whatever's on your mind, and make sure you feel steady walking in. If something's still unclear before your appointment, ask. A two minute question today can save you a lot of unnecessary worry on the day itself.
+
+> **Disclaimer:** This guide is intended for general educational purposes only. Preparation instructions may vary depending on the type of MRI and your medical condition. Always follow the guidance provided by your healthcare team.`
         }
     },
     {
@@ -1124,7 +1390,8 @@ const subCategoryColors: Record<SubCategory, string> = {
     "AD COPY": "bg-[#FFD275] text-foreground",
     "EMAIL COPY": "bg-[#FFA285] text-foreground",
     "SOCIAL MEDIA": "bg-[#E599FF] text-foreground",
-    "LANDING PAGE": "bg-[#8EE6E6] text-foreground"
+    "LANDING PAGE": "bg-[#8EE6E6] text-foreground",
+    "Patient Guide": "bg-[#9EEAE3] text-foreground"
 }
 
 export function WritingShowcase() {
@@ -1930,72 +2197,142 @@ export function WritingShowcase() {
                                                 <span className="hidden sm:inline opacity-30">•</span>
                                                 <span>{selectedProject.readTime || "8 min read"}</span>
                                                 <span className="hidden sm:inline opacity-30">•</span>
-                                                <span className="text-primary">{selectedProject.details.tag || "Writing"}</span>
+                                                <span className="text-primary">{selectedProject.details?.tag || "Writing"}</span>
                                             </div>
                                         </div>
                                         <div className="h-[1px] bg-foreground/10" />
                                         <div className="space-y-6">
-                                            {selectedProject.details.articleText.split("\n\n").map((para, idx) => {
-                                                const trimmed = para.trim();
-                                                if (!trimmed) return null;
+                                            {(() => {
+                                                 let pCount = 0;
+                                                 return selectedProject.details?.articleText?.split("\n\n").map((para, idx) => {
+                                                     const trimmed = para.trim();
+                                                     if (!trimmed) return null;
 
-                                                // Check if it's one of the main headers
-                                                const isMainHeader = [
-                                                    "Why We Confuse the Two",
-                                                    "What Is Actually Happening in Your Body",
-                                                    "Five Signs You Are Exhausted, Not Lazy",
-                                                    "The Difference Between Rest and Recovery",
-                                                    "What Your Exhausted Self Actually Needs From You",
-                                                    "When to Consider Speaking to Someone",
-                                                    "One Thing Before You Close This Tab",
-                                                    "Finding the Venue That Fits",
-                                                    "Why It's Even Called Web3",
-                                                    "It's Not Really About Cryptocurrency",
-                                                    "A Wallet Is Closer to a Passport Than a Purse",
-                                                    "Ownership Actually Changes Something",
-                                                    "Why Businesses Actually Care",
-                                                    "The Real Obstacle Isn't the Technology",
-                                                    "So Is Web3 Actually the Future",
-                                                    "Wrapping Up",
-                                                    "Demystifying Web3"
-                                                ].includes(trimmed);
+                                                     // Check if it's a blockquote / disclaimer
+                                                     const isBlockquote = trimmed.startsWith(">");
 
-                                                // Check if it's a list subheader like "1. You used to be able..."
-                                                const isListHeader = /^\d+\.\s/.test(trimmed);
+                                                     // Check if it's a markdown horizontal rule/separator
+                                                     if (trimmed === "---") {
+                                                         return <div key={idx} className="h-[2px] bg-foreground/20 my-8" />;
+                                                     }
 
-                                                if (isMainHeader) {
-                                                    return (
-                                                        <h2 key={idx} className="text-xl sm:text-2xl font-black uppercase tracking-tight text-foreground pt-6 pb-2 font-sans border-b-[2px] border-foreground/10">
-                                                            {trimmed}
-                                                        </h2>
-                                                    );
-                                                }
+                                                     // Check if it's a markdown header or fallbacks
+                                                     const isMarkdownH12 = trimmed.startsWith("# ") || trimmed.startsWith("## ");
+                                                     const isMarkdownH3 = trimmed.startsWith("### ");
 
-                                                if (isListHeader) {
-                                                    return (
-                                                        <h3 key={idx} className="text-base sm:text-lg font-black uppercase tracking-tight text-primary pt-4 pb-1 font-sans">
-                                                            {trimmed}
-                                                        </h3>
-                                                    );
-                                                }
+                                                     // Check if it's one of the main headers
+                                                     const isMainHeader = [
+                                                         "Why We Confuse the Two",
+                                                         "What Is Actually Happening in Your Body",
+                                                         "Five Signs You Are Exhausted, Not Lazy",
+                                                         "The Difference Between Rest and Recovery",
+                                                         "What Your Exhausted Self Actually Needs From You",
+                                                         "When to Consider Speaking to Someone",
+                                                         "One Thing Before You Close This Tab",
+                                                         "Finding the Venue That Fits",
+                                                         "Why It's Even Called Web3",
+                                                         "It's Not Really About Cryptocurrency",
+                                                         "A Wallet Is Closer to a Passport Than a Purse",
+                                                         "Ownership Actually Changes Something",
+                                                         "Why Businesses Actually Care",
+                                                         "The Real Obstacle Isn't the Technology",
+                                                         "So Is Web3 Actually the Future",
+                                                         "Wrapping Up",
+                                                         "Demystifying Web3",
+                                                         "Looking Beyond the Hype",
+                                                         "The Password Problem Nobody Really Solved",
+                                                         "Think of a SIM Card, Not a Login",
+                                                         "A Wallet Holds More Than Money",
+                                                         "Sign In Without Typing Another Password",
+                                                         "Sharing Less, Not More",
+                                                         "What's Actually Still in the Way",
+                                                         "Will Passwords Actually Go Away",
+                                                         "The Real Win Here",
+                                                         "What Is Type 2 Diabetes, Really?",
+                                                         "Symptoms Worth Paying Attention To",
+                                                         "What Actually Causes It",
+                                                         "Who Should Be Watching More Closely",
+                                                         "How Doctors Actually Diagnose It",
+                                                         "What Treatment Actually Looks Like",
+                                                         "Can It Be Prevented",
+                                                         "When It's Time to See a Doctor",
+                                                         "Living Well With Type 2 Diabetes",
+                                                         "Patient Guide"
+                                                     ].includes(trimmed);
 
-                                                // Normal paragraph
-                                                return (
-                                                    <p 
-                                                        key={idx} 
-                                                        className={cn(
-                                                            "font-serif text-sm sm:text-base leading-relaxed text-foreground/90 font-medium",
-                                                            idx === 0 ? "first-letter:text-5xl first-letter:font-black first-letter:float-left first-letter:mr-3 first-letter:mt-1 first-letter:text-primary first-letter:font-sans" : ""
-                                                        )}
-                                                    >
-                                                        {trimmed}
-                                                    </p>
-                                                );
-                                            })}
+                                                     // Check if it's a list subheader like "1. You used to be able..."
+                                                     const isListHeader = /^\d+\.\s/.test(trimmed);
+
+                                                     if (isBlockquote) {
+                                                         const content = trimmed.slice(1).trim();
+                                                         const match = content.match(/^\*\*(.*?)\*\*:([\s\S]*)/);
+                                                         if (match) {
+                                                             return (
+                                                                 <div key={idx} className="p-5 border-[3px] border-foreground bg-[var(--nb-yellow)] shadow-[5px_5px_0px_#000] font-sans text-xs sm:text-sm text-foreground my-8">
+                                                                     <strong className="font-black uppercase tracking-wider">{match[1]}:</strong>
+                                                                     <span className="font-bold ml-1">{match[2]}</span>
+                                                                 </div>
+                                                             );
+                                                         }
+                                                         return (
+                                                             <div key={idx} className="p-5 border-[3px] border-foreground bg-[var(--nb-yellow)] shadow-[5px_5px_0px_#000] font-sans text-xs sm:text-sm font-bold text-foreground my-8">
+                                                                 {content}
+                                                             </div>
+                                                         );
+                                                     }
+
+                                                     if (isMarkdownH12 || isMainHeader) {
+                                                         const cleanTitle = trimmed.replace(/^#+\s+/, "");
+                                                         return (
+                                                             <h2 key={idx} className="text-xl sm:text-2xl font-black uppercase tracking-tight text-foreground pt-6 pb-2 font-sans border-b-[2px] border-foreground/10">
+                                                                 {cleanTitle}
+                                                             </h2>
+                                                         );
+                                                     }
+
+                                                     if (isMarkdownH3 || isListHeader) {
+                                                         const cleanTitle = trimmed.replace(/^#+\s+/, "");
+                                                         return (
+                                                             <h3 key={idx} className="text-base sm:text-lg font-black uppercase tracking-tight text-primary pt-4 pb-1 font-sans">
+                                                                 {cleanTitle}
+                                                             </h3>
+                                                         );
+                                                     }
+
+                                                     // Check if it's a list (contains lines starting with * or -)
+                                                     const isList = trimmed.split("\n").some(line => /^\s*[\*\-\u2022]\s/.test(line));
+                                                     if (isList) {
+                                                         return (
+                                                             <ul key={idx} className="list-disc pl-6 space-y-2 font-serif text-sm sm:text-base leading-relaxed text-foreground/90 font-medium my-4">
+                                                                 {trimmed.split("\n").map((line, lIdx) => {
+                                                                     const cleanLine = line.replace(/^\s*[\*\-\u2022]\s+/, "");
+                                                                     if (!cleanLine.trim()) return null;
+                                                                     return <li key={lIdx}>{cleanLine}</li>;
+                                                                 })}
+                                                             </ul>
+                                                         );
+                                                     }
+
+                                                     // Normal paragraph
+                                                     pCount++;
+                                                     const showDropcap = pCount === 1;
+                                                     return (
+                                                         <p 
+                                                             key={idx} 
+                                                             className={cn(
+                                                                 "font-serif text-sm sm:text-base leading-relaxed text-foreground/90 font-medium",
+                                                                 showDropcap ? "first-letter:text-5xl first-letter:font-black first-letter:float-left first-letter:mr-3 first-letter:mt-1 first-letter:text-primary first-letter:font-sans" : ""
+                                                             )}
+                                                         >
+                                                             {trimmed}
+                                                         </p>
+                                                     );
+                                                 }) || null;
+                                             })()}
                                         </div>
                                     </div>
                                 </div>
-                            ) : selectedProject.details?.articleText && modalTab === "strategy" ? (
+                             ) : selectedProject.details?.articleText && modalTab === "strategy" ? (
                                 <div className="flex-1 p-6 sm:p-10 md:p-16 overflow-y-auto bg-[#FDFCF7]">
                                     <div className="max-w-3xl mx-auto space-y-12">
                                         {/* Header */}
